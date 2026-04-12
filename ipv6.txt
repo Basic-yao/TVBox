@@ -32,7 +32,7 @@ http://61.221.215.25:8800/hls/9/index.m3u8
 
 #☘️体育频道#
 
-#EXTINF:-1 tvg-name="广东体育" tvg-id="广东体育" tvg-logo="https://tb.zbds.top/logo/广东体育.png" group-title="体育频道", 广东体育1
+#EXTINF:-1 tvg-name="广东体育" tvg-id="广东体育" tvg-logo="https://tb.zbds.top/logo/广东体育.png" group-title="体育频道", 广东体育
 http://cdn2.163189.xyz/live/gdty/stream.m3u8
 
 #EXTINF:-1 tvg-name="CCTV5+" tvg-id="CCTV5+" tvg-logo="https://tb.zbds.top/logo/CCTV5+.png" group-title="体育频道", CCTV5+
