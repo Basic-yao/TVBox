@@ -233,18 +233,10 @@ https://0472.org/hls/cgtnd.m3u8
 http://r.jdshipin.com/cCCzW
 
 #EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/翡翠台.png" group-title="港澳代理",翡翠台
-http://r.jdshipin.com/GeWKr
-
-#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/翡翠台.png" group-title="港澳代理",翡翠台
 http://iptv.4666888.xyz/iptv2A.php?id=34
 
 #EXTINF:-1 tvg-name="明珠台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/明珠台.png" group-title="港澳代理",明珠台
-http://r.jdshipin.com/ZQ4kN
-#EXTINF:-1 tvg-name="明珠台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/明珠台.png" group-title="港澳代理",明珠台
 http://r.jdshipin.com/jUx8K
-
-#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/无线新闻.png" group-title="港澳代理",无线新闻
-http://r.jdshipin.com/CkuBd
 
 #EXTINF:-1 tvg-name="有线新闻" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/有线新闻.png" group-title="港澳代理",有线新闻
 http://iptv.4666888.xyz/iptv2A.php?id=31
