@@ -36,7 +36,6 @@ http://61.221.215.25:8800/hls/9/index.m3u8
 http://cdn2.163189.xyz/live/gdty/stream.m3u8
 
 #EXTINF:-1 tvg-name="CCTV5+" tvg-id="CCTV5+" tvg-logo="https://tb.zbds.top/logo/CCTV5+.png" group-title="体育频道", CCTV5+
-https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
 http://74.91.26.218:82/live/cctv5p.m3u8
 
 #☘️广东频道#
