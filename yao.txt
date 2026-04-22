@@ -51,6 +51,47 @@
       "searchable": 1,
       "changeable": 1
     },
+  	{
+      "key": "SportGuaZi",
+      "name": "🌐瓜子┃体育🌐",
+      "type": 3,
+      "api": "csp_SportGuaZiGuard",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
+    },
+	{
+      "key": "SportKanQiuTong",
+      "name": "🌐球通┃体育🌐",
+      "type": 3,
+      "api": "csp_SportKanQiuTongGuard",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
+    },	
+    {
+      "key": "SportKanqiu",
+      "name": "🌐八八┃体育🌐",
+      "type": 3,
+      "api": "csp_SportKanqiuGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "SportWwe",
+      "name": "🌐WWE┃体育🌐",
+      "type": 3,
+      "api": "csp_SportWweGuard",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
+    },
     {
       "key": "玩偶",
       "name": "💓‍玩偶┃4K💓‍",
