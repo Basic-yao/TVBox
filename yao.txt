@@ -51,11 +51,22 @@
       "searchable": 1,
       "changeable": 1
     },
-  	{
-      "key": "SportGuaZi",
+      {
+      "key": "看球",
+      "name": "🌐88┃体育🌐",
+      "type": 3,
+      "api": "csp_KanqiuGuard",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
+    },
+	    {
+      "key": "瓜子看球",
       "name": "🌐瓜子┃体育🌐",
       "type": 3,
-      "api": "csp_SportGuaZiGuard",
+      "api": "csp_WexGZsportGuard",
       "searchable": 1,
       "changeable": 0,
       "style": {
@@ -63,10 +74,10 @@
       }
     },
 	{
-      "key": "SportKanQiuTong",
+      "key": "看球通",
       "name": "🌐球通┃体育🌐",
       "type": 3,
-      "api": "csp_SportKanQiuTongGuard",
+      "api": "csp_KanQiuTongGuard",
       "searchable": 1,
       "changeable": 0,
       "style": {
@@ -74,18 +85,10 @@
       }
     },	
     {
-      "key": "SportKanqiu",
-      "name": "🌐八八┃体育🌐",
-      "type": 3,
-      "api": "csp_SportKanqiuGuard",
-      "searchable": 1,
-      "changeable": 0
-    },
-    {
-      "key": "SportWwe",
+      "key": "WWE",
       "name": "🌐WWE┃体育🌐",
       "type": 3,
-      "api": "csp_SportWweGuard",
+      "api": "csp_WweGuard",
       "searchable": 1,
       "changeable": 0,
       "style": {
