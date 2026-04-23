@@ -1,6 +1,6 @@
 {
 
-  "spider": "https://raw.githubusercontent.com/Basic-yao/IP-TV/refs/heads/main/9a5924d728864b7a9e086dc613e60e51;md5;313cee1e4b5c7805ddbff53dbc9e09b9",
+   "spider": "https://raw.githubusercontent.com/Basic-yao/IP-TV/refs/heads/main/9a5924d728864b7a9e086dc613e60e51.txt;md5;d70201c1a77626ef5d247cdb50abb035",
   "wallpaper": "http://王二小放牛娃牛逼.999888987.xyz",
   "logo": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaFile/3CEAE9E_773_wexfnw_20250911190012684newMediaFile.gif",
   "sites": [
@@ -50,47 +50,6 @@
       "api": "csp_NewErXiaoGuard",
       "searchable": 1,
       "changeable": 1
-    },
-    	{
-      "key": "SportGuaZi",
-      "name": "🌐瓜子┃体育🌐",
-      "type": 3,
-      "api": "csp_SportGuaZiGuard",
-      "searchable": 1,
-      "changeable": 0,
-      "style": {
-        "type": "list"
-      }
-    },
-	{
-      "key": "SportKanQiuTong",
-      "name": "🌐球通┃体育🌐",
-      "type": 3,
-      "api": "csp_SportKanQiuTongGuard",
-      "searchable": 1,
-      "changeable": 0,
-      "style": {
-        "type": "list"
-      }
-    },	
-    {
-      "key": "SportKanqiu",
-      "name": "🌐八八┃体育🌐",
-      "type": 3,
-      "api": "csp_SportKanqiuGuard",
-      "searchable": 1,
-      "changeable": 0
-    },
-    {
-      "key": "SportWwe",
-      "name": "🌐WWE┃体育🌐",
-      "type": 3,
-      "api": "csp_SportWweGuard",
-      "searchable": 1,
-      "changeable": 0,
-      "style": {
-        "type": "list"
-      }
     },
     {
       "key": "玩偶",
@@ -663,7 +622,47 @@
         "json": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/345A587_773_gaozhong_20250828171449997newMediaImage.txt"
       }
     },
-
+	{
+      "key": "SportGuaZi",
+      "name": "🌐瓜子┃体育🌐",
+      "type": 3,
+      "api": "csp_SportGuaZiGuard",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
+    },
+	{
+      "key": "SportKanQiuTong",
+      "name": "🌐球通┃体育🌐",
+      "type": 3,
+      "api": "csp_SportKanQiuTongGuard",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
+    },	
+    {
+      "key": "SportKanqiu",
+      "name": "🌐八八┃体育🌐",
+      "type": 3,
+      "api": "csp_SportKanqiuGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "SportWwe",
+      "name": "🌐WWE┃体育🌐",
+      "type": 3,
+      "api": "csp_SportWweGuard",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
+    },
     {
       "key": "emby",
       "name": "🀄️emby┃4K🀄️",
@@ -971,7 +970,11 @@
       ]
     }
   ],
- 
+  "ads": [
+    "mozai.4gtv.tv",
+    "pv.vipwm.cc",
+	"static-mozai.4gtv.tv"
+  ],
   "lives": [
     {
         "name": "Kimentanm",
