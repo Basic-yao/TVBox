@@ -971,16 +971,12 @@
       ]
     }
   ],
-  "ads": [
-    "mozai.4gtv.tv",
-    "pv.vipwm.cc",
-	"static-mozai.4gtv.tv"
-  ],
+ 
   "lives": [
     {
         "name": "Kimentanm",
         "type": 0,
-        "url": "https://gh.llkk.cc/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+        "url": "https://raw.githubusercontent.com/Basic-yao/IP-TV/refs/heads/main/live.txt",
         "playerType": 2
     },
     {
