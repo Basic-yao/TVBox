@@ -1,5 +1,4 @@
 {
-
   "spider": "https://raw.githubusercontent.com/Basic-yao/IP-TV/refs/heads/main/wex.txt;md5;313cee1e4b5c7805ddbff53dbc9e09b9",
   "wallpaper": "http://王二小放牛娃牛逼.999888987.xyz",
   "logo": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaFile/3CEAE9E_773_wexfnw_20250911190012684newMediaFile.gif",
@@ -43,14 +42,6 @@
       "changeable": 0,
       "indexs": 0
     },
-    {
-      "key": "二小",
-      "name": "💓‍二小┃4K💓‍",
-      "type": 3,
-      "api": "csp_NewErXiaoGuard",
-      "searchable": 1,
-      "changeable": 1
-    },
 	{
       "key": "SportGuaZi",
       "name": "🌐瓜子┃体育🌐",
@@ -91,6 +82,14 @@
       "style": {
         "type": "list"
       }
+    },
+    {
+      "key": "二小",
+      "name": "💓‍二小┃4K💓‍",
+      "type": 3,
+      "api": "csp_NewErXiaoGuard",
+      "searchable": 1,
+      "changeable": 1
     },
     {
       "key": "Wexerxiaoziyuan",
