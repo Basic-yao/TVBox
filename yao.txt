@@ -767,14 +767,6 @@
       "searchable": 1,
       "changeable": 0
     }
-   {
-      "key":"push_agent",
-      "name":"🎾推送",
-      "type":3,
-      "api":"csp_Push",
-      "searchable":0,
-      "quickSearch":0,
-      "ext":{"commonConfig":"https://gh-proxy.com/raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json"}},
   ],
   "parses": [
     {
