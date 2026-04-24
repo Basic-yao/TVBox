@@ -84,16 +84,18 @@
       }
     },
     {
-        "key":"926",
-        "name":"⚽926┃看球⚽",
-        "type":3,
-        "api":"csp_kanqiu926Guard",
-        "timeout":10,
-        "searchable":0,
-        "changeable":0,
-        "style":{
-            "type":"list"
-        }
+          "key":"Jrsjs",
+          "name":"⚽ Jrs┃球迷⚽",
+          "type":3,
+          "api":"https://gh-proxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
+          "ext":"https://gh-proxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/jrk.js",
+          "timeout":10,
+          "searchable":0,
+          "quickSearch":0,
+          "changeable":0
+          "style":{
+              "type":"list"
+          }
     },
     {
       "key": "二小",
