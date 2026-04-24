@@ -1,5 +1,5 @@
 {
-  "spider": "https://raw.githubusercontent.com/Basic-yao/IP-TV/refs/heads/main/9a5924d728864b7a9e086dc613e60e51.txt;md5;d70201c1a77626ef5d247cdb50abb035",
+  "spider": "https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/9a5924d728864b7a9e086dc613e60e51.txt;md5;d70201c1a77626ef5d247cdb50abb035",
   "wallpaper": "http://王二小放牛娃牛逼.999888987.xyz",
   "logo": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaFile/3CEAE9E_773_wexfnw_20250911190012684newMediaFile.gif",
   "sites": [
@@ -940,7 +940,7 @@
     {
         "name": "Kimentanm",
         "type": 0,
-        "url": "https://raw.githubusercontent.com/Basic-yao/IP-TV/refs/heads/main/live.txt",
+        "url": "https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/live.txt",
         "playerType": 2
     },
     {
