@@ -83,7 +83,18 @@
         "type": "list"
       }
     },
-
+    {
+        "key":"926",
+        "name":"⚽926┃看球⚽",
+        "type":3,
+        "api":"csp_kanqiu926Guard",
+        "timeout":10,
+        "searchable":0,
+        "changeable":0,
+        "style":{
+            "type":"list"
+        }
+    },
     {
       "key": "二小",
       "name": "💓‍二小┃4K💓‍",
