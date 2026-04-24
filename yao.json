@@ -84,6 +84,20 @@
       }
     },
     {
+          "key":"Jrsjs",
+          "name":"⚽Jrs┃球迷⚽",
+          "type":3,
+          "api":"https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
+          "ext":"https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/jrk.js",
+          "timeout":10,
+          "searchable":0,
+          "quickSearch":0,
+          "changeable":0
+          "style":{
+              "type":"list"
+          }
+    },
+    {
       "key": "二小",
       "name": "💓‍二小┃4K💓‍",
       "type": 3,
@@ -969,11 +983,7 @@
       ]
     }
   ],
-  "ads": [
-    "mozai.4gtv.tv",
-    "pv.vipwm.cc",
-	"static-mozai.4gtv.tv"
-  ],
+
   "lives": [
     {
         "name": "Kimentanm",
