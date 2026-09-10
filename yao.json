@@ -1,5 +1,5 @@
 {
-    "spider": "https://gh-proxy.org/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/c9b7ce360a5900c3d089681cf0af7b35.jar;md5;9f55040b32bfe4a5c9a2353cdef51544",
+    "spider": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/c9b7ce360a5900c3d089681cf0af7b35.jar;md5;9f55040b32bfe4a5c9a2353cdef51544",
     "sites": [
         {
             "key": "Douban",
@@ -10,7 +10,7 @@
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 0,
-            "ext": "https://gh-proxy.org/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/20260414181247-ae51abfbfe.txt"
+            "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/20260414181247-ae51abfbfe.txt"
         }, {
             "key": "Doubanaaaa",
             "name": "🐮【更新日期:20260906】🐮",
@@ -20,7 +20,7 @@
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 0,
-            "ext": "https://gh-proxy.org/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/20260414181247-ae51abfbfe.txt"
+            "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/20260414181247-ae51abfbfe.txt"
         }, {
             "key": "Wexconfig",
             "name": "🐮配置┃中心🐮",
@@ -1052,7 +1052,7 @@
     "lives": [{
             "name": "Kimentanm",
             "type": 0,
-            "url": "https://gh-proxy.org/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/live.m3u",
+            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/live.m3u",
             "playerType": 1
         }, {
             "name": "综合直播",
