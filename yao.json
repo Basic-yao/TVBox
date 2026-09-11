@@ -1,19 +1,9 @@
 {
-    "spider": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/c9b7ce360a5900c3d089681cf0af7b35.jar;md5;9f55040b32bfe4a5c9a2353cdef51544",
+    "spider": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/21bf5077bc286e074ee40ba1d527e814.jar;md5;bd387114ab7a7078f8ae8f120c733907",
     "sites": [
         {
-            "key": "Douban",
-            "name": "🐮【王二小放牛娃】🐮",
-            "type": 3,
-            "api": "csp_NewDouBanGuard",
-            "indexs": 1,
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 0,
-            "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/20260414181247-ae51abfbfe.txt"
-        }, {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20260906】🐮",
+            "name": "🐮【更新日期:20260911】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
@@ -43,7 +33,7 @@
             "style": {
                 "type": "list"
             }
-        }, {
+        },{
             "key": "SportAiFeiQiu",
             "name": "🌐飞球┃体育🌐",
             "type": 3,
@@ -101,14 +91,6 @@
                 "type": "list"
             }
         }, {
-            "key": "二小",
-            "name": "💓‍指南┃4K💓‍",
-            "type": 3,
-            "api": "csp_AiNewXiaoPanGuard",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0
-        }, {
             "key": "玩偶",
             "name": "💓‍玩偶┃4K💓‍",
             "type": 3,
@@ -129,22 +111,6 @@
             "name": "💓‍七味┃4K💓‍",
             "type": 3,
             "api": "csp_AiQwMkvGuard",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0
-        }, {
-            "key": "NewZhiZhen",
-            "name": "💓至臻┃4K💓",
-            "type": 3,
-            "api": "csp_AiNewZhiZhenGuard",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0
-        }, {
-            "key": "AiNewPanLian",
-            "name": "💓盘链┃4K💓",
-            "type": 3,
-            "api": "csp_AiNewPanLianGuard",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 0
@@ -683,7 +649,7 @@
             "api": "csp_MusicAiLunHuiGuard",
             "searchable": 1,
             "changeable": 0
-        }, {
+        },  {
             "key": "FakeAi115Share",
             "name": "💓115┃分享💓‍",
             "type": 3,
