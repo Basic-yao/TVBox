@@ -1,9 +1,9 @@
 {
-    "spider": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/21bf5077bc286e074ee40ba1d527e814.jar;md5;bd387114ab7a7078f8ae8f120c733907",
+    "spider": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/20/73c02ea3ecd704dc1d50278db9e6e441.jar;md5;7be82cf9f66e0070ed430fd7b2d2ba64",
     "sites": [
         {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20260911】🐮",
+            "name": "🐮【更新日期:20260920】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
@@ -33,7 +33,7 @@
             "style": {
                 "type": "list"
             }
-        },{
+        }, {
             "key": "SportAiFeiQiu",
             "name": "🌐飞球┃体育🌐",
             "type": 3,
@@ -90,6 +90,14 @@
             "style": {
                 "type": "list"
             }
+        }, {
+            "key": "花卷",
+            "name": "💓花卷┃4K💓‍",
+            "type": 3,
+            "api": "csp_AiNewHuaJuanGuard",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0
         }, {
             "key": "玩偶",
             "name": "💓‍玩偶┃4K💓‍",
@@ -649,7 +657,7 @@
             "api": "csp_MusicAiLunHuiGuard",
             "searchable": 1,
             "changeable": 0
-        },  {
+        },{
             "key": "FakeAi115Share",
             "name": "💓115┃分享💓‍",
             "type": 3,
@@ -1015,6 +1023,7 @@
         }
     ],
 
+    ],
     "lives": [{
             "name": "Kimentanm",
             "type": 0,
