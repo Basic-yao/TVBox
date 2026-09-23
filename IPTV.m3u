@@ -1,6 +1,7 @@
 #EXTM3U
 #EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml"
-
+#EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/凤凰中文.png" group-title="🕘️更新时间",2026-09-23 12:53:09
+http://bobohome.ignorelist.com:20247/fengshows?id=2.m3u8
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/凤凰中文.png" group-title="💓常看频道",凤凰中文
 http://bobohome.ignorelist.com:20247/fengshows?id=2.m3u8
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/凤凰中文.png" group-title="💓常看频道",凤凰中文
@@ -1125,5 +1126,3 @@ http://footyun.top:35455/yy/1356043620
 https://live.ottiptv.cc/yy/1382851588
 #EXTINF:-1 tvg-id="正阳门下" tvg-name="正阳门下" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/正阳门下.png" group-title="🎞️影剧频道",正阳门下
 http://footyun.top:35455/yy/1354931580
-#EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/凤凰中文.png" group-title="🕘️更新时间",2026-09-23 12:53:09
-http://bobohome.ignorelist.com:20247/fengshows?id=2.m3u8
