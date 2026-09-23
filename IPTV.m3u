@@ -28,12 +28,6 @@ http://bobohome.ignorelist.com:20247/fengshows?id=3.m3u8
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/凤凰香港.png" group-title="💓常看频道",凤凰香港
 #EXTVLCOPT:http-user-agent=FengWatch/5.4.14
 http://bobohome.ignorelist.com:20247/fengshows?id=3.m3u8
-#EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://raw.githubusercontent.com/XinMan939/iptv-api/master/config/logo/凤凰香港.png" group-title="💓常看频道",凤凰香港
-http://iptv.cqshushu.com/migu.php?pid=hk_fhhk&token=263b9cc89eb51ce670b1043b52f2b2d3
-#EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://raw.githubusercontent.com/XinMan939/iptv-api/master/config/logo/凤凰香港.png" group-title="💓常看频道",凤凰香港
-http://iptv.cqshushu.com/migu.php?pid=fhhk&token=263b9cc89eb51ce670b1043b52f2b2d3
-#EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://raw.githubusercontent.com/XinMan939/iptv-api/master/config/logo/凤凰香港.png" group-title="💓常看频道",凤凰香港
-http://iptv.cqshushu.com/gddf.php?id=fhhk&token=263b9cc89eb51ce670b1043b52f2b2d3
 #EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/广东体育.png" group-title="💓常看频道",广东体育
 http://121.10.7.16:4000/udp/239.77.0.168:5146
 #EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/广东体育.png" group-title="💓常看频道",广东体育
@@ -44,10 +38,6 @@ http://183.62.8.58:50085/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
 http://121.10.7.16:4000/udp/239.77.0.112:5146
 #EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/广东体育.png" group-title="💓常看频道",广东体育
 http://www.yahao.host:4022/udp/239.77.0.112:5146
-#EXTINF:-1 tvg-id="纬来体育台" tvg-name="纬来体育" tvg-logo="https://raw.githubusercontent.com/XinMan939/iptv-api/master/config/logo/纬来体育.png" group-title="💓常看频道",纬来体育
-http://iptv.cqshushu.com/wltv.php?id=wlty&token=263b9cc89eb51ce670b1043b52f2b2d3
-#EXTINF:-1 tvg-id="纬来体育台" tvg-name="纬来体育" tvg-logo="https://raw.githubusercontent.com/XinMan939/iptv-api/master/config/logo/纬来体育.png" group-title="💓常看频道",纬来体育
-http://iptv.cqshushu.com/wltv.php?id=wlty&token=a438a27a9ab11996f4a8f848146f2733
 #EXTINF:-1 tvg-id="纬来体育台" tvg-name="纬来体育" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/纬来体育.png" group-title="💓常看频道",纬来体育
 http://dassby.qqff.top:99/live/辽宁体育/index.m3u8
 #EXTINF:-1 tvg-id="CCTV-2" tvg-name="CCTV-2" tvg-logo="https://tb.zbds.top/logo/CCTV2.png" group-title="💓常看频道",CCTV-2
@@ -794,7 +784,6 @@ http://mg.hmysapp.cn:177/偷源狗/卫视/云南卫视.php?id=301
 http://smzb.bypbwxx.top/lvdou/zhibojm-weishi-ws.php?token=c79ad674991e06d5a440af7e66455f
 #EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/浙江卫视.png" group-title="📡卫视频道",浙江卫视
 http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226690/1.m3u8
-
 #EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/浙江卫视.png" group-title="📡卫视频道",浙江卫视
 http://ali-vl.cztv.com/channels/lantian/channel001/360p.m3u8
 #EXTINF:-1 tvg-id="东莞生活资讯" tvg-name="东莞生活资讯" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/东莞生活资讯.png" group-title="☘️粤港澳台",东莞生活资讯
@@ -910,10 +899,6 @@ http://bobohome.ignorelist.com:20247/fengshows?id=1.m3u8
 http://bobohome.ignorelist.com:20247/fengshows?id=1.m3u8
 #EXTINF:-1 tvg-id="HOY78" tvg-name="HOY78" tvg-logo="https://raw.githubusercontent.com/XinMan939/iptv-api/master/config/logo/HOY78.png" group-title="☘️粤港澳台",HOY78
 http://45.192.97.170:8880/play/336.m3u8
-#EXTINF:-1 tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://raw.githubusercontent.com/XinMan939/iptv-api/master/config/logo/TVB明珠.png" group-title="☘️粤港澳台",明珠台
-http://iptv.cqshushu.com/migu.php?pid=hk_mzt&token=a438a27a9ab11996f4a8f848146f2733
-#EXTINF:-1 tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://raw.githubusercontent.com/XinMan939/iptv-api/master/config/logo/TVB明珠.png" group-title="☘️粤港澳台",明珠台
-http://iptv.cqshushu.com/migu.php?pid=hk_mzt&token=263b9cc89eb51ce670b1043b52f2b2d3
 #EXTINF:-1 tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://raw.githubusercontent.com/XinMan939/iptv-api/master/config/logo/TVB明珠.png" group-title="☘️粤港澳台",明珠台
 https://live.catvod.com/live.php?id=mztsub
 #EXTINF:-1 tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://raw.githubusercontent.com/XinMan939/iptv-api/master/config/logo/TVB明珠.png" group-title="☘️粤港澳台",明珠台
