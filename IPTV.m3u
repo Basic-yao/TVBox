@@ -185,6 +185,8 @@ http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226697/1.m3u8
 http://222.223.41.27:8888/hls/37/index.m3u8
 #EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视4K" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/四川卫视4K.png" group-title="🎯4K超高清",四川卫视4K
 http://123.120.6.99:4022/rtp/239.3.1.131:3001
+#EXTINF:-1 tvg-id="翡翠台4K" tvg-name="无线翡翠4K" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/无线翡翠4K.png" group-title="🎯4K超高清",无线翡翠4K
+https://cdn3.indevs.in/stream/tvb/fct4k/
 #EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/浙江卫视4K.png" group-title="🎯4K超高清",浙江卫视4K
 http://58.35.95.16:20009/rtp/233.18.204.229:5140
 #EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/logo/浙江卫视4K.png" group-title="🎯4K超高清",浙江卫视4K
