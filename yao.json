@@ -1,16 +1,16 @@
 {
-    "spider": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/73c02ea3ecd704dc1d50278db9e6e441.jar;md5;7be82cf9f66e0070ed430fd7b2d2ba64",
+    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/06cf2230c30d9c26fa46ea79147b330d.jpg;md5;fc8f993c9297d38139363cd0e3db9853",
     "sites": [
-        {
+         {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20260920】🐮",
+            "name": "🐮【更新日期:20260923】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 0,
-            "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/20260414181247-ae51abfbfe.txt"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/20260414181247-ae51abfbfe.txt"
         }, {
             "key": "Wexconfig",
             "name": "🐮配置┃中心🐮",
@@ -90,7 +90,7 @@
             "style": {
                 "type": "list"
             }
-        }, {
+        },{
             "key": "花卷",
             "name": "💓花卷┃4K💓‍",
             "type": 3,
@@ -657,7 +657,7 @@
             "api": "csp_MusicAiLunHuiGuard",
             "searchable": 1,
             "changeable": 0
-        },{
+        }, {
             "key": "FakeAi115Share",
             "name": "💓115┃分享💓‍",
             "type": 3,
@@ -1022,12 +1022,15 @@
             ]
         }
     ],
-
+    "ads": [
+        "mozai.4gtv.tv",
+        "pv.vipwm.cc",
+        "static-mozai.4gtv.tv"
     ],
     "lives": [{
             "name": "Kimentanm",
             "type": 0,
-            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/live.m3u",
+            "url": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/live.m3u",
             "playerType": 1
         }, {
             "name": "综合直播",
