@@ -118,6 +118,8 @@ http://111.193.162.68:8012/rtp/239.3.1.236:2000
 #EXTINF:-1 tvg-id="华数爱上4K" tvg-name="华数爱上4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/华数爱上4K.png" group-title="🎯4K超高清",华数爱上4K
 http://221.220.135.44:8012/rtp/239.3.1.236:2000
 #EXTINF:-1 tvg-id="江苏卫视4K" tvg-name="江苏卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏卫视4K.png" group-title="🎯4K超高清",江苏卫视4K
+http://8.138.7.223/tv/jsws4k.php
+#EXTINF:-1 tvg-id="江苏卫视4K" tvg-name="江苏卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏卫视4K.png" group-title="🎯4K超高清",江苏卫视4K
 http://106.111.244.12:58099/rtp/239.49.1.61:8000
 #EXTINF:-1 tvg-id="江苏卫视4K" tvg-name="江苏卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏卫视4K.png" group-title="🎯4K超高清",江苏卫视4K
 http://106.111.244.12:58099/rtp/239.49.8.82:8000
