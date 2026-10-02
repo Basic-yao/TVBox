@@ -1,493 +1,1039 @@
-#EXTM3U x-tvg-url="http://192.168.1.12:8080/epg/epg.gz"
-#EXTINF:-1 tvg-id="CNA" tvg-name="CNA" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CNA.png" group-title="🕘️更新时间",2026-10-02 12:20:18
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.191:1025
-#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/北京卫视4K.png" group-title="🎯4K超高清",北京卫视4K
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.191:1025
-#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/北京卫视4K.png" group-title="🎯4K超高清",北京卫视4K
-http://120.234.187.66:10086/rtp/239.11.0.192:1025
-#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/北京卫视4K.png" group-title="🎯4K超高清",北京卫视4K
-http://120.234.187.66:10086/rtp/239.10.0.131:1025
-#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/北京卫视4K.png" group-title="🎯4K超高清",北京卫视4K
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.131:1025
-#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/北京卫视4K.png" group-title="🎯4K超高清",北京卫视4K
-http://120.234.187.66:10086/rtp/239.11.0.191:1025
-#EXTINF:-1 tvg-id="CCTV-4K" tvg-name="CCTV-4K超高清" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4K超高清.png" group-title="🎯4K超高清",CCTV-4K超高清
-http://120.234.187.66:10086/rtp/239.11.0.161:1025
-#EXTINF:-1 tvg-id="CCTV-4K" tvg-name="CCTV-4K超高清" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4K超高清.png" group-title="🎯4K超高清",CCTV-4K超高清
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.161:1025
-#EXTINF:-1 tvg-id="广东4K" tvg-name="广东4K超高清" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东4K超高清.png" group-title="🎯4K超高清",广东4K超高清
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.75:1025
-#EXTINF:-1 tvg-id="广东4K" tvg-name="广东4K超高清" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东4K超高清.png" group-title="🎯4K超高清",广东4K超高清
-http://120.234.187.66:10086/rtp/239.10.0.76:1025
-#EXTINF:-1 tvg-id="广东4K" tvg-name="广东4K超高清" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东4K超高清.png" group-title="🎯4K超高清",广东4K超高清
-http://120.234.187.66:10086/rtp/239.10.0.75:1025
-#EXTINF:-1 tvg-id="广东4K" tvg-name="广东4K超高清" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东4K超高清.png" group-title="🎯4K超高清",广东4K超高清
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.76:1025
-#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南卫视4K.png" group-title="🎯4K超高清",湖南卫视4K
-http://120.234.187.66:10086/rtp/239.21.0.166:4012
-#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南卫视4K.png" group-title="🎯4K超高清",湖南卫视4K
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.200:1025
-#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南卫视4K.png" group-title="🎯4K超高清",湖南卫视4K
-http://120.234.187.66:10086/rtp/239.11.0.200:1025
-#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南卫视4K.png" group-title="🎯4K超高清",湖南卫视4K
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.115:1025
-#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南卫视4K.png" group-title="🎯4K超高清",湖南卫视4K
-http://120.234.187.66:10086/rtp/239.10.0.115:1025
-#EXTINF:-1 tvg-id="南国都市4K" tvg-name="南国都市4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/南国都市4K.png" group-title="🎯4K超高清",南国都市4K
-http://120.234.187.66:10086/rtp/239.11.0.170:1025
-#EXTINF:-1 tvg-id="南国都市4K" tvg-name="南国都市4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/南国都市4K.png" group-title="🎯4K超高清",南国都市4K
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.170:1025
-#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/四川卫视4K.png" group-title="🎯4K超高清",四川卫视4K
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.204:1025
-#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/四川卫视4K.png" group-title="🎯4K超高清",四川卫视4K
-http://120.234.187.66:10086/rtp/239.21.0.170:4028
-#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/四川卫视4K.png" group-title="🎯4K超高清",四川卫视4K
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.194:2186
-#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/四川卫视4K.png" group-title="🎯4K超高清",四川卫视4K
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.204:1025
-#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/四川卫视4K.png" group-title="🎯4K超高清",四川卫视4K
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.170:4028
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="📺央视频道",CCTV-1
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.104:2006
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="📺央视频道",CCTV-1
-http://120.234.187.66:10086/rtp/239.10.0.48:1025
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="📺央视频道",CCTV-1
-http://120.234.187.66:10086/rtp/239.10.0.114:1025
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="📺央视频道",CCTV-1
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.48:1025
-#EXTINF:-1 tvg-id="CCTV-2" tvg-name="CCTV-2" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-2.png" group-title="📺央视频道",CCTV-2
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.197:2192
-#EXTINF:-1 tvg-id="CCTV-2" tvg-name="CCTV-2" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-2.png" group-title="📺央视频道",CCTV-2
-http://120.234.187.66:10086/rtp/239.10.0.207:1025
-#EXTINF:-1 tvg-id="CCTV-2" tvg-name="CCTV-2" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-2.png" group-title="📺央视频道",CCTV-2
-http://120.234.187.66:10086/rtp/239.20.0.197:2192
-#EXTINF:-1 tvg-id="CCTV-3" tvg-name="CCTV-3" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-3.png" group-title="📺央视频道",CCTV-3
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.28:3292
-#EXTINF:-1 tvg-id="CCTV-3" tvg-name="CCTV-3" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-3.png" group-title="📺央视频道",CCTV-3
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.101:1025
-#EXTINF:-1 tvg-id="CCTV-3" tvg-name="CCTV-3" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-3.png" group-title="📺央视频道",CCTV-3
-http://120.234.187.66:10086/rtp/239.20.0.28:3292
-#EXTINF:-1 tvg-id="CCTV-4" tvg-name="CCTV-4" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4.png" group-title="📺央视频道",CCTV-4
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.245:1025
-#EXTINF:-1 tvg-id="CCTV-4" tvg-name="CCTV-4" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4.png" group-title="📺央视频道",CCTV-4
-http://120.234.187.66:10086/rtp/239.10.0.245:1025
-#EXTINF:-1 tvg-id="CCTV-4" tvg-name="CCTV-4" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4.png" group-title="📺央视频道",CCTV-4
-http://120.234.187.66:10086/rtp/239.20.0.16:3340
-#EXTINF:-1 tvg-id="CCTV-4" tvg-name="CCTV-4" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4.png" group-title="📺央视频道",CCTV-4
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.16:3340
-#EXTINF:-1 tvg-id="CCTV-5" tvg-name="CCTV-5" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="📺央视频道",CCTV-5
-http://120.234.187.66:10086/rtp/239.10.0.102:1025
-#EXTINF:-1 tvg-id="CCTV-5+" tvg-name="CCTV-5+" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="📺央视频道",CCTV-5+
-http://120.234.187.66:10086/rtp/239.10.0.213:1025
-#EXTINF:-1 tvg-id="CCTV-5+" tvg-name="CCTV-5+" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="📺央视频道",CCTV-5+
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.213:1025
-#EXTINF:-1 tvg-id="CCTV-5+" tvg-name="CCTV-5+" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="📺央视频道",CCTV-5+
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.203:2204
-#EXTINF:-1 tvg-id="CCTV-5+" tvg-name="CCTV-5+" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="📺央视频道",CCTV-5+
-http://120.234.187.66:10086/rtp/239.20.0.203:2204
-#EXTINF:-1 tvg-id="CCTV-6" tvg-name="CCTV-6" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-6.png" group-title="📺央视频道",CCTV-6
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.103:1025
-#EXTINF:-1 tvg-id="CCTV-6" tvg-name="CCTV-6" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-6.png" group-title="📺央视频道",CCTV-6
-http://120.234.187.66:10086/rtp/239.10.0.103:1025
-#EXTINF:-1 tvg-id="CCTV-6" tvg-name="CCTV-6" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-6.png" group-title="📺央视频道",CCTV-6
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.29:3288
-#EXTINF:-1 tvg-id="CCTV-7" tvg-name="CCTV-7" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-7.png" group-title="📺央视频道",CCTV-7
-http://120.234.187.66:10086/rtp/239.20.0.198:2194
-#EXTINF:-1 tvg-id="CCTV-7" tvg-name="CCTV-7" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-7.png" group-title="📺央视频道",CCTV-7
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.208:1025
-#EXTINF:-1 tvg-id="CCTV-7" tvg-name="CCTV-7" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-7.png" group-title="📺央视频道",CCTV-7
-http://120.234.187.66:10086/rtp/239.10.0.208:1025
-#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-8.png" group-title="📺央视频道",CCTV-8
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.104:1025
-#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-8.png" group-title="📺央视频道",CCTV-8
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.31:3280
-#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-8.png" group-title="📺央视频道",CCTV-8
-http://120.234.187.66:10086/rtp/239.10.0.104:1025
-#EXTINF:-1 tvg-id="CCTV-8" tvg-name="CCTV-8" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-8.png" group-title="📺央视频道",CCTV-8
-http://120.234.187.66:10086/rtp/239.20.0.31:3280
-#EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-9.png" group-title="📺央视频道",CCTV-9
-http://120.234.187.66:10086/rtp/239.10.0.209:1025
-#EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-9.png" group-title="📺央视频道",CCTV-9
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.199:2196
-#EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-9.png" group-title="📺央视频道",CCTV-9
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.209:1025
-#EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-9.png" group-title="📺央视频道",CCTV-9
-http://120.234.187.66:10086/rtp/239.20.0.199:2196
-#EXTINF:-1 tvg-id="CCTV-10" tvg-name="CCTV-10" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-10.png" group-title="📺央视频道",CCTV-10
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.210:1025
-#EXTINF:-1 tvg-id="CCTV-10" tvg-name="CCTV-10" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-10.png" group-title="📺央视频道",CCTV-10
-http://120.234.187.66:10086/rtp/239.10.0.210:1025
-#EXTINF:-1 tvg-id="CCTV-10" tvg-name="CCTV-10" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-10.png" group-title="📺央视频道",CCTV-10
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.200:2198
-#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-11.png" group-title="📺央视频道",CCTV-11
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.35:3480
-#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-11.png" group-title="📺央视频道",CCTV-11
-http://120.234.187.66:10086/rtp/239.11.0.24:1025
-#EXTINF:-1 tvg-id="CCTV-11" tvg-name="CCTV-11" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-11.png" group-title="📺央视频道",CCTV-11
-http://120.234.187.66:10086/rtp/239.21.0.35:3480
-#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-12.png" group-title="📺央视频道",CCTV-12
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.201:2200
-#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-12.png" group-title="📺央视频道",CCTV-12
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.211:1025
-#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-12.png" group-title="📺央视频道",CCTV-12
-http://fcasad.x3322.net:9901/tsfile/live/1032_1.m3u8?key=txiptv
-#EXTINF:-1 tvg-id="CCTV-12" tvg-name="CCTV-12" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-12.png" group-title="📺央视频道",CCTV-12
-http://120.234.187.66:10086/rtp/239.10.0.211:1025
-#EXTINF:-1 tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-13.png" group-title="📺央视频道",CCTV-13
-http://120.234.187.66:10086/rtp/239.10.0.198:1025
-#EXTINF:-1 tvg-id="CCTV-13" tvg-name="CCTV-13" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-13.png" group-title="📺央视频道",CCTV-13
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.198:1025
-#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-14.png" group-title="📺央视频道",CCTV-14
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.212:1025
-#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-14.png" group-title="📺央视频道",CCTV-14
-http://120.234.187.66:10086/rtp/239.10.0.212:1025
-#EXTINF:-1 tvg-id="CCTV-14" tvg-name="CCTV-14" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-14.png" group-title="📺央视频道",CCTV-14
-http://120.234.187.66:10086/rtp/239.20.0.202:2202
-#EXTINF:-1 tvg-id="CCTV-15" tvg-name="CCTV-15" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-15.png" group-title="📺央视频道",CCTV-15
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.36:3484
-#EXTINF:-1 tvg-id="CCTV-15" tvg-name="CCTV-15" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-15.png" group-title="📺央视频道",CCTV-15
-http://120.234.187.66:10086/rtp/239.21.0.36:3484
-#EXTINF:-1 tvg-id="CCTV-15" tvg-name="CCTV-15" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-15.png" group-title="📺央视频道",CCTV-15
-http://120.234.187.66:10086/rtp/239.11.0.25:1025
-#EXTINF:-1 tvg-id="CCTV-15" tvg-name="CCTV-15" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-15.png" group-title="📺央视频道",CCTV-15
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.25:1025
-#EXTINF:-1 tvg-id="CCTV-16" tvg-name="CCTV-16" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="📺央视频道",CCTV-16
-http://120.234.187.66:10086/rtp/239.11.0.126:1025
-#EXTINF:-1 tvg-id="CCTV-16" tvg-name="CCTV-16" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="📺央视频道",CCTV-16
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.126:1025
-#EXTINF:-1 tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-17.png" group-title="📺央视频道",CCTV-17
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.7:3376
-#EXTINF:-1 tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-17.png" group-title="📺央视频道",CCTV-17
-http://120.234.187.66:10086/rtp/239.20.0.7:3376
-#EXTINF:-1 tvg-id="CCTV-17" tvg-name="CCTV-17" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-17.png" group-title="📺央视频道",CCTV-17
-http://120.234.187.66:10086/rtp/239.10.0.244:1025
-#EXTINF:-1 tvg-id="第一剧场" tvg-name="CCTV第一剧场" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV第一剧场.png" group-title="📺央视频道",CCTV第一剧场
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.67:1025
-#EXTINF:-1 tvg-id="第一剧场" tvg-name="CCTV第一剧场" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV第一剧场.png" group-title="📺央视频道",CCTV第一剧场
-http://120.234.187.66:10086/rtp/239.21.0.78:3652
-#EXTINF:-1 tvg-id="电视指南" tvg-name="CCTV电视指南" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV电视指南.png" group-title="📺央视频道",CCTV电视指南
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.81:3664
-#EXTINF:-1 tvg-id="电视指南" tvg-name="CCTV电视指南" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV电视指南.png" group-title="📺央视频道",CCTV电视指南
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.58:1025
-#EXTINF:-1 tvg-id="电视指南" tvg-name="CCTV电视指南" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV电视指南.png" group-title="📺央视频道",CCTV电视指南
-http://120.234.187.66:10086/rtp/239.21.0.81:3664
-#EXTINF:-1 tvg-id="风云剧场" tvg-name="CCTV风云剧场" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云剧场.png" group-title="📺央视频道",CCTV风云剧场
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.76:3644
-#EXTINF:-1 tvg-id="风云剧场" tvg-name="CCTV风云剧场" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云剧场.png" group-title="📺央视频道",CCTV风云剧场
-http://120.234.187.66:10086/rtp/239.21.0.76:3644
-#EXTINF:-1 tvg-id="风云剧场" tvg-name="CCTV风云剧场" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云剧场.png" group-title="📺央视频道",CCTV风云剧场
-http://120.234.187.66:10086/rtp/239.11.0.65:1025
-#EXTINF:-1 tvg-id="风云剧场" tvg-name="CCTV风云剧场" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云剧场.png" group-title="📺央视频道",CCTV风云剧场
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.65:1025
-#EXTINF:-1 tvg-id="风云足球" tvg-name="CCTV风云足球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云足球.png" group-title="📺央视频道",CCTV风云足球
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.70:3620
-#EXTINF:-1 tvg-id="风云足球" tvg-name="CCTV风云足球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云足球.png" group-title="📺央视频道",CCTV风云足球
-http://120.234.187.66:10086/rtp/239.21.0.70:3620
-#EXTINF:-1 tvg-id="风云足球" tvg-name="CCTV风云足球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云足球.png" group-title="📺央视频道",CCTV风云足球
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.59:1025
-#EXTINF:-1 tvg-id="风云足球" tvg-name="CCTV风云足球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云足球.png" group-title="📺央视频道",CCTV风云足球
-http://120.234.187.66:10086/rtp/239.11.0.59:1025
-#EXTINF:-1 tvg-id="风云音乐" tvg-name="CCTV风云音乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云音乐.png" group-title="📺央视频道",CCTV风云音乐
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.68:1025
-#EXTINF:-1 tvg-id="风云音乐" tvg-name="CCTV风云音乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云音乐.png" group-title="📺央视频道",CCTV风云音乐
-http://120.234.187.66:10086/rtp/239.11.0.68:1025
-#EXTINF:-1 tvg-id="风云音乐" tvg-name="CCTV风云音乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV风云音乐.png" group-title="📺央视频道",CCTV风云音乐
-http://120.234.187.66:10086/rtp/239.21.0.79:3656
-#EXTINF:-1 tvg-id="怀旧剧场" tvg-name="CCTV怀旧剧场" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV怀旧剧场.png" group-title="📺央视频道",CCTV怀旧剧场
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.64:1025
-#EXTINF:-1 tvg-id="怀旧剧场" tvg-name="CCTV怀旧剧场" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV怀旧剧场.png" group-title="📺央视频道",CCTV怀旧剧场
-http://120.234.187.66:10086/rtp/239.11.0.64:1025
-#EXTINF:-1 tvg-id="怀旧剧场" tvg-name="CCTV怀旧剧场" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV怀旧剧场.png" group-title="📺央视频道",CCTV怀旧剧场
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.75:3640
-#EXTINF:-1 tvg-id="女性时尚" tvg-name="CCTV女性时尚" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV女性时尚.png" group-title="📺央视频道",CCTV女性时尚
-http://120.234.187.66:10086/rtp/239.11.0.62:1025
-#EXTINF:-1 tvg-id="女性时尚" tvg-name="CCTV女性时尚" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV女性时尚.png" group-title="📺央视频道",CCTV女性时尚
-http://120.234.187.66:10086/rtp/239.21.0.73:3632
-#EXTINF:-1 tvg-id="世界地理" tvg-name="CCTV世界地理" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV世界地理.png" group-title="📺央视频道",CCTV世界地理
-http://120.234.187.66:10086/rtp/239.11.0.63:1025
-#EXTINF:-1 tvg-id="世界地理" tvg-name="CCTV世界地理" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV世界地理.png" group-title="📺央视频道",CCTV世界地理
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.63:1025
-#EXTINF:-1 tvg-id="世界地理" tvg-name="CCTV世界地理" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV世界地理.png" group-title="📺央视频道",CCTV世界地理
-http://120.234.187.66:10086/rtp/239.21.0.74:3636
-#EXTINF:-1 tvg-id="兵器科技" tvg-name="CCTV兵器科技" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV兵器科技.png" group-title="📺央视频道",CCTV兵器科技
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.57:1025
-#EXTINF:-1 tvg-id="兵器科技" tvg-name="CCTV兵器科技" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV兵器科技.png" group-title="📺央视频道",CCTV兵器科技
-http://120.234.187.66:10086/rtp/239.11.0.57:1025
-#EXTINF:-1 tvg-id="兵器科技" tvg-name="CCTV兵器科技" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV兵器科技.png" group-title="📺央视频道",CCTV兵器科技
-http://120.234.187.66:10086/rtp/239.21.0.80:3660
-#EXTINF:-1 tvg-id="央视台球" tvg-name="CCTV央视台球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV央视台球.png" group-title="📺央视频道",CCTV央视台球
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.71:3624
-#EXTINF:-1 tvg-id="央视台球" tvg-name="CCTV央视台球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV央视台球.png" group-title="📺央视频道",CCTV央视台球
-http://120.234.187.66:10086/rtp/239.11.0.60:1025
-#EXTINF:-1 tvg-id="央视台球" tvg-name="CCTV央视台球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV央视台球.png" group-title="📺央视频道",CCTV央视台球
-http://120.234.187.66:10086/rtp/239.21.0.71:3624
-#EXTINF:-1 tvg-id="CETV-1" tvg-name="CETV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CETV-1.png" group-title="📺央视频道",CETV-1
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.223:1025
-#EXTINF:-1 tvg-id="CETV-1" tvg-name="CETV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CETV-1.png" group-title="📺央视频道",CETV-1
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.213:2224
-#EXTINF:-1 tvg-id="CETV-1" tvg-name="CETV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CETV-1.png" group-title="📺央视频道",CETV-1
-http://120.234.187.66:10086/rtp/239.10.0.223:1025
-#EXTINF:-1 tvg-id="CETV-1" tvg-name="CETV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CETV-1.png" group-title="📺央视频道",CETV-1
-http://fcasad.x3322.net:9901/tsfile/live/1125_1.m3u8?key=txiptv
-#EXTINF:-1 tvg-id="CETV-4" tvg-name="CETV-4" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CETV-4.png" group-title="📺央视频道",CETV-4
-http://120.234.187.66:10086/rtp/239.11.0.176:1025
-#EXTINF:-1 tvg-id="CETV-4" tvg-name="CETV-4" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CETV-4.png" group-title="📺央视频道",CETV-4
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.176:1025
-#EXTINF:-1 tvg-id="CETV-4" tvg-name="CETV-4" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CETV-4.png" group-title="📺央视频道",CETV-4
-http://120.234.187.66:10086/rtp/239.21.0.142:3912
-#EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/安徽卫视.png" group-title="📡卫视频道",安徽卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.203:1025
-#EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/安徽卫视.png" group-title="📡卫视频道",安徽卫视
-http://120.234.187.66:10086/rtp/239.10.0.203:1025
-#EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/安徽卫视.png" group-title="📡卫视频道",安徽卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.193:2184
-#EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/安徽卫视.png" group-title="📡卫视频道",安徽卫视
-http://120.234.187.66:10086/rtp/239.20.0.193:2184
-#EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/兵团卫视.png" group-title="📡卫视频道",兵团卫视
-http://120.234.187.66:10086/rtp/239.21.0.164:4004
-#EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/兵团卫视.png" group-title="📡卫视频道",兵团卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.164:4004
-#EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/兵团卫视.png" group-title="📡卫视频道",兵团卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.198:1025
-#EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/兵团卫视.png" group-title="📡卫视频道",兵团卫视
-http://120.234.187.66:10086/rtp/239.11.0.198:1025
-#EXTINF:-1 tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆卫视.png" group-title="📡卫视频道",重庆卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.195:2188
-#EXTINF:-1 tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆卫视.png" group-title="📡卫视频道",重庆卫视
-http://120.234.187.66:10086/rtp/239.10.0.205:1025
-#EXTINF:-1 tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆卫视.png" group-title="📡卫视频道",重庆卫视
-http://120.234.187.66:10086/rtp/239.20.0.195:2188
-#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="📡卫视频道",东方卫视
-http://120.234.187.66:10086/rtp/239.21.0.169:4024
-#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="📡卫视频道",东方卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.169:4024
-#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="📡卫视频道",东方卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.183:1025
-#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="📡卫视频道",东方卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.173:2144
-#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="📡卫视频道",东方卫视
-http://120.234.187.66:10086/rtp/239.20.0.173:2144
-#EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东南卫视.png" group-title="📡卫视频道",东南卫视
-http://120.234.187.66:10086/rtp/239.20.0.58:3168
-#EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东南卫视.png" group-title="📡卫视频道",东南卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.77:1025
-#EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东南卫视.png" group-title="📡卫视频道",东南卫视
-http://120.234.187.66:10086/rtp/239.10.0.77:1025
-#EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东南卫视.png" group-title="📡卫视频道",东南卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.58:3168
-#EXTINF:-1 tvg-id="甘肃卫视" tvg-name="甘肃卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/甘肃卫视.png" group-title="📡卫视频道",甘肃卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.141:3908
-#EXTINF:-1 tvg-id="甘肃卫视" tvg-name="甘肃卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/甘肃卫视.png" group-title="📡卫视频道",甘肃卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.175:1025
-#EXTINF:-1 tvg-id="甘肃卫视" tvg-name="甘肃卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/甘肃卫视.png" group-title="📡卫视频道",甘肃卫视
-http://120.234.187.66:10086/rtp/239.21.0.141:3908
-#EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东卫视.png" group-title="📡卫视频道",广东卫视
-http://120.234.187.66:10086/rtp/239.10.0.86:1025
-#EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东卫视.png" group-title="📡卫视频道",广东卫视
-http://120.234.187.66:10086/rtp/239.11.0.93:1025
-#EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东卫视.png" group-title="📡卫视频道",广东卫视
-http://120.234.187.66:10086/rtp/239.20.0.101:2000
-#EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东卫视.png" group-title="📡卫视频道",广东卫视
-http://120.234.187.66:10086/rtp/239.10.0.111:1025
-#EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东卫视.png" group-title="📡卫视频道",广东卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.111:1025
-#EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广西卫视.png" group-title="📡卫视频道",广西卫视
-http://120.234.187.66:10086/rtp/239.20.0.15:3344
-#EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广西卫视.png" group-title="📡卫视频道",广西卫视
-http://120.234.187.66:10086/rtp/239.10.0.246:1025
-#EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广西卫视.png" group-title="📡卫视频道",广西卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.15:3344
-#EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/贵州卫视.png" group-title="📡卫视频道",贵州卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.222:1025
-#EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/贵州卫视.png" group-title="📡卫视频道",贵州卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.212:2222
-#EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/贵州卫视.png" group-title="📡卫视频道",贵州卫视
-http://120.234.187.66:10086/rtp/239.10.0.222:1025
-#EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/贵州卫视.png" group-title="📡卫视频道",贵州卫视
-http://120.234.187.66:10086/rtp/239.20.0.212:2222
-#EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/海南卫视.png" group-title="📡卫视频道",海南卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.172:1025
-#EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/海南卫视.png" group-title="📡卫视频道",海南卫视
-http://120.234.187.66:10086/rtp/239.11.0.172:1025
-#EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/海南卫视.png" group-title="📡卫视频道",海南卫视
-http://120.234.187.66:10086/rtp/239.21.0.134:3880
-#EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/河北卫视.png" group-title="📡卫视频道",河北卫视
-http://120.234.187.66:10086/rtp/239.10.0.79:1025
-#EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/河北卫视.png" group-title="📡卫视频道",河北卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.79:1025
-#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/河南卫视.png" group-title="📡卫视频道",河南卫视
-http://120.234.187.66:10086/rtp/239.21.0.104:3756
-#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/河南卫视.png" group-title="📡卫视频道",河南卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.104:3756
-#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/河南卫视.png" group-title="📡卫视频道",河南卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.94:1025
-#EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黑龙江卫视.png" group-title="📡卫视频道",黑龙江卫视
-http://120.234.187.66:10086/rtp/239.10.0.53:1025
-#EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黑龙江卫视.png" group-title="📡卫视频道",黑龙江卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.123:2044
-#EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黑龙江卫视.png" group-title="📡卫视频道",黑龙江卫视
-http://120.234.187.66:10086/rtp/239.20.0.123:2044
-#EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黑龙江卫视.png" group-title="📡卫视频道",黑龙江卫视
-http://120.234.187.66:10086/rtp/239.10.0.133:1025
-#EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黑龙江卫视.png" group-title="📡卫视频道",黑龙江卫视
-http://fcasad.x3322.net:9901/tsfile/live/1070_1.m3u8?key=txiptv
-#EXTINF:-1 tvg-id="湖北卫视" tvg-name="湖北卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖北卫视.png" group-title="📡卫视频道",湖北卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.54:1025
-#EXTINF:-1 tvg-id="湖北卫视" tvg-name="湖北卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖北卫视.png" group-title="📡卫视频道",湖北卫视
-http://120.234.187.66:10086/rtp/239.20.0.124:2046
-#EXTINF:-1 tvg-id="湖北卫视" tvg-name="湖北卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖北卫视.png" group-title="📡卫视频道",湖北卫视
-http://120.234.187.66:10086/rtp/239.10.0.134:1025
-#EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/吉林卫视.png" group-title="📡卫视频道",吉林卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.81:1025
-#EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/吉林卫视.png" group-title="📡卫视频道",吉林卫视
-http://120.234.187.66:10086/rtp/239.10.0.81:1025
-#EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/吉林卫视.png" group-title="📡卫视频道",吉林卫视
-http://120.234.187.66:10086/rtp/239.20.0.54:3184
-#EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏卫视.png" group-title="📡卫视频道",江苏卫视
-http://120.234.187.66:10086/rtp/239.21.0.167:4016
-#EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏卫视.png" group-title="📡卫视频道",江苏卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.201:1025
-#EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏卫视.png" group-title="📡卫视频道",江苏卫视
-http://120.234.187.66:10086/rtp/239.11.0.201:1025
-#EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏卫视.png" group-title="📡卫视频道",江苏卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.180:1025
-#EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏卫视.png" group-title="📡卫视频道",江苏卫视
-http://120.234.187.66:10086/rtp/239.20.0.170:2138
-#EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江西卫视.png" group-title="📡卫视频道",江西卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.80:1025
-#EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江西卫视.png" group-title="📡卫视频道",江西卫视
-http://120.234.187.66:10086/rtp/239.10.0.80:1025
-#EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江西卫视.png" group-title="📡卫视频道",江西卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.55:3180
-#EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/辽宁卫视.png" group-title="📡卫视频道",辽宁卫视
-http://120.234.187.66:10086/rtp/239.10.0.185:1025
-#EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/辽宁卫视.png" group-title="📡卫视频道",辽宁卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.185:1025
-#EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/辽宁卫视.png" group-title="📡卫视频道",辽宁卫视
-http://120.234.187.66:10086/rtp/239.20.0.175:2148
-#EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/辽宁卫视.png" group-title="📡卫视频道",辽宁卫视
-http://fcasad.x3322.net:9901/tsfile/live/1069_1.m3u8?key=txiptv
-#EXTINF:-1 tvg-id="宁夏卫视" tvg-name="宁夏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/宁夏卫视.png" group-title="📡卫视频道",宁夏卫视
-http://120.234.187.66:10086/rtp/239.11.0.199:1025
-#EXTINF:-1 tvg-id="宁夏卫视" tvg-name="宁夏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/宁夏卫视.png" group-title="📡卫视频道",宁夏卫视
-http://120.234.187.66:10086/rtp/239.21.0.165:4008
-#EXTINF:-1 tvg-id="宁夏卫视" tvg-name="宁夏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/宁夏卫视.png" group-title="📡卫视频道",宁夏卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.199:1025
-#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/青海卫视.png" group-title="📡卫视频道",青海卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.144:3920
-#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/青海卫视.png" group-title="📡卫视频道",青海卫视
-http://120.234.187.66:10086/rtp/239.21.0.144:3920
-#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/青海卫视.png" group-title="📡卫视频道",青海卫视
-http://120.234.187.66:10086/rtp/239.11.0.179:1025
-#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/青海卫视.png" group-title="📡卫视频道",青海卫视
-http://fcasad.x3322.net:9901/tsfile/live/1086_1.m3u8?key=txiptv
-#EXTINF:-1 tvg-id="三沙卫视" tvg-name="三沙卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/三沙卫视.png" group-title="📡卫视频道",三沙卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.177:1025
-#EXTINF:-1 tvg-id="三沙卫视" tvg-name="三沙卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/三沙卫视.png" group-title="📡卫视频道",三沙卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.143:3916
-#EXTINF:-1 tvg-id="三沙卫视" tvg-name="三沙卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/三沙卫视.png" group-title="📡卫视频道",三沙卫视
-http://120.234.187.66:10086/rtp/239.11.0.177:1025
-#EXTINF:-1 tvg-id="厦门卫视" tvg-name="厦门卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/厦门卫视.png" group-title="📡卫视频道",厦门卫视
-http://fcasad.x3322.net:9901/tsfile/live/1093_1.m3u8?key=txiptv
-#EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/山东卫视.png" group-title="📡卫视频道",山东卫视
-http://120.234.187.66:10086/rtp/239.21.0.171:4032
-#EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/山东卫视.png" group-title="📡卫视频道",山东卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.88:3048
-#EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/山东卫视.png" group-title="📡卫视频道",山东卫视
-http://120.234.187.66:10086/rtp/239.10.0.182:1025
-#EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/山东卫视.png" group-title="📡卫视频道",山东卫视
-http://120.234.187.66:10086/rtp/239.20.0.172:2142
-#EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/山东卫视.png" group-title="📡卫视频道",山东卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.56:1025
-#EXTINF:-1 tvg-id="山西卫视" tvg-name="山西卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/山西卫视.png" group-title="📡卫视频道",山西卫视
-http://fcasad.x3322.net:9901/tsfile/live/1084_1.m3u8?key=txiptv
-#EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/深圳卫视.png" group-title="📡卫视频道",深圳卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.52:1025
-#EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/深圳卫视.png" group-title="📡卫视频道",深圳卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.161:3992
-#EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/深圳卫视.png" group-title="📡卫视频道",深圳卫视
-http://120.234.187.66:10086/rtp/239.21.0.161:3992
-#EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/深圳卫视.png" group-title="📡卫视频道",深圳卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.132:1025
-#EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/深圳卫视.png" group-title="📡卫视频道",深圳卫视
-http://120.234.187.66:10086/rtp/239.10.0.132:1025
-#EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/天津卫视.png" group-title="📡卫视频道",天津卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.171:2140
-#EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/天津卫视.png" group-title="📡卫视频道",天津卫视
-http://120.234.187.66:10086/rtp/239.20.0.171:2140
-#EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/天津卫视.png" group-title="📡卫视频道",天津卫视
-http://120.234.187.66:10086/rtp/239.10.0.181:1025
-#EXTINF:-1 tvg-id="西藏卫视" tvg-name="西藏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/西藏卫视.png" group-title="📡卫视频道",西藏卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.196:1025
-#EXTINF:-1 tvg-id="西藏卫视" tvg-name="西藏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/西藏卫视.png" group-title="📡卫视频道",西藏卫视
-http://120.234.187.66:10086/rtp/239.11.0.196:1025
-#EXTINF:-1 tvg-id="西藏卫视" tvg-name="西藏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/西藏卫视.png" group-title="📡卫视频道",西藏卫视
-http://120.234.187.66:10086/rtp/239.21.0.162:3996
-#EXTINF:-1 tvg-id="新疆卫视" tvg-name="新疆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/新疆卫视.png" group-title="📡卫视频道",新疆卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.163:4000
-#EXTINF:-1 tvg-id="新疆卫视" tvg-name="新疆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/新疆卫视.png" group-title="📡卫视频道",新疆卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.197:1025
-#EXTINF:-1 tvg-id="云南卫视" tvg-name="云南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/云南卫视.png" group-title="📡卫视频道",云南卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.171:1025
-#EXTINF:-1 tvg-id="云南卫视" tvg-name="云南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/云南卫视.png" group-title="📡卫视频道",云南卫视
-http://120.234.187.66:10086/rtp/239.11.0.171:1025
-#EXTINF:-1 tvg-id="云南卫视" tvg-name="云南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/云南卫视.png" group-title="📡卫视频道",云南卫视
-http://120.234.187.66:10086/rtp/239.21.0.133:3876
-#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江卫视.png" group-title="📡卫视频道",浙江卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.168:4020
-#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江卫视.png" group-title="📡卫视频道",浙江卫视
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.202:1025
-#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江卫视.png" group-title="📡卫视频道",浙江卫视
-http://120.234.187.66:10086/rtp/239.21.0.168:4020
-#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江卫视.png" group-title="📡卫视频道",浙江卫视
-http://120.234.187.66:10086/rtp/239.10.0.179:1025
-#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江卫视.png" group-title="📡卫视频道",浙江卫视
-http://120.234.187.66:10086/rtp/239.20.0.169:2136
-#EXTINF:-1 tvg-id="广东新闻" tvg-name="广东新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东新闻.png" group-title="☘️粤港澳台",广东新闻
-http://120.234.187.66:10086/rtp/239.10.0.199:1025
-#EXTINF:-1 tvg-id="广东新闻" tvg-name="广东新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东新闻.png" group-title="☘️粤港澳台",广东新闻
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.199:1025
-#EXTINF:-1 tvg-id="广东新闻" tvg-name="广东新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东新闻.png" group-title="☘️粤港澳台",广东新闻
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.93:3712
-#EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="☘️粤港澳台",广东体育
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.47:1025
-#EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="☘️粤港澳台",广东体育
-http://120.234.187.66:10086/rtp/239.10.0.47:1025
-#EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="☘️粤港澳台",广东体育
-http://120.234.187.66:10086/rtp/239.20.0.97:3012
-#EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="☘️粤港澳台",广东体育
-http://120.234.187.66:10086/rtp/239.10.0.113:1025
-#EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="☘️粤港澳台",广东体育
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.103:2004
-#EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="☘️粤港澳台",广东珠江
-http://120.234.187.66:10086/rtp/239.10.0.63:1025
-#EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="☘️粤港澳台",广东珠江
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.62:1025
-#EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="☘️粤港澳台",广东珠江
-http://120.234.187.66:10086/rtp/239.10.0.62:1025
-#EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="☘️粤港澳台",广东珠江
-http://gzgxzm.dpdns.org:10086/rtp/239.20.0.64:3144
-#EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="☘️粤港澳台",广东珠江
-http://fcasad.x3322.net:9901/tsfile/live/1011_1.m3u8?key=txiptv
-#EXTINF:-1 tvg-id="广东经济" tvg-name="广东经视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东经视.png" group-title="☘️粤港澳台",广东经视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.46:1025
-#EXTINF:-1 tvg-id="广东经济" tvg-name="广东经视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东经视.png" group-title="☘️粤港澳台",广东经视
-http://120.234.187.66:10086/rtp/239.10.0.46:1025
-#EXTINF:-1 tvg-id="广东经济" tvg-name="广东经视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东经视.png" group-title="☘️粤港澳台",广东经视
-http://120.234.187.66:10086/rtp/239.10.0.112:1025
-#EXTINF:-1 tvg-id="广东经济" tvg-name="广东经视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东经视.png" group-title="☘️粤港澳台",广东经视
-http://gzgxzm.dpdns.org:10086/rtp/239.10.0.112:1025
-#EXTINF:-1 tvg-id="广州新闻" tvg-name="广州新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广州新闻.png" group-title="☘️粤港澳台",广州新闻
-http://120.234.187.66:10086/rtp/239.11.0.139:1025
-#EXTINF:-1 tvg-id="广州新闻" tvg-name="广州新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广州新闻.png" group-title="☘️粤港澳台",广州新闻
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.139:1025
-#EXTINF:-1 tvg-id="广州综合" tvg-name="广州综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广州综合.png" group-title="☘️粤港澳台",广州综合
-http://120.234.187.66:10086/rtp/239.11.0.138:1025
-#EXTINF:-1 tvg-id="广州综合" tvg-name="广州综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广州综合.png" group-title="☘️粤港澳台",广州综合
-http://gzgxzm.dpdns.org:10086/rtp/239.11.0.138:1025
-#EXTINF:-1 tvg-id="岭南戏曲" tvg-name="岭南戏曲" tvg-logo="https://www.xn--rgv465a.top/tvlogo/岭南戏曲.png" group-title="☘️粤港澳台",岭南戏曲
-http://120.234.187.66:10086/rtp/239.11.0.180:1025
-#EXTINF:-1 tvg-id="岭南戏曲" tvg-name="岭南戏曲" tvg-logo="https://www.xn--rgv465a.top/tvlogo/岭南戏曲.png" group-title="☘️粤港澳台",岭南戏曲
-http://gzgxzm.dpdns.org:10086/rtp/239.21.0.147:3932
-#EXTINF:-1 tvg-id="天映频道" tvg-name="天映频道" tvg-logo="https://www.xn--rgv465a.top/tvlogo/天映频道.png" group-title="🌐国际频道",天映频道
-http://fcasad.x3322.net:9901/tsfile/live/1043_1.m3u8?key=txiptv
+央视频道,#genre#
+CCTV1,http://120.234.187.66:10086/rtp/239.10.0.114:1025
+CCTV1,http://120.234.187.66:10086/rtp/239.10.0.202:1025
+CCTV1,http://120.234.187.66:10086/rtp/239.10.0.48:1025
+CCTV1,http://120.234.187.66:10086/rtp/239.20.0.104:2006
+CCTV1,http://120.234.187.66:10086/rtp/239.20.0.192:2182
+CCTV1,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.114:1025
+CCTV1,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.202:1025
+CCTV1,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.48:1025
+CCTV1,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.104:2006
+CCTV1,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.192:2182
+CCTV2,http://120.234.187.66:10086/rtp/239.10.0.186:1025
+CCTV2,http://120.234.187.66:10086/rtp/239.10.0.207:1025
+CCTV2,http://120.234.187.66:10086/rtp/239.20.0.176:2150
+CCTV2,http://120.234.187.66:10086/rtp/239.20.0.197:2192
+CCTV2,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.186:1025
+CCTV2,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.207:1025
+CCTV2,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.176:2150
+CCTV2,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.197:2192
+CCTV3,http://120.234.187.66:10086/rtp/239.10.0.101:1025
+CCTV3,http://120.234.187.66:10086/rtp/239.10.0.107:1025
+CCTV3,http://120.234.187.66:10086/rtp/239.20.0.27:3296
+CCTV3,http://120.234.187.66:10086/rtp/239.20.0.28:3292
+CCTV3,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.101:1025
+CCTV3,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.107:1025
+CCTV3,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.27:3296
+CCTV3,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.28:3292
+CCTV4,http://120.234.187.66:10086/rtp/239.10.0.187:1025
+CCTV4,http://120.234.187.66:10086/rtp/239.10.0.245:1025
+CCTV4,http://120.234.187.66:10086/rtp/239.20.0.16:3340
+CCTV4,http://120.234.187.66:10086/rtp/239.20.0.177:2152
+CCTV4,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.187:1025
+CCTV4,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.245:1025
+CCTV4,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.16:3340
+CCTV4,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.177:2152
+CCTV4K,http://120.234.187.66:10086/rtp/239.11.0.161:1025
+CCTV4K,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.161:1025
+CCTV4欧洲,http://120.234.187.66:10086/rtp/239.11.0.101:1025
+CCTV4欧洲,http://120.234.187.66:10086/rtp/239.11.0.187:1025
+CCTV4欧洲,http://120.234.187.66:10086/rtp/239.21.0.107:3768
+CCTV4欧洲,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.101:1025
+CCTV4欧洲,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.187:1025
+CCTV4欧洲,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.107:3768
+CCTV4美洲,http://120.234.187.66:10086/rtp/239.11.0.102:1025
+CCTV4美洲,http://120.234.187.66:10086/rtp/239.21.0.108:3772
+CCTV4美洲,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.102:1025
+CCTV4美洲,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.108:3772
+CCTV5,http://120.234.187.66:10086/rtp/239.10.0.102:1025
+CCTV5,http://120.234.187.66:10086/rtp/239.10.0.108:1025
+CCTV5,http://120.234.187.66:10086/rtp/239.20.0.26:3300
+CCTV5,http://120.234.187.66:10086/rtp/239.20.0.30:3284
+CCTV5,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.102:1025
+CCTV5,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.108:1025
+CCTV5,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.26:3300
+CCTV5,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.30:3284
+CCTV5+,http://120.234.187.66:10086/rtp/239.10.0.213:1025
+CCTV5+,http://120.234.187.66:10086/rtp/239.20.0.203:2204
+CCTV5+,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.213:1025
+CCTV5+,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.203:2204
+CCTV6,http://120.234.187.66:10086/rtp/239.10.0.103:1025
+CCTV6,http://120.234.187.66:10086/rtp/239.10.0.109:1025
+CCTV6,http://120.234.187.66:10086/rtp/239.20.0.25:3304
+CCTV6,http://120.234.187.66:10086/rtp/239.20.0.29:3288
+CCTV6,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.103:1025
+CCTV6,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.109:1025
+CCTV6,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.25:3304
+CCTV6,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.29:3288
+CCTV7,http://120.234.187.66:10086/rtp/239.10.0.188:1025
+CCTV7,http://120.234.187.66:10086/rtp/239.10.0.208:1025
+CCTV7,http://120.234.187.66:10086/rtp/239.20.0.178:2154
+CCTV7,http://120.234.187.66:10086/rtp/239.20.0.198:2194
+CCTV7,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.188:1025
+CCTV7,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.208:1025
+CCTV7,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.178:2154
+CCTV7,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.198:2194
+CCTV8,http://120.234.187.66:10086/rtp/239.10.0.104:1025
+CCTV8,http://120.234.187.66:10086/rtp/239.10.0.110:1025
+CCTV8,http://120.234.187.66:10086/rtp/239.20.0.24:3308
+CCTV8,http://120.234.187.66:10086/rtp/239.20.0.31:3280
+CCTV8,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.104:1025
+CCTV8,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.110:1025
+CCTV8,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.24:3308
+CCTV8,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.31:3280
+CCTV9,http://120.234.187.66:10086/rtp/239.10.0.189:1025
+CCTV9,http://120.234.187.66:10086/rtp/239.10.0.209:1025
+CCTV9,http://120.234.187.66:10086/rtp/239.20.0.179:2156
+CCTV9,http://120.234.187.66:10086/rtp/239.20.0.199:2196
+CCTV9,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.189:1025
+CCTV9,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.209:1025
+CCTV9,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.179:2156
+CCTV9,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.199:2196
+CCTV10,http://120.234.187.66:10086/rtp/239.10.0.190:1025
+CCTV10,http://120.234.187.66:10086/rtp/239.10.0.210:1025
+CCTV10,http://120.234.187.66:10086/rtp/239.20.0.180:2158
+CCTV10,http://120.234.187.66:10086/rtp/239.20.0.200:2198
+CCTV10,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.190:1025
+CCTV10,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.210:1025
+CCTV10,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.180:2158
+CCTV10,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.200:2198
+CCTV11,http://120.234.187.66:10086/rtp/239.10.0.191:1025
+CCTV11,http://120.234.187.66:10086/rtp/239.11.0.24:1025
+CCTV11,http://120.234.187.66:10086/rtp/239.20.0.181:2160
+CCTV11,http://120.234.187.66:10086/rtp/239.21.0.35:3480
+CCTV11,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.191:1025
+CCTV11,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.24:1025
+CCTV11,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.181:2160
+CCTV11,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.35:3480
+CCTV12,http://120.234.187.66:10086/rtp/239.10.0.192:1025
+CCTV12,http://120.234.187.66:10086/rtp/239.10.0.211:1025
+CCTV12,http://120.234.187.66:10086/rtp/239.20.0.182:2162
+CCTV12,http://120.234.187.66:10086/rtp/239.20.0.201:2200
+CCTV12,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.192:1025
+CCTV12,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.211:1025
+CCTV12,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.182:2162
+CCTV12,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.201:2200
+CCTV13,http://120.234.187.66:10086/rtp/239.10.0.193:1025
+CCTV13,http://120.234.187.66:10086/rtp/239.10.0.198:1025
+CCTV13,http://120.234.187.66:10086/rtp/239.20.0.183:2164
+CCTV13,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.193:1025
+CCTV13,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.198:1025
+CCTV13,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.183:2164
+CCTV14,http://120.234.187.66:10086/rtp/239.10.0.194:1025
+CCTV14,http://120.234.187.66:10086/rtp/239.10.0.212:1025
+CCTV14,http://120.234.187.66:10086/rtp/239.11.0.186:1025
+CCTV14,http://120.234.187.66:10086/rtp/239.20.0.184:2166
+CCTV14,http://120.234.187.66:10086/rtp/239.20.0.202:2202
+CCTV14,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.194:1025
+CCTV14,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.212:1025
+CCTV14,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.186:1025
+CCTV14,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.184:2166
+CCTV14,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.202:2202
+CCTV15,http://120.234.187.66:10086/rtp/239.10.0.195:1025
+CCTV15,http://120.234.187.66:10086/rtp/239.11.0.25:1025
+CCTV15,http://120.234.187.66:10086/rtp/239.20.0.185:2168
+CCTV15,http://120.234.187.66:10086/rtp/239.21.0.36:3484
+CCTV15,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.195:1025
+CCTV15,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.25:1025
+CCTV15,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.185:2168
+CCTV15,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.36:3484
+CCTV16,http://120.234.187.66:10086/rtp/239.11.0.126:1025
+CCTV16,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.126:1025
+CCTV17,http://120.234.187.66:10086/rtp/239.10.0.243:1025
+CCTV17,http://120.234.187.66:10086/rtp/239.10.0.244:1025
+CCTV17,http://120.234.187.66:10086/rtp/239.20.0.7:3376
+CCTV17,http://120.234.187.66:10086/rtp/239.20.0.8:3372
+CCTV17,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.243:1025
+CCTV17,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.244:1025
+CCTV17,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.7:3376
+CCTV17,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.8:3372
+CCTV风云音乐,http://120.234.187.66:10086/rtp/239.11.0.68:1025
+CCTV风云音乐,http://120.234.187.66:10086/rtp/239.21.0.79:3656
+CCTV风云音乐,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.68:1025
+CCTV风云音乐,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.79:3656
+CCTV世界地理,http://120.234.187.66:10086/rtp/239.11.0.63:1025
+CCTV世界地理,http://120.234.187.66:10086/rtp/239.21.0.74:3636
+CCTV世界地理,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.63:1025
+CCTV世界地理,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.74:3636
+CCTV第一剧场,http://120.234.187.66:10086/rtp/239.11.0.67:1025
+CCTV第一剧场,http://120.234.187.66:10086/rtp/239.21.0.78:3652
+CCTV第一剧场,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.67:1025
+CCTV第一剧场,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.78:3652
+CCTV风云剧场,http://120.234.187.66:10086/rtp/239.11.0.65:1025
+CCTV风云剧场,http://120.234.187.66:10086/rtp/239.21.0.76:3644
+CCTV风云剧场,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.65:1025
+CCTV风云剧场,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.76:3644
+CCTV央视精品,http://120.234.187.66:10086/rtp/239.11.0.66:1025
+CCTV央视精品,http://120.234.187.66:10086/rtp/239.21.0.77:3648
+CCTV央视精品,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.66:1025
+CCTV央视精品,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.77:3648
+CCTV兵器科技,http://120.234.187.66:10086/rtp/239.11.0.57:1025
+CCTV兵器科技,http://120.234.187.66:10086/rtp/239.21.0.80:3660
+CCTV兵器科技,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.57:1025
+CCTV兵器科技,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.80:3660
+CCTV风云足球,http://120.234.187.66:10086/rtp/239.11.0.59:1025
+CCTV风云足球,http://120.234.187.66:10086/rtp/239.21.0.70:3620
+CCTV风云足球,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.59:1025
+CCTV风云足球,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.70:3620
+CCTV高网频道,http://120.234.187.66:10086/rtp/239.11.0.61:1025
+CCTV高网频道,http://120.234.187.66:10086/rtp/239.21.0.72:3628
+CCTV高网频道,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.61:1025
+CCTV高网频道,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.72:3628
+CCTV怀旧剧场,http://120.234.187.66:10086/rtp/239.11.0.64:1025
+CCTV怀旧剧场,http://120.234.187.66:10086/rtp/239.21.0.75:3640
+CCTV怀旧剧场,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.64:1025
+CCTV怀旧剧场,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.75:3640
+CCTV女性时尚,http://120.234.187.66:10086/rtp/239.10.0.19:1025
+CCTV女性时尚,http://120.234.187.66:10086/rtp/239.11.0.62:1025
+CCTV女性时尚,http://120.234.187.66:10086/rtp/239.20.0.239:2276
+CCTV女性时尚,http://120.234.187.66:10086/rtp/239.21.0.73:3632
+CCTV女性时尚,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.19:1025
+CCTV女性时尚,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.62:1025
+CCTV女性时尚,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.239:2276
+CCTV女性时尚,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.73:3632
+CCTV央视台球,http://120.234.187.66:10086/rtp/239.11.0.60:1025
+CCTV央视台球,http://120.234.187.66:10086/rtp/239.21.0.71:3624
+CCTV央视台球,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.60:1025
+CCTV央视台球,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.71:3624
+CCTV卫生健康,http://120.234.187.66:10086/rtp/239.11.0.185:1025
+CCTV卫生健康,http://120.234.187.66:10086/rtp/239.21.0.154:3960
+CCTV卫生健康,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.185:1025
+CCTV卫生健康,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.154:3960
+CCTV电视指南,http://120.234.187.66:10086/rtp/239.11.0.58:1025
+CCTV电视指南,http://120.234.187.66:10086/rtp/239.21.0.81:3664
+CCTV电视指南,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.58:1025
+CCTV电视指南,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.81:3664
+卫视频道,#genre#
+湖南卫视,http://120.234.187.66:10086/rtp/239.10.0.115:1025
+湖南卫视,http://120.234.187.66:10086/rtp/239.10.0.145:1025
+湖南卫视,http://120.234.187.66:10086/rtp/239.10.0.49:1025
+湖南卫视,http://120.234.187.66:10086/rtp/239.11.0.200:1025
+湖南卫视,http://120.234.187.66:10086/rtp/239.20.0.105:2008
+湖南卫视,http://120.234.187.66:10086/rtp/239.20.0.135:2068
+湖南卫视,http://120.234.187.66:10086/rtp/239.21.0.166:4012
+湖南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.115:1025
+湖南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.145:1025
+湖南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.49:1025
+湖南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.200:1025
+湖南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.105:2008
+湖南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.135:2068
+湖南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.166:4012
+浙江卫视,http://120.234.187.66:10086/rtp/239.10.0.116:1025
+浙江卫视,http://120.234.187.66:10086/rtp/239.10.0.179:1025
+浙江卫视,http://120.234.187.66:10086/rtp/239.11.0.202:1025
+浙江卫视,http://120.234.187.66:10086/rtp/239.20.0.106:2010
+浙江卫视,http://120.234.187.66:10086/rtp/239.20.0.169:2136
+浙江卫视,http://120.234.187.66:10086/rtp/239.21.0.168:4020
+浙江卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.116:1025
+浙江卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.179:1025
+浙江卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.202:1025
+浙江卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.106:2010
+浙江卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.169:2136
+浙江卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.168:4020
+江苏卫视,http://120.234.187.66:10086/rtp/239.10.0.117:1025
+江苏卫视,http://120.234.187.66:10086/rtp/239.10.0.180:1025
+江苏卫视,http://120.234.187.66:10086/rtp/239.11.0.201:1025
+江苏卫视,http://120.234.187.66:10086/rtp/239.20.0.107:2012
+江苏卫视,http://120.234.187.66:10086/rtp/239.20.0.170:2138
+江苏卫视,http://120.234.187.66:10086/rtp/239.21.0.167:4016
+江苏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.117:1025
+江苏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.180:1025
+江苏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.201:1025
+江苏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.107:2012
+江苏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.170:2138
+江苏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.167:4016
+北京卫视,http://120.234.187.66:10086/rtp/239.10.0.131:1025
+北京卫视,http://120.234.187.66:10086/rtp/239.10.0.147:1025
+北京卫视,http://120.234.187.66:10086/rtp/239.11.0.191:1025
+北京卫视,http://120.234.187.66:10086/rtp/239.11.0.192:1025
+北京卫视,http://120.234.187.66:10086/rtp/239.20.0.121:2040
+北京卫视,http://120.234.187.66:10086/rtp/239.20.0.137:2072
+北京卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.131:1025
+北京卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.147:1025
+北京卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.191:1025
+北京卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.192:1025
+北京卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.121:2040
+北京卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.137:2072
+东方卫视,http://120.234.187.66:10086/rtp/239.10.0.118:1025
+东方卫视,http://120.234.187.66:10086/rtp/239.10.0.183:1025
+东方卫视,http://120.234.187.66:10086/rtp/239.11.0.203:1025
+东方卫视,http://120.234.187.66:10086/rtp/239.20.0.108:2014
+东方卫视,http://120.234.187.66:10086/rtp/239.20.0.173:2144
+东方卫视,http://120.234.187.66:10086/rtp/239.21.0.169:4024
+东方卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.118:1025
+东方卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.183:1025
+东方卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.203:1025
+东方卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.108:2014
+东方卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.173:2144
+东方卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.169:4024
+安徽卫视,http://120.234.187.66:10086/rtp/239.10.0.146:1025
+安徽卫视,http://120.234.187.66:10086/rtp/239.10.0.203:1025
+安徽卫视,http://120.234.187.66:10086/rtp/239.20.0.136:2070
+安徽卫视,http://120.234.187.66:10086/rtp/239.20.0.193:2184
+安徽卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.146:1025
+安徽卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.203:1025
+安徽卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.136:2070
+安徽卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.193:2184
+广东卫视,http://120.234.187.66:10086/rtp/239.10.0.111:1025
+广东卫视,http://120.234.187.66:10086/rtp/239.10.0.141:1025
+广东卫视,http://120.234.187.66:10086/rtp/239.10.0.42:1025
+广东卫视,http://120.234.187.66:10086/rtp/239.10.0.45:1025
+广东卫视,http://120.234.187.66:10086/rtp/239.10.0.86:1025
+广东卫视,http://120.234.187.66:10086/rtp/239.11.0.188:1025
+广东卫视,http://120.234.187.66:10086/rtp/239.11.0.194:1025
+广东卫视,http://120.234.187.66:10086/rtp/239.11.0.93:1025
+广东卫视,http://120.234.187.66:10086/rtp/239.20.0.101:2000
+广东卫视,http://120.234.187.66:10086/rtp/239.20.0.131:2060
+广东卫视,http://120.234.187.66:10086/rtp/239.20.0.99:3004
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.111:1025
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.141:1025
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.42:1025
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.45:1025
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.86:1025
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.188:1025
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.194:1025
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.93:1025
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.101:2000
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.131:2060
+广东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.99:3004
+深圳卫视,http://120.234.187.66:10086/rtp/239.10.0.132:1025
+深圳卫视,http://120.234.187.66:10086/rtp/239.10.0.144:1025
+深圳卫视,http://120.234.187.66:10086/rtp/239.10.0.52:1025
+深圳卫视,http://120.234.187.66:10086/rtp/239.11.0.195:1025
+深圳卫视,http://120.234.187.66:10086/rtp/239.20.0.122:2042
+深圳卫视,http://120.234.187.66:10086/rtp/239.20.0.134:2066
+深圳卫视,http://120.234.187.66:10086/rtp/239.21.0.161:3992
+深圳卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.132:1025
+深圳卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.144:1025
+深圳卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.52:1025
+深圳卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.195:1025
+深圳卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.122:2042
+深圳卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.134:2066
+深圳卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.161:3992
+辽宁卫视,http://120.234.187.66:10086/rtp/239.10.0.185:1025
+辽宁卫视,http://120.234.187.66:10086/rtp/239.20.0.175:2148
+辽宁卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.185:1025
+辽宁卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.175:2148
+海南卫视,http://120.234.187.66:10086/rtp/239.10.0.165:1025
+海南卫视,http://120.234.187.66:10086/rtp/239.11.0.172:1025
+海南卫视,http://120.234.187.66:10086/rtp/239.20.0.155:2108
+海南卫视,http://120.234.187.66:10086/rtp/239.21.0.134:3880
+海南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.165:1025
+海南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.172:1025
+海南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.155:2108
+海南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.134:3880
+山东卫视,http://120.234.187.66:10086/rtp/239.10.0.182:1025
+山东卫视,http://120.234.187.66:10086/rtp/239.10.0.56:1025
+山东卫视,http://120.234.187.66:10086/rtp/239.11.0.205:1025
+山东卫视,http://120.234.187.66:10086/rtp/239.20.0.172:2142
+山东卫视,http://120.234.187.66:10086/rtp/239.20.0.88:3048
+山东卫视,http://120.234.187.66:10086/rtp/239.21.0.171:4032
+山东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.182:1025
+山东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.56:1025
+山东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.205:1025
+山东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.172:2142
+山东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.88:3048
+山东卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.171:4032
+天津卫视,http://120.234.187.66:10086/rtp/239.10.0.181:1025
+天津卫视,http://120.234.187.66:10086/rtp/239.20.0.171:2140
+天津卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.181:1025
+天津卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.171:2140
+重庆卫视,http://120.234.187.66:10086/rtp/239.10.0.205:1025
+重庆卫视,http://120.234.187.66:10086/rtp/239.20.0.195:2188
+重庆卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.205:1025
+重庆卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.195:2188
+东南卫视,http://120.234.187.66:10086/rtp/239.10.0.77:1025
+东南卫视,http://120.234.187.66:10086/rtp/239.20.0.58:3168
+东南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.77:1025
+东南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.58:3168
+甘肃卫视,http://120.234.187.66:10086/rtp/239.10.0.169:1025
+甘肃卫视,http://120.234.187.66:10086/rtp/239.11.0.175:1025
+甘肃卫视,http://120.234.187.66:10086/rtp/239.20.0.159:2116
+甘肃卫视,http://120.234.187.66:10086/rtp/239.21.0.141:3908
+甘肃卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.169:1025
+甘肃卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.175:1025
+甘肃卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.159:2116
+甘肃卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.141:3908
+广西卫视,http://120.234.187.66:10086/rtp/239.10.0.246:1025
+广西卫视,http://120.234.187.66:10086/rtp/239.20.0.15:3344
+广西卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.246:1025
+广西卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.15:3344
+贵州卫视,http://120.234.187.66:10086/rtp/239.10.0.222:1025
+贵州卫视,http://120.234.187.66:10086/rtp/239.20.0.212:2222
+贵州卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.222:1025
+贵州卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.212:2222
+河北卫视,http://120.234.187.66:10086/rtp/239.10.0.79:1025
+河北卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.79:1025
+黑龙江卫视,http://120.234.187.66:10086/rtp/239.10.0.133:1025
+黑龙江卫视,http://120.234.187.66:10086/rtp/239.10.0.53:1025
+黑龙江卫视,http://120.234.187.66:10086/rtp/239.20.0.123:2044
+黑龙江卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.133:1025
+黑龙江卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.53:1025
+黑龙江卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.123:2044
+河南卫视,http://120.234.187.66:10086/rtp/239.10.0.154:1025
+河南卫视,http://120.234.187.66:10086/rtp/239.11.0.94:1025
+河南卫视,http://120.234.187.66:10086/rtp/239.20.0.144:2086
+河南卫视,http://120.234.187.66:10086/rtp/239.21.0.104:3756
+河南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.154:1025
+河南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.94:1025
+河南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.144:2086
+河南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.104:3756
+湖北卫视,http://120.234.187.66:10086/rtp/239.10.0.134:1025
+湖北卫视,http://120.234.187.66:10086/rtp/239.10.0.54:1025
+湖北卫视,http://120.234.187.66:10086/rtp/239.20.0.124:2046
+湖北卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.134:1025
+湖北卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.54:1025
+湖北卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.124:2046
+江西卫视,http://120.234.187.66:10086/rtp/239.10.0.148:1025
+江西卫视,http://120.234.187.66:10086/rtp/239.10.0.80:1025
+江西卫视,http://120.234.187.66:10086/rtp/239.20.0.138:2074
+江西卫视,http://120.234.187.66:10086/rtp/239.20.0.55:3180
+江西卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.148:1025
+江西卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.80:1025
+江西卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.138:2074
+江西卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.55:3180
+吉林卫视,http://120.234.187.66:10086/rtp/239.10.0.81:1025
+吉林卫视,http://120.234.187.66:10086/rtp/239.20.0.54:3184
+吉林卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.81:1025
+吉林卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.54:3184
+内蒙古卫视,http://120.234.187.66:10086/rtp/239.10.0.163:1025
+内蒙古卫视,http://120.234.187.66:10086/rtp/239.20.0.153:2104
+内蒙古卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.163:1025
+内蒙古卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.153:2104
+宁夏卫视,http://120.234.187.66:10086/rtp/239.10.0.166:1025
+宁夏卫视,http://120.234.187.66:10086/rtp/239.11.0.199:1025
+宁夏卫视,http://120.234.187.66:10086/rtp/239.20.0.156:2110
+宁夏卫视,http://120.234.187.66:10086/rtp/239.21.0.165:4008
+宁夏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.166:1025
+宁夏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.199:1025
+宁夏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.156:2110
+宁夏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.165:4008
+山西卫视,http://120.234.187.66:10086/rtp/239.10.0.162:1025
+山西卫视,http://120.234.187.66:10086/rtp/239.20.0.152:2102
+山西卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.162:1025
+山西卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.152:2102
+陕西卫视,http://120.234.187.66:10086/rtp/239.10.0.161:1025
+陕西卫视,http://120.234.187.66:10086/rtp/239.20.0.151:2100
+陕西卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.161:1025
+陕西卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.151:2100
+四川卫视,http://120.234.187.66:10086/rtp/239.10.0.204:1025
+四川卫视,http://120.234.187.66:10086/rtp/239.11.0.204:1025
+四川卫视,http://120.234.187.66:10086/rtp/239.20.0.194:2186
+四川卫视,http://120.234.187.66:10086/rtp/239.21.0.170:4028
+四川卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.204:1025
+四川卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.204:1025
+四川卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.194:2186
+四川卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.170:4028
+新疆卫视,http://120.234.187.66:10086/rtp/239.10.0.168:1025
+新疆卫视,http://120.234.187.66:10086/rtp/239.11.0.197:1025
+新疆卫视,http://120.234.187.66:10086/rtp/239.20.0.158:2114
+新疆卫视,http://120.234.187.66:10086/rtp/239.21.0.163:4000
+新疆卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.168:1025
+新疆卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.197:1025
+新疆卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.158:2114
+新疆卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.163:4000
+云南卫视,http://120.234.187.66:10086/rtp/239.10.0.155:1025
+云南卫视,http://120.234.187.66:10086/rtp/239.11.0.171:1025
+云南卫视,http://120.234.187.66:10086/rtp/239.20.0.145:2088
+云南卫视,http://120.234.187.66:10086/rtp/239.21.0.133:3876
+云南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.155:1025
+云南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.171:1025
+云南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.145:2088
+云南卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.133:3876
+厦门卫视,http://120.234.187.66:10086/rtp/239.10.0.178:1025
+厦门卫视,http://120.234.187.66:10086/rtp/239.20.0.168:2134
+厦门卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.178:1025
+厦门卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.168:2134
+青海卫视,http://120.234.187.66:10086/rtp/239.10.0.164:1025
+青海卫视,http://120.234.187.66:10086/rtp/239.11.0.179:1025
+青海卫视,http://120.234.187.66:10086/rtp/239.20.0.154:2106
+青海卫视,http://120.234.187.66:10086/rtp/239.21.0.144:3920
+青海卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.164:1025
+青海卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.179:1025
+青海卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.154:2106
+青海卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.144:3920
+西藏卫视,http://120.234.187.66:10086/rtp/239.10.0.167:1025
+西藏卫视,http://120.234.187.66:10086/rtp/239.11.0.196:1025
+西藏卫视,http://120.234.187.66:10086/rtp/239.20.0.157:2112
+西藏卫视,http://120.234.187.66:10086/rtp/239.21.0.162:3996
+西藏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.167:1025
+西藏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.196:1025
+西藏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.157:2112
+西藏卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.162:3996
+兵团卫视,http://120.234.187.66:10086/rtp/239.10.0.170:1025
+兵团卫视,http://120.234.187.66:10086/rtp/239.11.0.198:1025
+兵团卫视,http://120.234.187.66:10086/rtp/239.20.0.160:2118
+兵团卫视,http://120.234.187.66:10086/rtp/239.21.0.164:4004
+兵团卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.170:1025
+兵团卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.198:1025
+兵团卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.160:2118
+兵团卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.164:4004
+延边卫视,http://120.234.187.66:10086/rtp/239.10.0.140:1025
+延边卫视,http://120.234.187.66:10086/rtp/239.20.0.51:3216
+延边卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.140:1025
+延边卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.51:3216
+三沙卫视,http://120.234.187.66:10086/rtp/239.10.0.83:1025
+三沙卫视,http://120.234.187.66:10086/rtp/239.11.0.177:1025
+三沙卫视,http://120.234.187.66:10086/rtp/239.20.0.52:3192
+三沙卫视,http://120.234.187.66:10086/rtp/239.21.0.143:3916
+三沙卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.83:1025
+三沙卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.177:1025
+三沙卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.52:3192
+三沙卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.143:3916
+大湾区卫视,http://120.234.187.66:10086/rtp/239.10.0.135:1025
+大湾区卫视,http://120.234.187.66:10086/rtp/239.11.0.78:1025
+大湾区卫视,http://120.234.187.66:10086/rtp/239.20.0.125:2048
+大湾区卫视,http://120.234.187.66:10086/rtp/239.21.0.84:3676
+大湾区卫视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.135:1025
+大湾区卫视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.78:1025
+大湾区卫视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.125:2048
+大湾区卫视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.84:3676
+哈哈炫动,http://120.234.187.66:10086/rtp/239.10.0.174:1025
+哈哈炫动,http://120.234.187.66:10086/rtp/239.20.0.164:2126
+哈哈炫动,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.174:1025
+哈哈炫动,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.164:2126
+少儿动漫,http://120.234.187.66:10086/rtp/239.10.0.18:1025
+少儿动漫,http://120.234.187.66:10086/rtp/239.20.0.238:2274
+少儿动漫,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.18:1025
+少儿动漫,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.238:2274
+金鹰卡通,http://120.234.187.66:10086/rtp/239.10.0.173:1025
+金鹰卡通,http://120.234.187.66:10086/rtp/239.11.0.125:1025
+金鹰卡通,http://120.234.187.66:10086/rtp/239.20.0.163:2124
+金鹰卡通,http://120.234.187.66:10086/rtp/239.21.0.115:3804
+金鹰卡通,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.173:1025
+金鹰卡通,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.125:1025
+金鹰卡通,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.163:2124
+金鹰卡通,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.115:3804
+嘉佳卡通,http://120.234.187.66:10086/rtp/239.10.0.129:1025
+嘉佳卡通,http://120.234.187.66:10086/rtp/239.10.0.200:1025
+嘉佳卡通,http://120.234.187.66:10086/rtp/239.20.0.119:2036
+嘉佳卡通,http://120.234.187.66:10086/rtp/239.21.0.94:3716
+嘉佳卡通,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.129:1025
+嘉佳卡通,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.200:1025
+嘉佳卡通,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.119:2036
+嘉佳卡通,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.94:3716
+数字频道,#genre#
+电竞天堂,http://120.234.187.66:10086/rtp/239.20.0.50:3200
+电竞天堂,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.50:3200
+国学频道,http://120.234.187.66:10086/rtp/239.10.0.38:1025
+国学频道,http://120.234.187.66:10086/rtp/239.20.0.247:2292
+国学频道,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.38:1025
+国学频道,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.247:2292
+发现之旅,http://120.234.187.66:10086/rtp/239.11.0.182:1025
+发现之旅,http://120.234.187.66:10086/rtp/239.21.0.151:3948
+发现之旅,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.182:1025
+发现之旅,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.151:3948
+环球奇观,http://120.234.187.66:10086/rtp/239.10.0.36:1025
+环球奇观,http://120.234.187.66:10086/rtp/239.20.0.245:2288
+环球奇观,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.36:1025
+环球奇观,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.245:2288
+老故事,http://120.234.187.66:10086/rtp/239.10.0.33:1025
+老故事,http://120.234.187.66:10086/rtp/239.20.0.227:2252
+老故事,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.33:1025
+老故事,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.227:2252
+书画频道,http://120.234.187.66:10086/rtp/239.11.0.174:1025
+书画频道,http://120.234.187.66:10086/rtp/239.21.0.140:3904
+书画频道,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.174:1025
+书画频道,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.140:3904
+财富天下,http://120.234.187.66:10086/rtp/239.20.0.167:2132
+财富天下,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.167:2132
+IPTV频道,http://120.234.187.66:10086/rtp/239.10.0.10:1025
+IPTV频道,http://120.234.187.66:10086/rtp/239.10.0.11:1025
+IPTV频道,http://120.234.187.66:10086/rtp/239.10.0.8:1025
+IPTV频道,http://120.234.187.66:10086/rtp/239.10.0.9:1025
+IPTV频道,http://120.234.187.66:10086/rtp/239.20.0.228:2254
+IPTV频道,http://120.234.187.66:10086/rtp/239.20.0.229:2256
+IPTV频道,http://120.234.187.66:10086/rtp/239.20.0.230:2258
+IPTV频道,http://120.234.187.66:10086/rtp/239.20.0.231:2260
+IPTV频道,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.10:1025
+IPTV频道,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.11:1025
+IPTV频道,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.8:1025
+IPTV频道,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.9:1025
+IPTV频道,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.228:2254
+IPTV频道,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.229:2256
+IPTV频道,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.230:2258
+IPTV频道,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.231:2260
+电影频道,#genre#
+科幻电影,http://120.234.187.66:10086/rtp/239.10.0.12:1025
+科幻电影,http://120.234.187.66:10086/rtp/239.20.0.208:2214
+科幻电影,http://120.234.187.66:10086/rtp/239.20.0.232:2262
+科幻电影,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.12:1025
+科幻电影,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.208:2214
+科幻电影,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.232:2262
+经典电影,http://120.234.187.66:10086/rtp/239.10.0.13:1025
+经典电影,http://120.234.187.66:10086/rtp/239.20.0.233:2264
+经典电影,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.13:1025
+经典电影,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.233:2264
+教育频道,#genre#
+中国教育1,http://120.234.187.66:10086/rtp/239.10.0.223:1025
+中国教育1,http://120.234.187.66:10086/rtp/239.20.0.213:2224
+中国教育1,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.223:1025
+中国教育1,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.213:2224
+中国教育2,http://120.234.187.66:10086/rtp/239.11.0.35:1025
+中国教育2,http://120.234.187.66:10086/rtp/239.21.0.46:3524
+中国教育2,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.35:1025
+中国教育2,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.46:3524
+中国教育4,http://120.234.187.66:10086/rtp/239.11.0.176:1025
+中国教育4,http://120.234.187.66:10086/rtp/239.11.0.36:1025
+中国教育4,http://120.234.187.66:10086/rtp/239.21.0.142:3912
+中国教育4,http://120.234.187.66:10086/rtp/239.21.0.47:3528
+中国教育4,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.176:1025
+中国教育4,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.36:1025
+中国教育4,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.142:3912
+中国教育4,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.47:3528
+CGTN,http://120.234.187.66:10086/rtp/239.10.0.196:1025
+CGTN,http://120.234.187.66:10086/rtp/239.11.0.103:1025
+CGTN,http://120.234.187.66:10086/rtp/239.20.0.186:2170
+CGTN,http://120.234.187.66:10086/rtp/239.21.0.109:3776
+CGTN,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.196:1025
+CGTN,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.103:1025
+CGTN,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.186:2170
+CGTN,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.109:3776
+CGTN法语,http://120.234.187.66:10086/rtp/239.11.0.106:1025
+CGTN法语,http://120.234.187.66:10086/rtp/239.21.0.112:3788
+CGTN法语,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.106:1025
+CGTN法语,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.112:3788
+CGTN俄语,http://120.234.187.66:10086/rtp/239.11.0.108:1025
+CGTN俄语,http://120.234.187.66:10086/rtp/239.21.0.114:3796
+CGTN俄语,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.108:1025
+CGTN俄语,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.114:3796
+CGTN阿语,http://120.234.187.66:10086/rtp/239.11.0.107:1025
+CGTN阿语,http://120.234.187.66:10086/rtp/239.21.0.113:3792
+CGTN阿语,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.107:1025
+CGTN阿语,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.113:3792
+CGTN西语,http://120.234.187.66:10086/rtp/239.11.0.105:1025
+CGTN西语,http://120.234.187.66:10086/rtp/239.21.0.111:3800
+CGTN西语,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.105:1025
+CGTN西语,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.111:3800
+CGTN纪录,http://120.234.187.66:10086/rtp/239.11.0.104:1025
+CGTN纪录,http://120.234.187.66:10086/rtp/239.11.0.178:1025
+CGTN纪录,http://120.234.187.66:10086/rtp/239.21.0.110:3780
+CGTN纪录,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.104:1025
+CGTN纪录,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.178:1025
+CGTN纪录,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.110:3780
+华东地区,#genre#
+山东教育,http://120.234.187.66:10086/rtp/239.10.0.176:1025
+山东教育,http://120.234.187.66:10086/rtp/239.20.0.166:2130
+山东教育,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.176:1025
+山东教育,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.166:2130
+华中地区,#genre#
+金鹰纪实,http://120.234.187.66:10086/rtp/239.10.0.206:1025
+金鹰纪实,http://120.234.187.66:10086/rtp/239.20.0.196:2190
+金鹰纪实,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.206:1025
+金鹰纪实,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.196:2190
+华南地区,#genre#
+广东经济,http://120.234.187.66:10086/rtp/239.10.0.112:1025
+广东经济,http://120.234.187.66:10086/rtp/239.10.0.201:1025
+广东经济,http://120.234.187.66:10086/rtp/239.10.0.46:1025
+广东经济,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.112:1025
+广东经济,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.201:1025
+广东经济,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.46:1025
+广东体育,http://120.234.187.66:10086/rtp/239.10.0.113:1025
+广东体育,http://120.234.187.66:10086/rtp/239.10.0.124:1025
+广东体育,http://120.234.187.66:10086/rtp/239.10.0.47:1025
+广东体育,http://120.234.187.66:10086/rtp/239.20.0.103:2004
+广东体育,http://120.234.187.66:10086/rtp/239.20.0.114:2026
+广东体育,http://120.234.187.66:10086/rtp/239.20.0.97:3012
+广东体育,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.113:1025
+广东体育,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.124:1025
+广东体育,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.47:1025
+广东体育,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.103:2004
+广东体育,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.114:2026
+广东体育,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.97:3012
+广东珠江,http://120.234.187.66:10086/rtp/239.10.0.121:1025
+广东珠江,http://120.234.187.66:10086/rtp/239.10.0.62:1025
+广东珠江,http://120.234.187.66:10086/rtp/239.10.0.63:1025
+广东珠江,http://120.234.187.66:10086/rtp/239.20.0.111:2020
+广东珠江,http://120.234.187.66:10086/rtp/239.20.0.63:3148
+广东珠江,http://120.234.187.66:10086/rtp/239.20.0.64:3144
+广东珠江,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.121:1025
+广东珠江,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.62:1025
+广东珠江,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.63:1025
+广东珠江,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.111:2020
+广东珠江,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.63:3148
+广东珠江,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.64:3144
+广东影视,http://120.234.187.66:10086/rtp/239.10.0.127:1025
+广东影视,http://120.234.187.66:10086/rtp/239.11.0.79:1025
+广东影视,http://120.234.187.66:10086/rtp/239.20.0.117:2032
+广东影视,http://120.234.187.66:10086/rtp/239.21.0.85:3680
+广东影视,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.127:1025
+广东影视,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.79:1025
+广东影视,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.117:2032
+广东影视,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.85:3680
+广东公共,http://120.234.187.66:10086/rtp/239.20.0.113:2024
+广东公共,http://120.234.187.66:10086/rtp/239.21.0.86:3684
+广东公共,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.113:2024
+广东公共,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.86:3684
+广东少儿,http://120.234.187.66:10086/rtp/239.10.0.128:1025
+广东少儿,http://120.234.187.66:10086/rtp/239.11.0.81:1025
+广东少儿,http://120.234.187.66:10086/rtp/239.20.0.118:2034
+广东少儿,http://120.234.187.66:10086/rtp/239.21.0.87:3688
+广东少儿,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.128:1025
+广东少儿,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.81:1025
+广东少儿,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.118:2034
+广东少儿,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.87:3688
+广东新闻,http://120.234.187.66:10086/rtp/239.10.0.122:1025
+广东新闻,http://120.234.187.66:10086/rtp/239.10.0.199:1025
+广东新闻,http://120.234.187.66:10086/rtp/239.20.0.112:2022
+广东新闻,http://120.234.187.66:10086/rtp/239.21.0.93:3712
+广东新闻,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.122:1025
+广东新闻,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.199:1025
+广东新闻,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.112:2022
+广东新闻,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.93:3712
+广州综合,http://120.234.187.66:10086/rtp/239.11.0.138:1025
+广州综合,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.138:1025
+广州新闻,http://120.234.187.66:10086/rtp/239.11.0.139:1025
+广州新闻,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.139:1025
+韶关新闻,http://120.234.187.66:10086/rtp/239.11.0.84:1025
+韶关新闻,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.84:1025
+湛江公共,http://120.234.187.66:10086/rtp/239.10.0.254:1025
+湛江公共,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.254:1025
+惠州综合,http://120.234.187.66:10086/rtp/239.21.0.27:3448
+惠州综合,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.27:3448
+惠州公共,http://120.234.187.66:10086/rtp/239.21.0.28:3452
+惠州公共,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.28:3452
+揭阳综合,http://120.234.187.66:10086/rtp/239.21.0.82:3668
+揭阳综合,http://120.234.187.66:10086/rtp/239.21.0.91:3704
+揭阳综合,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.82:3668
+揭阳综合,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.91:3704
+揭阳生活,http://120.234.187.66:10086/rtp/239.21.0.83:3672
+揭阳生活,http://120.234.187.66:10086/rtp/239.21.0.92:3708
+揭阳生活,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.83:3672
+揭阳生活,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.92:3708
+云浮综合,http://120.234.187.66:10086/rtp/239.11.0.76:1025
+云浮综合,http://120.234.187.66:10086/rtp/239.11.0.96:1025
+云浮综合,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.76:1025
+云浮综合,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.96:1025
+云浮文旅,http://120.234.187.66:10086/rtp/239.11.0.77:1025
+云浮文旅,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.77:1025
+肇庆综合,http://120.234.187.66:10086/rtp/239.11.0.53:1025
+肇庆综合,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.53:1025
+肇庆生活,http://120.234.187.66:10086/rtp/239.11.0.54:1025
+肇庆生活,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.54:1025
+清远新闻,http://120.234.187.66:10086/rtp/239.11.0.74:1025
+清远新闻,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.74:1025
+清远文旅,http://120.234.187.66:10086/rtp/239.11.0.75:1025
+清远文旅,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.75:1025
+汕头经济,http://120.234.187.66:10086/rtp/239.21.0.102:3748
+汕头经济,http://120.234.187.66:10086/rtp/239.21.0.99:3736
+汕头经济,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.102:3748
+汕头经济,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.99:3736
+汕尾综合,http://120.234.187.66:10086/rtp/239.21.0.89:3696
+汕尾综合,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.89:3696
+汕尾公共,http://120.234.187.66:10086/rtp/239.21.0.90:3700
+汕尾公共,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.90:3700
+佛山公共,http://120.234.187.66:10086/rtp/239.11.0.109:1025
+佛山公共,http://120.234.187.66:10086/rtp/239.11.0.114:1025
+佛山公共,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.109:1025
+佛山公共,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.114:1025
+佛山南海,http://120.234.187.66:10086/rtp/239.11.0.110:1025
+佛山南海,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.110:1025
+佛山顺德,http://120.234.187.66:10086/rtp/239.11.0.111:1025
+佛山顺德,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.111:1025
+佛山综合,http://120.234.187.66:10086/rtp/239.11.0.113:1025
+佛山综合,http://120.234.187.66:10086/rtp/239.11.0.118:1025
+佛山综合,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.113:1025
+佛山综合,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.118:1025
+中山综合,http://120.234.187.66:10086/rtp/239.11.0.119:1025
+中山综合,http://120.234.187.66:10086/rtp/239.11.0.122:1025
+中山综合,http://120.234.187.66:10086/rtp/239.11.0.16:1025
+中山综合,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.119:1025
+中山综合,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.122:1025
+中山综合,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.16:1025
+河源综合,http://120.234.187.66:10086/rtp/239.21.0.48:3532
+河源综合,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.48:3532
+河源公共,http://120.234.187.66:10086/rtp/239.21.0.49:3536
+河源公共,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.49:3536
+岭南戏曲,http://120.234.187.66:10086/rtp/239.10.0.125:1025
+岭南戏曲,http://120.234.187.66:10086/rtp/239.11.0.180:1025
+岭南戏曲,http://120.234.187.66:10086/rtp/239.20.0.115:2028
+岭南戏曲,http://120.234.187.66:10086/rtp/239.21.0.147:3932
+岭南戏曲,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.125:1025
+岭南戏曲,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.180:1025
+岭南戏曲,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.115:2028
+岭南戏曲,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.147:3932
+其他频道,#genre#
+CETV,http://120.234.187.66:10086/rtp/239.11.0.100:1025
+CETV,http://120.234.187.66:10086/rtp/239.21.0.106:3764
+CETV,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.100:1025
+CETV,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.106:3764
+中学生,http://120.234.187.66:10086/rtp/239.11.0.173:1025
+中学生,http://120.234.187.66:10086/rtp/239.21.0.139:3900
+中学生,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.173:1025
+中学生,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.139:3900
+北京KAKU少儿,http://120.234.187.66:10086/rtp/239.10.0.172:1025
+北京KAKU少儿,http://120.234.187.66:10086/rtp/239.20.0.162:2122
+北京KAKU少儿,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.172:1025
+北京KAKU少儿,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.162:2122
+南国都市4K,http://120.234.187.66:10086/rtp/239.11.0.170:1025
+南国都市4K,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.170:1025
+南方购物,http://120.234.187.66:10086/rtp/239.10.0.126:1025
+南方购物,http://120.234.187.66:10086/rtp/239.20.0.116:2030
+南方购物,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.126:1025
+南方购物,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.116:2030
+南方购物精选,http://120.234.187.66:10086/rtp/239.11.0.95:1025
+南方购物精选,http://120.234.187.66:10086/rtp/239.21.0.105:3760
+南方购物精选,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.95:1025
+南方购物精选,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.105:3760
+南海,http://120.234.187.66:10086/rtp/239.11.0.115:1025
+南海,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.115:1025
+咪咕五大联赛4K1,http://120.234.187.66:10086/rtp/239.10.0.68:1025
+咪咕五大联赛4K1,http://120.234.187.66:10086/rtp/239.20.0.66:3136
+咪咕五大联赛4K1,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.68:1025
+咪咕五大联赛4K1,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.66:3136
+咪咕赛事000,http://120.234.187.66:10086/rtp/239.11.0.14:1025
+咪咕赛事000,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.14:1025
+咪咕赛事1,http://120.234.187.66:10086/rtp/239.10.0.87:1025
+咪咕赛事1,http://120.234.187.66:10086/rtp/239.20.0.45:3224
+咪咕赛事1,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.87:1025
+咪咕赛事1,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.45:3224
+咪咕赛事10,http://120.234.187.66:10086/rtp/239.11.0.1:1025
+咪咕赛事10,http://120.234.187.66:10086/rtp/239.21.0.10:3380
+咪咕赛事10,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.1:1025
+咪咕赛事10,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.10:3380
+咪咕赛事11,http://120.234.187.66:10086/rtp/239.11.0.2:1025
+咪咕赛事11,http://120.234.187.66:10086/rtp/239.21.0.11:3384
+咪咕赛事11,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.2:1025
+咪咕赛事11,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.11:3384
+咪咕赛事12,http://120.234.187.66:10086/rtp/239.11.0.3:1025
+咪咕赛事12,http://120.234.187.66:10086/rtp/239.21.0.12:3388
+咪咕赛事12,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.3:1025
+咪咕赛事12,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.12:3388
+咪咕赛事13,http://120.234.187.66:10086/rtp/239.11.0.4:1025
+咪咕赛事13,http://120.234.187.66:10086/rtp/239.21.0.13:3392
+咪咕赛事13,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.4:1025
+咪咕赛事13,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.13:3392
+咪咕赛事14,http://120.234.187.66:10086/rtp/239.11.0.5:1025
+咪咕赛事14,http://120.234.187.66:10086/rtp/239.21.0.14:3396
+咪咕赛事14,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.5:1025
+咪咕赛事14,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.14:3396
+咪咕赛事15,http://120.234.187.66:10086/rtp/239.11.0.6:1025
+咪咕赛事15,http://120.234.187.66:10086/rtp/239.21.0.15:3400
+咪咕赛事15,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.6:1025
+咪咕赛事15,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.15:3400
+咪咕赛事16,http://120.234.187.66:10086/rtp/239.11.0.7:1025
+咪咕赛事16,http://120.234.187.66:10086/rtp/239.21.0.16:3404
+咪咕赛事16,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.7:1025
+咪咕赛事16,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.16:3404
+咪咕赛事17,http://120.234.187.66:10086/rtp/239.11.0.8:1025
+咪咕赛事17,http://120.234.187.66:10086/rtp/239.21.0.17:3408
+咪咕赛事17,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.8:1025
+咪咕赛事17,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.17:3408
+咪咕赛事18,http://120.234.187.66:10086/rtp/239.11.0.9:1025
+咪咕赛事18,http://120.234.187.66:10086/rtp/239.21.0.18:3412
+咪咕赛事18,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.9:1025
+咪咕赛事18,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.18:3412
+咪咕赛事19,http://120.234.187.66:10086/rtp/239.11.0.10:1025
+咪咕赛事19,http://120.234.187.66:10086/rtp/239.21.0.19:3416
+咪咕赛事19,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.10:1025
+咪咕赛事19,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.19:3416
+咪咕赛事2,http://120.234.187.66:10086/rtp/239.10.0.88:1025
+咪咕赛事2,http://120.234.187.66:10086/rtp/239.20.0.44:3228
+咪咕赛事2,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.88:1025
+咪咕赛事2,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.44:3228
+咪咕赛事20,http://120.234.187.66:10086/rtp/239.11.0.11:1025
+咪咕赛事20,http://120.234.187.66:10086/rtp/239.21.0.20:3420
+咪咕赛事20,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.11:1025
+咪咕赛事20,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.20:3420
+咪咕赛事21,http://120.234.187.66:10086/rtp/239.11.0.12:1025
+咪咕赛事21,http://120.234.187.66:10086/rtp/239.21.0.21:3424
+咪咕赛事21,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.12:1025
+咪咕赛事21,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.21:3424
+咪咕赛事22,http://120.234.187.66:10086/rtp/239.11.0.13:1025
+咪咕赛事22,http://120.234.187.66:10086/rtp/239.21.0.22:3428
+咪咕赛事22,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.13:1025
+咪咕赛事22,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.22:3428
+咪咕赛事23,http://120.234.187.66:10086/rtp/239.11.0.18:1025
+咪咕赛事23,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.18:1025
+咪咕赛事24,http://120.234.187.66:10086/rtp/239.11.0.19:1025
+咪咕赛事24,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.19:1025
+咪咕赛事25,http://120.234.187.66:10086/rtp/239.11.0.20:1025
+咪咕赛事25,http://120.234.187.66:10086/rtp/239.21.0.29:3456
+咪咕赛事25,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.20:1025
+咪咕赛事25,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.29:3456
+咪咕赛事26,http://120.234.187.66:10086/rtp/239.11.0.21:1025
+咪咕赛事26,http://120.234.187.66:10086/rtp/239.21.0.30:3460
+咪咕赛事26,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.21:1025
+咪咕赛事26,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.30:3460
+咪咕赛事27,http://120.234.187.66:10086/rtp/239.11.0.22:1025
+咪咕赛事27,http://120.234.187.66:10086/rtp/239.21.0.31:3464
+咪咕赛事27,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.22:1025
+咪咕赛事27,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.31:3464
+咪咕赛事28,http://120.234.187.66:10086/rtp/239.21.0.32:3468
+咪咕赛事28,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.32:3468
+咪咕赛事29,http://120.234.187.66:10086/rtp/239.21.0.33:3472
+咪咕赛事29,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.33:3472
+咪咕赛事3,http://120.234.187.66:10086/rtp/239.10.0.89:1025
+咪咕赛事3,http://120.234.187.66:10086/rtp/239.20.0.43:3232
+咪咕赛事3,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.89:1025
+咪咕赛事3,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.43:3232
+咪咕赛事4,http://120.234.187.66:10086/rtp/239.10.0.247:1025
+咪咕赛事4,http://120.234.187.66:10086/rtp/239.20.0.14:3348
+咪咕赛事4,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.247:1025
+咪咕赛事4,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.14:3348
+咪咕赛事5,http://120.234.187.66:10086/rtp/239.10.0.248:1025
+咪咕赛事5,http://120.234.187.66:10086/rtp/239.20.0.13:3352
+咪咕赛事5,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.248:1025
+咪咕赛事5,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.13:3352
+咪咕赛事6,http://120.234.187.66:10086/rtp/239.10.0.249:1025
+咪咕赛事6,http://120.234.187.66:10086/rtp/239.20.0.12:3356
+咪咕赛事6,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.249:1025
+咪咕赛事6,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.12:3356
+咪咕赛事7,http://120.234.187.66:10086/rtp/239.10.0.250:1025
+咪咕赛事7,http://120.234.187.66:10086/rtp/239.20.0.11:3360
+咪咕赛事7,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.250:1025
+咪咕赛事7,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.11:3360
+咪咕赛事8,http://120.234.187.66:10086/rtp/239.10.0.251:1025
+咪咕赛事8,http://120.234.187.66:10086/rtp/239.20.0.10:3364
+咪咕赛事8,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.251:1025
+咪咕赛事8,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.10:3364
+咪咕赛事9,http://120.234.187.66:10086/rtp/239.10.0.252:1025
+咪咕赛事9,http://120.234.187.66:10086/rtp/239.20.0.09:3368
+咪咕赛事9,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.252:1025
+咪咕赛事9,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.09:3368
+喜粤TV.576,http://120.234.187.66:10086/rtp/239.10.0.100:1025
+喜粤TV.576,http://120.234.187.66:10086/rtp/239.10.0.84:1025
+喜粤TV.576,http://120.234.187.66:10086/rtp/239.10.0.97:1025
+喜粤TV.576,http://120.234.187.66:10086/rtp/239.10.0.98:1025
+喜粤TV.576,http://120.234.187.66:10086/rtp/239.10.0.99:1025
+喜粤TV.576,http://120.234.187.66:10086/rtp/239.11.0.15:1025
+喜粤TV.576,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.100:1025
+喜粤TV.576,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.84:1025
+喜粤TV.576,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.97:1025
+喜粤TV.576,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.98:1025
+喜粤TV.576,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.99:1025
+喜粤TV.576,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.15:1025
+广东4K,http://120.234.187.66:10086/rtp/239.10.0.75:1025
+广东4K,http://120.234.187.66:10086/rtp/239.10.0.76:1025
+广东4K,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.75:1025
+广东4K,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.76:1025
+广东民生,http://120.234.187.66:10086/rtp/239.10.0.123:1025
+广东民生,http://120.234.187.66:10086/rtp/239.11.0.80:1025
+广东民生,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.123:1025
+广东民生,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.80:1025
+收视指南,http://120.234.187.66:10086/rtp/239.10.0.20:1025
+收视指南,http://120.234.187.66:10086/rtp/239.20.0.240:2278
+收视指南,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.20:1025
+收视指南,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.240:2278
+未知,http://120.234.187.66:10086/rtp/239.10.0.51:1025
+未知,http://120.234.187.66:10086/rtp/239.10.0.59:1025
+未知,http://120.234.187.66:10086/rtp/239.10.0.60:1025
+未知,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.51:1025
+未知,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.59:1025
+未知,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.60:1025
+汕头新闻综合,http://120.234.187.66:10086/rtp/239.21.0.101:3744
+汕头新闻综合,http://120.234.187.66:10086/rtp/239.21.0.98:3732
+汕头新闻综合,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.101:3744
+汕头新闻综合,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.98:3732
+江门侨乡生活.576,http://120.234.187.66:10086/rtp/239.11.0.70:1025
+江门侨乡生活.576,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.70:1025
+江门综合,http://120.234.187.66:10086/rtp/239.10.0.219:1025
+江门综合,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.219:1025
+江门综合.576,http://120.234.187.66:10086/rtp/239.11.0.69:1025
+江门综合.576,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.69:1025
+汽摩,http://120.234.187.66:10086/rtp/239.10.0.232:1025
+汽摩,http://120.234.187.66:10086/rtp/239.20.0.222:2242
+汽摩,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.232:1025
+汽摩,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.222:2242
+河北,http://120.234.187.66:10086/rtp/239.20.0.56:3176
+河北,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.56:3176
+湛江新闻综合,http://120.234.187.66:10086/rtp/239.10.0.253:1025
+湛江新闻综合,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.253:1025
+热播剧场,http://120.234.187.66:10086/rtp/239.10.0.15:1025
+热播剧场,http://120.234.187.66:10086/rtp/239.20.0.235:2268
+热播剧场,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.15:1025
+热播剧场,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.235:2268
+爱体育,http://120.234.187.66:10086/rtp/239.10.0.17:1025
+爱体育,http://120.234.187.66:10086/rtp/239.10.0.218:1025
+爱体育,http://120.234.187.66:10086/rtp/239.20.0.237:2272
+爱体育,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.17:1025
+爱体育,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.218:1025
+爱体育,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.237:2272
+爱大剧,http://120.234.187.66:10086/rtp/239.10.0.14:1025
+爱大剧,http://120.234.187.66:10086/rtp/239.20.0.234:2266
+爱大剧,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.14:1025
+爱大剧,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.234:2266
+爱综艺,http://120.234.187.66:10086/rtp/239.10.0.16:1025
+爱综艺,http://120.234.187.66:10086/rtp/239.20.0.236:2270
+爱综艺,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.16:1025
+爱综艺,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.236:2270
+现代教育,http://120.234.187.66:10086/rtp/239.10.0.138:1025
+现代教育,http://120.234.187.66:10086/rtp/239.20.0.128:2054
+现代教育,http://120.234.187.66:10086/rtp/239.21.0.148:3936
+现代教育,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.138:1025
+现代教育,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.128:2054
+现代教育,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.148:3936
+百视通直播室101,http://120.234.187.66:10086/rtp/239.10.0.90:1025
+百视通直播室101,http://120.234.187.66:10086/rtp/239.20.0.42:3236
+百视通直播室101,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.90:1025
+百视通直播室101,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.42:3236
+百视通直播室102,http://120.234.187.66:10086/rtp/239.10.0.91:1025
+百视通直播室102,http://120.234.187.66:10086/rtp/239.20.0.41:3240
+百视通直播室102,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.91:1025
+百视通直播室102,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.41:3240
+百视通直播室103,http://120.234.187.66:10086/rtp/239.10.0.92:1025
+百视通直播室103,http://120.234.187.66:10086/rtp/239.20.0.40:3244
+百视通直播室103,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.92:1025
+百视通直播室103,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.40:3244
+百视通直播室104,http://120.234.187.66:10086/rtp/239.10.0.93:1025
+百视通直播室104,http://120.234.187.66:10086/rtp/239.20.0.39:3248
+百视通直播室104,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.93:1025
+百视通直播室104,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.39:3248
+百视通直播室105,http://120.234.187.66:10086/rtp/239.10.0.94:1025
+百视通直播室105,http://120.234.187.66:10086/rtp/239.20.0.38:3252
+百视通直播室105,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.94:1025
+百视通直播室105,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.38:3252
+百视通直播室106,http://120.234.187.66:10086/rtp/239.10.0.95:1025
+百视通直播室106,http://120.234.187.66:10086/rtp/239.20.0.37:3256
+百视通直播室106,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.95:1025
+百视通直播室106,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.37:3256
+百视通直播室107,http://120.234.187.66:10086/rtp/239.10.0.96:1025
+百视通直播室107,http://120.234.187.66:10086/rtp/239.20.0.36:3260
+百视通直播室107,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.96:1025
+百视通直播室107,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.36:3260
+睛彩广场舞,http://120.234.187.66:10086/rtp/239.11.0.184:1025
+睛彩广场舞,http://120.234.187.66:10086/rtp/239.21.0.153:3956
+睛彩广场舞,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.184:1025
+睛彩广场舞,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.153:3956
+睛彩竞技,http://120.234.187.66:10086/rtp/239.11.0.183:1025
+睛彩竞技,http://120.234.187.66:10086/rtp/239.21.0.152:3952
+睛彩竞技,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.183:1025
+睛彩竞技,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.152:3952
+移动,http://120.234.187.66:10086/rtp/239.10.0.143:1025
+移动,http://120.234.187.66:10086/rtp/239.20.0.133:2064
+移动,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.143:1025
+移动,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.133:2064
+移动咪咕五大联赛4K2,http://120.234.187.66:10086/rtp/239.10.0.69:1025
+移动咪咕五大联赛4K2,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.69:1025
+粤TV,http://120.234.187.66:10086/rtp/239.10.0.21:1025
+粤TV,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.21:1025
+粤TV19,http://120.234.187.66:10086/rtp/239.11.0.26:1025
+粤TV19,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.26:1025
+粤TV22,http://120.234.187.66:10086/rtp/239.11.0.162:1025
+粤TV22,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.162:1025
+粤TV27,http://120.234.187.66:10086/rtp/239.11.0.168:1025
+粤TV27,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.168:1025
+精选3,http://120.234.187.66:10086/rtp/239.10.0.242:1025
+精选3,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.242:1025
+精选4K频道1,http://120.234.187.66:10086/rtp/239.21.0.97:3728
+精选4K频道1,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.97:3728
+精选4K频道2,http://120.234.187.66:10086/rtp/239.20.0.250:2298
+精选4K频道2,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.250:2298
+精选4K频道3,http://120.234.187.66:10086/rtp/239.20.0.46:3220
+精选4K频道3,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.46:3220
+经济科教,http://120.234.187.66:10086/rtp/239.20.0.102:2002
+经济科教,http://120.234.187.66:10086/rtp/239.20.0.191:2180
+经济科教,http://120.234.187.66:10086/rtp/239.20.0.98:3008
+经济科教,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.102:2002
+经济科教,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.191:2180
+经济科教,http://gzgxzm.dpdns.org:10086/rtp/239.20.0.98:3008
+茂名综合,http://120.234.187.66:10086/rtp/239.10.0.238:1025
+茂名综合,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.238:1025
+茂名综合.576,http://120.234.187.66:10086/rtp/239.10.0.239:1025
+茂名综合.576,http://gzgxzm.dpdns.org:10086/rtp/239.10.0.239:1025
+阳江1,http://120.234.187.66:10086/rtp/239.11.0.189:1025
+阳江1,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.189:1025
+顺德,http://120.234.187.66:10086/rtp/239.11.0.116:1025
+顺德,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.116:1025
+更新时间,#genre#
+2026-10-02 11:59:42,https://taoiptv.com/lives/44025.txt?token=c14c259716e82a23
