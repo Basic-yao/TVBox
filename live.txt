@@ -1036,4 +1036,4 @@ CETV,http://gzgxzm.dpdns.org:10086/rtp/239.21.0.106:3764
 顺德,http://120.234.187.66:10086/rtp/239.11.0.116:1025
 顺德,http://gzgxzm.dpdns.org:10086/rtp/239.11.0.116:1025
 更新时间,#genre#
-2026-10-02 11:59:42,https://taoiptv.com/lives/44025.txt?token=c14c259716e82a23
+2026-10-10 08:04:02,https://taoiptv.com/time.mp4
