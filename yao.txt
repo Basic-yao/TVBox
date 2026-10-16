@@ -1,9 +1,9 @@
 {
-    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/06cf2230c30d9c26fa46ea79147b330d.jpg;md5;fc8f993c9297d38139363cd0e3db9853",
+    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/9a35119b3c4b4ba86345e3ab35b017a0.jpg;md5;09c3693dd068fd9b586f45d7d9c71916",
     "sites": [
-         {
+        {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20260923】🐮",
+            "name": "🐮【更新日期:20261010】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
@@ -34,20 +34,20 @@
                 "type": "list"
             }
         }, {
-            "key": "SportAiFeiQiu",
-            "name": "🌐飞球┃体育🌐",
+            "key": "SportAiGuaZi",
+            "name": "🌐瓜子┃体育🌐",
             "type": 3,
-            "api": "csp_SportAiFeiQiuGuard",
+            "api": "csp_SportAiGuaZiGuard",
             "searchable": 1,
             "changeable": 0,
             "style": {
                 "type": "list"
             }
-        }, {
-            "key": "SportAiGuaZi",
-            "name": "🌐瓜子┃体育🌐",
+        },{
+            "key": "SportAiFeiQiu",
+            "name": "🌐飞球┃体育🌐",
             "type": 3,
-            "api": "csp_SportAiGuaZiGuard",
+            "api": "csp_SportAiFeiQiuGuard",
             "searchable": 1,
             "changeable": 0,
             "style": {
@@ -90,7 +90,7 @@
             "style": {
                 "type": "list"
             }
-        },{
+        }, {
             "key": "花卷",
             "name": "💓花卷┃4K💓‍",
             "type": 3,
@@ -151,6 +151,30 @@
             "name": "💓多多┃4K💓",
             "type": 3,
             "api": "csp_AiNewDuoDuoGuard",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0
+        },  {
+            "key": "AiNewKuaiYing",
+            "name": "💓快影┃4K💓",
+            "type": 3,
+            "api": "csp_AiNewKuaiYingGuard",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0
+        },  {
+            "key": "AiNewLaBi",
+            "name": "💓蜡笔┃4K💓",
+            "type": 3,
+            "api": "csp_AiNewLaBiGuard",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0
+        },  {
+            "key": "AiNewShanDian",
+            "name": "💓闪电┃4K💓",
+            "type": 3,
+            "api": "csp_AiNewShanDianGuard",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 0
@@ -657,7 +681,7 @@
             "api": "csp_MusicAiLunHuiGuard",
             "searchable": 1,
             "changeable": 0
-        }, {
+        },{
             "key": "FakeAi115Share",
             "name": "💓115┃分享💓‍",
             "type": 3,
@@ -1030,7 +1054,7 @@
     "lives": [{
             "name": "Kimentanm",
             "type": 0,
-            "url": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/live.m3u",
+            "url": "https://basic-yao.github.io/iptv-api/result.m3u",
             "playerType": 1
         }, {
             "name": "综合直播",
