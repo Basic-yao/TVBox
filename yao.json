@@ -1,9 +1,9 @@
 {
-    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/9a35119b3c4b4ba86345e3ab35b017a0.jpg;md5;09c3693dd068fd9b586f45d7d9c71916",
+    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/3c42bc0af40a47993c3e59bed0028562.jpg;md5;4389970af213143447e51a0ec472d1b5",
     "sites": [
-        {
+         {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20261010】🐮",
+            "name": "🐮【更新日期:20261016】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
@@ -34,20 +34,20 @@
                 "type": "list"
             }
         }, {
-            "key": "SportAiGuaZi",
-            "name": "🌐瓜子┃体育🌐",
+            "key": "SportAiFeiQiu",
+            "name": "🌐飞球┃体育🌐",
             "type": 3,
-            "api": "csp_SportAiGuaZiGuard",
+            "api": "csp_SportAiFeiQiuGuard",
             "searchable": 1,
             "changeable": 0,
             "style": {
                 "type": "list"
             }
-        },{
-            "key": "SportAiFeiQiu",
-            "name": "🌐飞球┃体育🌐",
+        }, {
+            "key": "SportAiGuaZi",
+            "name": "🌐瓜子┃体育🌐",
             "type": 3,
-            "api": "csp_SportAiFeiQiuGuard",
+            "api": "csp_SportAiGuaZiGuard",
             "searchable": 1,
             "changeable": 0,
             "style": {
@@ -90,7 +90,7 @@
             "style": {
                 "type": "list"
             }
-        }, {
+        },{
             "key": "花卷",
             "name": "💓花卷┃4K💓‍",
             "type": 3,
@@ -681,7 +681,7 @@
             "api": "csp_MusicAiLunHuiGuard",
             "searchable": 1,
             "changeable": 0
-        },{
+        }, {
             "key": "FakeAi115Share",
             "name": "💓115┃分享💓‍",
             "type": 3,
@@ -1045,11 +1045,6 @@
                 "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
             ]
         }
-    ],
-    "ads": [
-        "mozai.4gtv.tv",
-        "pv.vipwm.cc",
-        "static-mozai.4gtv.tv"
     ],
     "lives": [{
             "name": "Kimentanm",
