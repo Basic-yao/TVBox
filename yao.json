@@ -1,9 +1,9 @@
 {
-    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/3c42bc0af40a47993c3e59bed0028562.jpg;md5;4389970af213143447e51a0ec472d1b5",
+    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/a665408c7f44fbbd128badb05f545aad.jpg;md5;12e821fd4c608270b019feb736c469dd",
     "sites": [
-         {
+        {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20261016】🐮",
+            "name": "🐮【更新日期:20261020】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
@@ -1050,7 +1050,7 @@
             "name": "Kimentanm",
             "type": 0,
             "url": "https://basic-yao.github.io/iptv-api/result.m3u",
-            "playerType": 1
+            "playerType": 2
         }, {
             "name": "综合直播",
             "type": 0,
