@@ -1050,7 +1050,7 @@
             "name": "Kimentanm",
             "type": 0,
             "url": "https://basic-yao.github.io/iptv-api/result.m3u",
-            "playerType": 2
+            "playerType": 1
         }, {
             "name": "综合直播",
             "type": 0,
