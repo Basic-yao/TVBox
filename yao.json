@@ -1,9 +1,9 @@
 {
-    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/a665408c7f44fbbd128badb05f545aad.jpg;md5;12e821fd4c608270b019feb736c469dd",
+    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/837a77b77fc98aba6b97856944e94d7c.jpg;md5;722d5c1bdcb1b38fc62874941e060d6b",
     "sites": [
         {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20261020】🐮",
+            "name": "🐮【更新日期:20261026】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
@@ -34,16 +34,6 @@
                 "type": "list"
             }
         }, {
-            "key": "SportAiFeiQiu",
-            "name": "🌐飞球┃体育🌐",
-            "type": 3,
-            "api": "csp_SportAiFeiQiuGuard",
-            "searchable": 1,
-            "changeable": 0,
-            "style": {
-                "type": "list"
-            }
-        }, {
             "key": "SportAiGuaZi",
             "name": "🌐瓜子┃体育🌐",
             "type": 3,
@@ -53,6 +43,23 @@
             "style": {
                 "type": "list"
             }
+        },{
+            "key": "SportAiFeiQiu",
+            "name": "🌐飞球┃体育🌐",
+            "type": 3,
+            "api": "csp_SportAiFeiQiuGuard",
+            "searchable": 1,
+            "changeable": 0,
+            "style": {
+                "type": "list"
+            }
+        },  {
+            "key": "SportAiKanqiu",
+            "name": "🌐八八┃体育🌐",
+            "type": 3,
+            "api": "csp_SportAiKanqiuGuard",
+            "searchable": 1,
+            "changeable": 0
         }, {
             "key": "SportAiKanQiuTong",
             "name": "🌐球通┃体育🌐",
@@ -63,13 +70,6 @@
             "style": {
                 "type": "list"
             }
-        }, {
-            "key": "SportAiKanqiu",
-            "name": "🌐八八┃体育🌐",
-            "type": 3,
-            "api": "csp_SportAiKanqiuGuard",
-            "searchable": 1,
-            "changeable": 0
         }, {
             "key": "SportAiKaFei",
             "name": "🌐咖啡┃体育🌐",
@@ -1045,6 +1045,11 @@
                 "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
             ]
         }
+    ],
+    "ads": [
+        "mozai.4gtv.tv",
+        "pv.vipwm.cc",
+        "static-mozai.4gtv.tv"
     ],
     "lives": [{
             "name": "Kimentanm",
