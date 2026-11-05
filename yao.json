@@ -1,9 +1,9 @@
 {
-    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/837a77b77fc98aba6b97856944e94d7c.jpg;md5;722d5c1bdcb1b38fc62874941e060d6b",
+    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/690e7f13e63718e6ea88add0c59d4289.jpg;md5;86cb2cdcd99e29334004b80e48007e9a",
     "sites": [
         {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20261026】🐮",
+            "name": "🐮【更新日期:20261104】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
@@ -33,7 +33,7 @@
             "style": {
                 "type": "list"
             }
-        }, {
+        },{
             "key": "SportAiGuaZi",
             "name": "🌐瓜子┃体育🌐",
             "type": 3,
@@ -43,7 +43,7 @@
             "style": {
                 "type": "list"
             }
-        },{
+        }, {
             "key": "SportAiFeiQiu",
             "name": "🌐飞球┃体育🌐",
             "type": 3,
@@ -53,13 +53,6 @@
             "style": {
                 "type": "list"
             }
-        },  {
-            "key": "SportAiKanqiu",
-            "name": "🌐八八┃体育🌐",
-            "type": 3,
-            "api": "csp_SportAiKanqiuGuard",
-            "searchable": 1,
-            "changeable": 0
         }, {
             "key": "SportAiKanQiuTong",
             "name": "🌐球通┃体育🌐",
@@ -70,6 +63,13 @@
             "style": {
                 "type": "list"
             }
+        }, {
+            "key": "SportAiKanqiu",
+            "name": "🌐八八┃体育🌐",
+            "type": 3,
+            "api": "csp_SportAiKanqiuGuard",
+            "searchable": 1,
+            "changeable": 0
         }, {
             "key": "SportAiKaFei",
             "name": "🌐咖啡┃体育🌐",
@@ -90,7 +90,7 @@
             "style": {
                 "type": "list"
             }
-        },{
+        }, {
             "key": "花卷",
             "name": "💓花卷┃4K💓‍",
             "type": 3,
@@ -527,6 +527,13 @@
             "api": "csp_DuanJuAiWeiGuanGuard",
             "searchable": 1,
             "changeable": 0
+        },{
+            "key": "AnimeAiGongHeGuo",
+            "name": "🤡共和┃动漫🤡",
+            "type": 3,
+            "api": "csp_AnimeAiGongHeGuoGuard",
+            "searchable": 1,
+            "changeable": 0
         }, {
             "key": "AnimeXiFan",
             "name": "🤡稀饭┃动漫🤡",
@@ -562,14 +569,7 @@
             "api": "csp_BookHeMaGuard",
             "searchable": 1,
             "changeable": 0
-        }, {
-            "key": "BookAiShiJie",
-            "name": "🎃‍极品┃听书🎃",
-            "type": 3,
-            "api": "csp_BookAiShiJieGuard",
-            "searchable": 1,
-            "changeable": 0
-        }, {
+        },{
             "key": "BookAiYueTing",
             "name": "🎃‍悦庭┃听书🎃",
             "type": 3,
@@ -867,14 +867,7 @@
             "api": "csp_SoAiPanSooGuard",
             "searchable": 1,
             "changeable": 0
-        }, {
-            "key": "SoAiQuPanShe",
-            "name": "🎠趣搜┃百度🎠",
-            "type": 3,
-            "api": "csp_SoAiQuPanSheGuard",
-            "searchable": 1,
-            "changeable": 0
-        }, {
+        },  {
             "key": "SoAiAiPanSo",
             "name": "🎠爱盘┃综合🎠",
             "type": 3,
