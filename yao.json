@@ -1,9 +1,9 @@
 {
-    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/690e7f13e63718e6ea88add0c59d4289.jpg;md5;86cb2cdcd99e29334004b80e48007e9a",
+    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/7b563c7039830e7c712e93f27fd2e102.jpg;md5;541366f5860ceb66e1c3005f5a299afe",
     "sites": [
         {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20261104】🐮",
+            "name": "🐮【更新日期:20261112】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
@@ -11,7 +11,7 @@
             "quickSearch": 0,
             "filterable": 0,
             "ext": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/20260414181247-ae51abfbfe.txt"
-        }, {
+        },{
             "key": "Wexconfig",
             "name": "🐮配置┃中心🐮",
             "type": 3,
@@ -33,21 +33,21 @@
             "style": {
                 "type": "list"
             }
-        },{
-            "key": "SportAiGuaZi",
-            "name": "🌐瓜子┃体育🌐",
+        }, {
+            "key": "SportAiFeiQiu",
+            "name": "🌐飞球┃体育🌐",
             "type": 3,
-            "api": "csp_SportAiGuaZiGuard",
+            "api": "csp_SportAiFeiQiuGuard",
             "searchable": 1,
             "changeable": 0,
             "style": {
                 "type": "list"
             }
         }, {
-            "key": "SportAiFeiQiu",
-            "name": "🌐飞球┃体育🌐",
+            "key": "SportAiGuaZi",
+            "name": "🌐瓜子┃体育🌐",
             "type": 3,
-            "api": "csp_SportAiFeiQiuGuard",
+            "api": "csp_SportAiGuaZiGuard",
             "searchable": 1,
             "changeable": 0,
             "style": {
@@ -279,6 +279,14 @@
             "name": "💥贱片┃秒播💥",
             "type": 3,
             "api": "csp_WexAiJianPianGuard",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0
+        },  {
+            "key": "下饭",
+            "name": "💥下饭┃秒播💥",
+            "type": 3,
+            "api": "csp_WexAiJuXiaFanGuard",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 0
@@ -681,7 +689,7 @@
             "api": "csp_MusicAiLunHuiGuard",
             "searchable": 1,
             "changeable": 0
-        }, {
+        },{
             "key": "FakeAi115Share",
             "name": "💓115┃分享💓‍",
             "type": 3,
@@ -881,7 +889,14 @@
             "api": "csp_SoKaKaGuard",
             "searchable": 1,
             "changeable": 0
-        }, {
+        },{
+            "key": "SoAiQuanPanGuard",
+            "name": "🎠全盘┃综合🎠",
+            "type": 3,
+            "api": "csp_SoAiQuanPanGuard",
+            "searchable": 1,
+            "changeable": 0
+        },  {
             "key": "push_agent",
             "name": "推送",
             "type": 3,
