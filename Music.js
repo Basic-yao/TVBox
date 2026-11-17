@@ -8,6 +8,9 @@
  *
  * 说明：原版 TVBox 的 JS 引擎只注入同步 req()，不支持 fetch / async / await。
  * 本文件全程同步，所有生命周期函数直接返回 JSON 字符串。
+ *
+ * 本文件是纯 JS 爬虫，需配合 music.json 订阅文件使用：
+ *   music.json 里 type:3 站点的 api 指向本文件的 url。
  */
 
 var UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
