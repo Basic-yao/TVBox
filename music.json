@@ -1,0 +1,702 @@
+/**
+ * 哔哩哔哩「音乐·演唱会」QuickJS 源 —— OK影视 / FongMi 专用
+ *
+ * 配置示例：
+ * {"key":"js_演唱会","name":"演唱会 • 哔哩哔哩","type":3,"api":"./js/演唱会.js","searchable":1,"quickSearch":1,"filterable":1}
+ *
+ * 可选 ext 传 SESSDATA 解锁更高画质：
+ * "ext": "{\"sessdata\":\"你的SESSDATA\"}"
+ *
+ * 特性：
+ * - WBI 签名优先请求 playurl
+ * - 三接口搜索轮询 + 排行榜兜底
+ * - 播放 header 带 UA + Referer + Origin
+ * - 不填 SESSDATA 也能出 720P/480P 直链
+ */
+
+const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
+const BUVID = "buvid3=84B0395D-C9F2-C490-E92E-A09AB48FE26E71636infoc";
+let SESSDATA = "";
+
+const MIXIN_KEY_ENC_TAB = [46, 47, 18, 2, 53, 8, 23, 32, 15, 50, 10, 31, 58, 3, 45, 35, 27, 43, 5, 49, 33, 9, 42, 19, 29, 28, 14, 39, 12, 38, 41, 13, 37, 48, 7, 16, 24, 55, 40, 61, 26, 17, 0, 1, 60, 51, 30, 4, 22, 25, 54, 21, 56, 59, 6, 63, 57, 62, 11, 36, 20, 34, 44, 52];
+
+const CLASSES = [
+  { type_name: "演唱会筛选", type_id: "演唱会超清" },
+  { type_name: "粤语", type_id: "粤语歌曲超清" },
+  { type_name: "KTV热门", type_id: "KTV热门歌曲" },
+  { type_name: "民谣歌曲", type_id: "民谣歌曲超清" },
+  { type_name: "经典老歌", type_id: "经典老歌超清" },
+  { type_name: "网红翻唱", type_id: "网红翻唱歌曲超清" },
+  { type_name: "DJ", type_id: "DJ歌曲超清" },
+  { type_name: "网易云经典", type_id: "网易云经典歌曲" },
+  { type_name: "滚石经典", type_id: "滚石歌曲" },
+  { type_name: "古风歌曲", type_id: "古风歌曲" },
+  { type_name: "闽南语歌曲", type_id: "闽南语歌曲" },
+  { type_name: "电子琴纯音乐", type_id: "电子琴纯音乐" },
+  { type_name: "抖音DJ", type_id: "抖音DJ" },
+  { type_name: "无损音乐", type_id: "无损音乐" },
+  { type_name: "时光音乐会", type_id: "时光音乐会MV" },
+  { type_name: "2026年热榜", type_id: "2026年热门歌曲" },
+  { type_name: "2025年热榜", type_id: "2025年热门歌曲" },
+  { type_name: "2024年热榜", type_id: "2024年热门歌曲" },
+  { type_name: "00年代经典", type_id: "00年代经典歌曲" },
+  { type_name: "90年代经典", type_id: "90年代经典歌曲" },
+  { type_name: "80年代经典", type_id: "80年代经典歌曲" },
+  { type_name: "70年代经典", type_id: "70年代经典歌曲" },
+  { type_name: "60年代经典", type_id: "60年代经典歌曲" }
+];
+
+const ORDER_FILTER = {
+  key: "order",
+  name: "排序",
+  value: [
+    { n: "综合排序", v: "0" },
+    { n: "最多点击", v: "click" },
+    { n: "最新发布", v: "pubdate" },
+    { n: "最多弹幕", v: "dm" },
+    { n: "最多收藏", v: "stow" }
+  ]
+};
+
+const DURATION_FILTER = {
+  key: "duration",
+  name: "时长",
+  value: [
+    { n: "全部", v: "0" },
+    { n: "60分钟以上", v: "4" },
+    { n: "30~60分钟", v: "3" },
+    { n: "10~30分钟", v: "2" },
+    { n: "10分钟以下", v: "1" }
+  ]
+};
+
+// 演唱会分类常用歌手筛选（可按需自行扩充）
+const ARTIST_FILTER = {
+  key: "tid",
+  name: "分类",
+  value: [
+    { n: "全部", v: "演唱会超清" },
+    { n: "周杰伦", v: "周杰伦演唱会超清" },
+    { n: "林俊杰", v: "林俊杰演唱会超清" },
+    { n: "陈奕迅", v: "陈奕迅演唱会超清" },
+    { n: "邓紫棋", v: "邓紫棋演唱会超清" },
+    { n: "五月天", v: "五月天演唱会超清" },
+    { n: "张学友", v: "张学友演唱会超清" },
+    { n: "刘德华", v: "刘德华演唱会超清" },
+    { n: "王菲", v: "王菲演唱会超清" },
+    { n: "薛之谦", v: "薛之谦演唱会超清" },
+    { n: "毛不易", v: "毛不易演唱会超清" },
+    { n: "李荣浩", v: "李荣浩演唱会超清" },
+    { n: "Beyond", v: "Beyond演唱会超清" },
+    { n: "张国荣", v: "张国荣演唱会超清" },
+    { n: "邓丽君", v: "邓丽君演唱会超清" },
+    { n: "周深", v: "周深演唱会超清" },
+    { n: "刀郎", v: "刀郎演唱会超清" },
+    { n: "凤凰传奇", v: "凤凰传奇演唱会超清" },
+    { n: "蔡依林", v: "蔡依林演唱会超清" },
+    { n: "王力宏", v: "王力宏演唱会超清" }
+  ]
+};
+
+const FILTERS = {
+  演唱会超清: [ORDER_FILTER, ARTIST_FILTER, DURATION_FILTER],
+  粤语歌曲超清: [DURATION_FILTER],
+  KTV热门歌曲: [DURATION_FILTER],
+  民谣歌曲超清: [ORDER_FILTER, DURATION_FILTER],
+  经典老歌超清: [DURATION_FILTER],
+  网红翻唱歌曲超清: [DURATION_FILTER],
+  DJ歌曲超清: [ORDER_FILTER, DURATION_FILTER],
+  网易云经典歌曲: [ORDER_FILTER, DURATION_FILTER],
+  滚石歌曲: [DURATION_FILTER],
+  古风歌曲: [DURATION_FILTER],
+  闽南语歌曲: [DURATION_FILTER],
+  电子琴纯音乐: [ORDER_FILTER, DURATION_FILTER],
+  抖音DJ: [ORDER_FILTER, DURATION_FILTER],
+  无损音乐: [DURATION_FILTER],
+  时光音乐会MV: [DURATION_FILTER],
+  "2026年热门歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "2025年热门歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "2024年热门歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "00年代经典歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "90年代经典歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "80年代经典歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "70年代经典歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "60年代经典歌曲": [ORDER_FILTER, DURATION_FILTER]
+};
+
+let _wbiKeys = null;
+
+function headers() {
+  const h = {
+    "User-Agent": UA,
+    Referer: "https://www.bilibili.com/",
+    Origin: "https://www.bilibili.com",
+    Accept: "application/json, text/plain, */*",
+    "Accept-Language": "zh-CN,zh;q=0.9"
+  };
+  let ck = BUVID;
+  if (SESSDATA) ck += "; SESSDATA=" + SESSDATA;
+  h.Cookie = ck;
+  return h;
+}
+
+function httpJson(url, params) {
+  try {
+    let full = url;
+    if (params) {
+      const qs = Object.keys(params)
+        .map((k) => encodeURIComponent(k) + "=" + encodeURIComponent(params[k]))
+        .join("&");
+      full += (url.indexOf("?") >= 0 ? "&" : "?") + qs;
+    }
+    // FongMi / 多数环境注入 req；没有则尝试 fetch
+    if (typeof req === "function") {
+      const res = req(full, { headers: headers(), timeout: 12000 });
+      if (res && res.content) {
+        return typeof res.content === "string" ? JSON.parse(res.content) : res.content;
+      }
+      if (typeof res === "string") return JSON.parse(res);
+    }
+    if (typeof fetch === "function") {
+      // 同步环境可能不支持 await，仅作兜底
+    }
+  } catch (e) {}
+  return null;
+}
+
+function getWbiKeys() {
+  if (_wbiKeys) return _wbiKeys;
+  try {
+    const r = httpJson("https://api.bilibili.com/x/web-interface/nav");
+    const img = (r.data.wbi_img.img_url || "").split("/").pop().split(".")[0];
+    const sub = (r.data.wbi_img.sub_url || "").split("/").pop().split(".")[0];
+    const raw = img + sub;
+    let mixin = "";
+    for (let i = 0; i < MIXIN_KEY_ENC_TAB.length; i++) mixin += raw[MIXIN_KEY_ENC_TAB[i]] || "";
+    _wbiKeys = mixin.slice(0, 32);
+  } catch (e) {
+    _wbiKeys = "";
+  }
+  return _wbiKeys;
+}
+
+function md5(str) {
+  // 简易 md5（QuickJS 常见环境无 crypto，内嵌精简实现）
+  function cmn(q, a, b, x, s, t) {
+    a = (a + q + x + t) | 0;
+    return (((a << s) | (a >>> (32 - s))) + b) | 0;
+  }
+  function ff(a, b, c, d, x, s, t) {
+    return cmn((b & c) | (~b & d), a, b, x, s, t);
+  }
+  function gg(a, b, c, d, x, s, t) {
+    return cmn((b & d) | (c & ~d), a, b, x, s, t);
+  }
+  function hh(a, b, c, d, x, s, t) {
+    return cmn(b ^ c ^ d, a, b, x, s, t);
+  }
+  function ii(a, b, c, d, x, s, t) {
+    return cmn(c ^ (b | ~d), a, b, x, s, t);
+  }
+  function toUtf8(s) {
+    return unescape(encodeURIComponent(s));
+  }
+  const msg = toUtf8(str);
+  const n = msg.length;
+  const words = [];
+  for (let i = 0; i < n; i++) words[i >> 2] |= (msg.charCodeAt(i) & 0xff) << ((i % 4) * 8);
+  words[n >> 2] |= 0x80 << ((n % 4) * 8);
+  words[(((n + 8) >> 6) << 4) + 14] = n * 8;
+  let a = 1732584193,
+    b = -271733879,
+    c = -1732584194,
+    d = 271733878;
+  for (let i = 0; i < words.length; i += 16) {
+    const oa = a,
+      ob = b,
+      oc = c,
+      od = d;
+    a = ff(a, b, c, d, words[i + 0], 7, -680876936);
+    d = ff(d, a, b, c, words[i + 1], 12, -389564586);
+    c = ff(c, d, a, b, words[i + 2], 17, 606105819);
+    b = ff(b, c, d, a, words[i + 3], 22, -1044525330);
+    a = ff(a, b, c, d, words[i + 4], 7, -176418897);
+    d = ff(d, a, b, c, words[i + 5], 12, 1200080426);
+    c = ff(c, d, a, b, words[i + 6], 17, -1473231341);
+    b = ff(b, c, d, a, words[i + 7], 22, -45705983);
+    a = ff(a, b, c, d, words[i + 8], 7, 1770035416);
+    d = ff(d, a, b, c, words[i + 9], 12, -1958414417);
+    c = ff(c, d, a, b, words[i + 10], 17, -42063);
+    b = ff(b, c, d, a, words[i + 11], 22, -1990404162);
+    a = ff(a, b, c, d, words[i + 12], 7, 1804603682);
+    d = ff(d, a, b, c, words[i + 13], 12, -40341101);
+    c = ff(c, d, a, b, words[i + 14], 17, -1502002290);
+    b = ff(b, c, d, a, words[i + 15], 22, 1236535329);
+    a = gg(a, b, c, d, words[i + 1], 5, -165796510);
+    d = gg(d, a, b, c, words[i + 6], 9, -1069501632);
+    c = gg(c, d, a, b, words[i + 11], 14, 643717713);
+    b = gg(b, c, d, a, words[i + 0], 20, -373897302);
+    a = gg(a, b, c, d, words[i + 5], 5, -701558691);
+    d = gg(d, a, b, c, words[i + 10], 9, 38016083);
+    c = gg(c, d, a, b, words[i + 15], 14, -660478335);
+    b = gg(b, c, d, a, words[i + 4], 20, -405537848);
+    a = gg(a, b, c, d, words[i + 9], 5, 568446438);
+    d = gg(d, a, b, c, words[i + 14], 9, -1019803690);
+    c = gg(c, d, a, b, words[i + 3], 14, -187363961);
+    b = gg(b, c, d, a, words[i + 8], 20, 1163531501);
+    a = gg(a, b, c, d, words[i + 13], 5, -1444681467);
+    d = gg(d, a, b, c, words[i + 2], 9, -51403784);
+    c = gg(c, d, a, b, words[i + 7], 14, 1735328473);
+    b = gg(b, c, d, a, words[i + 12], 20, -1926607734);
+    a = hh(a, b, c, d, words[i + 5], 4, -378558);
+    d = hh(d, a, b, c, words[i + 8], 11, -2022574463);
+    c = hh(c, d, a, b, words[i + 11], 16, 1839030562);
+    b = hh(b, c, d, a, words[i + 14], 23, -35309556);
+    a = hh(a, b, c, d, words[i + 1], 4, -1530992060);
+    d = hh(d, a, b, c, words[i + 4], 11, 1272893353);
+    c = hh(c, d, a, b, words[i + 7], 16, -155497632);
+    b = hh(b, c, d, a, words[i + 10], 23, -1094730640);
+    a = hh(a, b, c, d, words[i + 13], 4, 681279174);
+    d = hh(d, a, b, c, words[i + 0], 11, -358537222);
+    c = hh(c, d, a, b, words[i + 3], 16, -722521979);
+    b = hh(b, c, d, a, words[i + 6], 23, 76029189);
+    a = hh(a, b, c, d, words[i + 9], 4, -640364487);
+    d = hh(d, a, b, c, words[i + 12], 11, -421815835);
+    c = hh(c, d, a, b, words[i + 15], 16, 530742520);
+    b = hh(b, c, d, a, words[i + 2], 23, -995338651);
+    a = ii(a, b, c, d, words[i + 0], 6, -198630844);
+    d = ii(d, a, b, c, words[i + 7], 10, 1126891415);
+    c = ii(c, d, a, b, words[i + 14], 15, -1416354905);
+    b = ii(b, c, d, a, words[i + 5], 21, -57434055);
+    a = ii(a, b, c, d, words[i + 12], 6, 1700485571);
+    d = ii(d, a, b, c, words[i + 3], 10, -1894986606);
+    c = ii(c, d, a, b, words[i + 10], 15, -1051523);
+    b = ii(b, c, d, a, words[i + 1], 21, -2054922799);
+    a = ii(a, b, c, d, words[i + 8], 6, 1873313359);
+    d = ii(d, a, b, c, words[i + 15], 10, -30611744);
+    c = ii(c, d, a, b, words[i + 6], 15, -1560198380);
+    b = ii(b, c, d, a, words[i + 13], 21, 1309151649);
+    a = ii(a, b, c, d, words[i + 4], 6, -145523070);
+    d = ii(d, a, b, c, words[i + 11], 10, -1120210379);
+    c = ii(c, d, a, b, words[i + 2], 15, 718787259);
+    b = ii(b, c, d, a, words[i + 9], 21, -343485551);
+    a = (a + oa) | 0;
+    b = (b + ob) | 0;
+    c = (c + oc) | 0;
+    d = (d + od) | 0;
+  }
+  function hex(n) {
+    let s = "";
+    for (let j = 0; j < 4; j++) s += ("0" + ((n >> (j * 8)) & 0xff).toString(16)).slice(-2);
+    return s;
+  }
+  return hex(a) + hex(b) + hex(c) + hex(d);
+}
+
+function wbiSign(params) {
+  const mixin = getWbiKeys();
+  if (!mixin) return params;
+  const p = Object.assign({}, params);
+  p.wts = Math.floor(Date.now() / 1000);
+  const keys = Object.keys(p).sort();
+  const q = keys.map((k) => k + "=" + encodeURIComponent(p[k])).join("&");
+  p.w_rid = md5(q + mixin);
+  return p;
+}
+
+function cleanTitle(s) {
+  if (!s) return "";
+  return String(s)
+    .replace(/<[^>]+>/g, "")
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#39;/g, "'")
+    .trim();
+}
+
+function pic(url) {
+  if (!url) return "";
+  if (url.indexOf("//") === 0) return "https:" + url;
+  return url;
+}
+
+function norm(items) {
+  const out = [];
+  (items || []).forEach((it) => {
+    if (!it || !it.bvid) return;
+    out.push({
+      vod_id: it.bvid,
+      vod_name: cleanTitle(it.title || ""),
+      vod_pic: pic(it.pic || ""),
+      vod_remarks: it.duration || "",
+      vod_actor: it.author || "",
+      vod_content: it.description || ""
+    });
+  });
+  return out;
+}
+
+function searchOnce(endpoint, keyword, pg, order, duration, signed) {
+  try {
+    if (endpoint.indexOf("search/all/v2") >= 0) {
+      const r = httpJson(endpoint, { keyword: keyword, page: pg });
+      if (!r || r.code !== 0) return { list: [], pages: 1 };
+      const blocks = (r.data && r.data.result) || [];
+      let vids = [];
+      for (let i = 0; i < blocks.length; i++) {
+        if (blocks[i] && blocks[i].result_type === "video") {
+          vids = blocks[i].data || [];
+          break;
+        }
+      }
+      return { list: norm(vids), pages: parseInt((r.data && r.data.numPages) || 1, 10) };
+    }
+    const params = {
+      search_type: "video",
+      keyword: keyword,
+      page: pg,
+      page_size: 20
+    };
+    if (order && order !== "0") {
+      const map = { "0": "totalrank", click: "click", pubdate: "pubdate", dm: "dm", stow: "stow" };
+      params.order = map[order] || "totalrank";
+    }
+    if (duration && duration !== "0") params.duration = duration;
+    const p = signed ? wbiSign(params) : params;
+    const r = httpJson(endpoint, p);
+    if (!r || r.code !== 0) return { list: [], pages: 1 };
+    return {
+      list: norm((r.data && r.data.result) || []),
+      pages: parseInt((r.data && r.data.numPages) || 1, 10)
+    };
+  } catch (e) {
+    return { list: [], pages: 1 };
+  }
+}
+
+function biliSearch(keyword, pg, order, duration) {
+  const eps = [
+    ["https://api.bilibili.com/x/web-interface/search/type", true],
+    ["https://api.bilibili.com/x/web-interface/search/all/v2", false],
+    ["https://api.bilibili.com/x/web-interface/search/type", false]
+  ];
+  for (let rnd = 0; rnd < 2; rnd++) {
+    for (let i = 0; i < eps.length; i++) {
+      const res = searchOnce(eps[i][0], keyword, pg, order, duration, eps[i][1]);
+      if (res.list && res.list.length) return res;
+    }
+  }
+  return { list: [], pages: 1 };
+}
+
+function ranking() {
+  const rids = ["3", "1", "4"];
+  for (let i = 0; i < rids.length; i++) {
+    const r = httpJson("https://api.bilibili.com/x/web-interface/ranking/v2", {
+      rid: rids[i],
+      type: "all"
+    });
+    if (r && r.code === 0) {
+      const lst = (r.data && r.data.list) || [];
+      if (lst.length) {
+        return lst
+          .filter((it) => it.bvid)
+          .map((it) => ({
+            vod_id: it.bvid,
+            vod_name: cleanTitle(it.title || ""),
+            vod_pic: pic(it.pic || ""),
+            vod_remarks: "热门",
+            vod_actor: (it.owner && it.owner.name) || "",
+            vod_content: it.desc || ""
+          }));
+      }
+    }
+  }
+  return [];
+}
+
+function view(bvid, p) {
+  const params = { bvid: bvid };
+  if (p && p > 1) params.p = p;
+  let r = httpJson("https://api.bilibili.com/x/web-interface/view", params);
+  if (r && r.code === 0 && r.data) return r.data;
+  r = httpJson("https://api.bilibili.com/x/player/pagelist", { bvid: bvid });
+  if (r && r.code === 0 && r.data) {
+    const pages = r.data;
+    const idx = Math.min(Math.max((p || 1) - 1, 0), pages.length - 1);
+    return {
+      bvid: bvid,
+      cid: pages[idx].cid || 0,
+      pages: pages,
+      title: pages[idx].part || "",
+      pic: ""
+    };
+  }
+  return {};
+}
+
+function playurl(bvid, cid) {
+  const qns = SESSDATA ? [80, 64, 32, 16] : [64, 32, 16];
+  const endpoints = [
+    ["https://api.bilibili.com/x/player/wbi/playurl", true],
+    ["https://api.bilibili.com/x/player/playurl", false]
+  ];
+  for (let qi = 0; qi < qns.length; qi++) {
+    const qn = qns[qi];
+    for (let ei = 0; ei < endpoints.length; ei++) {
+      for (let fi = 0; fi < 2; fi++) {
+        const fnval = fi === 0 ? 1 : 0;
+        let params = {
+          bvid: bvid,
+          cid: cid,
+          qn: qn,
+          fnval: fnval,
+          fnver: 0,
+          fourk: 1,
+          platform: "pc"
+        };
+        if (endpoints[ei][1]) params = wbiSign(params);
+        const r = httpJson(endpoints[ei][0], params);
+        if (!r || r.code !== 0) continue;
+        const data = r.data || {};
+        const durl = data.durl || [];
+        if (durl.length && durl[0].url) return { url: durl[0].url, qn: qn };
+        const dash = data.dash || {};
+        const videos = dash.video || [];
+        if (videos.length) {
+          videos.sort((a, b) => (b.id || 0) - (a.id || 0));
+          const base = videos[0].baseUrl || videos[0].base_url || "";
+          if (base) return { url: base, qn: qn };
+        }
+      }
+    }
+  }
+  return { url: "", qn: 0 };
+}
+
+function asObj(v) {
+  if (v && typeof v === "object") return v;
+  if (typeof v === "string") {
+    const s = v.trim();
+    if (!s) return null;
+    try {
+      return JSON.parse(s);
+    } catch (e) {
+      return null;
+    }
+  }
+  return null;
+}
+
+function init(ext) {
+  try {
+    const obj = asObj(ext) || {};
+    const ck = obj.cookies || obj.cookie || "";
+    const m = String(ck).match(/SESSDATA=([^;]+)/);
+    if (m) SESSDATA = m[1].trim();
+    if (obj.sessdata) SESSDATA = String(obj.sessdata).trim();
+  } catch (e) {}
+}
+
+function home(filter) {
+  const result = { class: CLASSES, list: [] };
+  if (filter) result.filters = FILTERS;
+  return JSON.stringify(result);
+}
+
+function homeVod() {
+  try {
+    return JSON.stringify({ list: ranking() });
+  } catch (e) {
+    return JSON.stringify({ list: [] });
+  }
+}
+
+function category(tid, pg, filter, extend) {
+  try {
+    pg = String(pg || "1");
+    let ext = asObj(extend) || {};
+    if (typeof extend === "string") {
+      try {
+        ext = JSON.parse(extend) || {};
+      } catch (e) {}
+    }
+    let keyword = String(ext.tid || tid || "").trim();
+    const order = String(ext.order || "0");
+    const duration = String(ext.duration || "0");
+    let res = biliSearch(keyword, pg, order, duration);
+    if ((!res.list || !res.list.length) && (pg === "1" || pg === 1)) {
+      const alts = [keyword + "超清", keyword.replace("超清", "").trim(), keyword + " MV"];
+      for (let i = 0; i < alts.length; i++) {
+        if (!alts[i] || alts[i] === keyword) continue;
+        res = biliSearch(alts[i], pg, order, duration);
+        if (res.list && res.list.length) break;
+      }
+    }
+    if ((!res.list || !res.list.length) && (pg === "1" || pg === 1)) {
+      res = { list: ranking(), pages: 1 };
+    }
+    return JSON.stringify({
+      list: res.list || [],
+      page: pg,
+      pagecount: Math.max(res.pages || 1, 1),
+      limit: 20,
+      total: (res.list || []).length
+    });
+  } catch (e) {
+    return JSON.stringify({ list: [], page: "1", pagecount: 1 });
+  }
+}
+
+function detail(ids) {
+  try {
+    let vid = "";
+    if (Array.isArray(ids)) vid = String(ids[0] || "");
+    else if (typeof ids === "object" && ids) vid = String(ids.id || ids.vod_id || "");
+    else vid = String(ids || "");
+    vid = vid.replace(/^["']|["']$/g, "").trim();
+    const bvid = vid.split("?")[0].split("$")[0].trim();
+    if (!bvid) return JSON.stringify({ list: [] });
+    const info = view(bvid, 1);
+    const pages = info.pages || [];
+    let play = "";
+    if (pages.length <= 1) {
+      play = "正片$" + bvid;
+    } else {
+      const eps = [];
+      for (let i = 0; i < pages.length; i++) {
+        const name = (pages[i].part || "").trim() || "第" + (i + 1) + "集";
+        eps.push(name + "$" + bvid + "?p=" + (i + 1));
+      }
+      play = eps.join("#");
+    }
+    const stat = info.stat || {};
+    let remark = "";
+    if (stat.view != null) {
+      const v = parseInt(stat.view, 10) || 0;
+      const d = parseInt(stat.danmaku, 10) || 0;
+      const fv = v >= 100000000 ? (v / 100000000).toFixed(1) + "亿" : v >= 10000 ? (v / 10000).toFixed(1) + "万" : String(v);
+      const fd = d >= 10000 ? (d / 10000).toFixed(1) + "万" : String(d);
+      remark = "播放:" + fv + " 弹幕:" + fd;
+    }
+    let year = "";
+    try {
+      if (info.pubdate) year = String(new Date(info.pubdate * 1000).getFullYear());
+    } catch (e) {}
+    const vod = {
+      vod_id: bvid,
+      vod_name: info.title || bvid,
+      vod_pic: pic(info.pic || ""),
+      type_name: "音乐/演唱会",
+      vod_year: year,
+      vod_area: "哔哩哔哩",
+      vod_remarks: remark,
+      vod_actor: (info.owner && info.owner.name) || "",
+      vod_director: "",
+      vod_content: info.desc || "",
+      vod_play_from: "哔哩哔哩",
+      vod_play_url: play
+    };
+    return JSON.stringify({ list: [vod] });
+  } catch (e) {
+    return JSON.stringify({ list: [] });
+  }
+}
+
+function search(key, quick, pg) {
+  try {
+    pg = String(pg || "1");
+    const res = biliSearch(String(key || "").trim(), pg, "totalrank", "0");
+    return JSON.stringify({
+      list: res.list || [],
+      page: pg,
+      pagecount: Math.max(res.pages || 1, 1)
+    });
+  } catch (e) {
+    return JSON.stringify({ list: [], page: "1", pagecount: 1 });
+  }
+}
+
+function play(flag, id, vipFlags) {
+  const header = {
+    "User-Agent": UA,
+    Referer: "https://www.bilibili.com",
+    Origin: "https://www.bilibili.com",
+    Accept: "*/*",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"
+  };
+  if (SESSDATA) header.Cookie = "SESSDATA=" + SESSDATA;
+
+  let bvid = "";
+  let p = 1;
+  const cand = String(id || "");
+  const m = cand.match(/(BV[0-9A-Za-z]{8,})/);
+  if (m) {
+    bvid = m[1];
+    const mp = cand.match(/[?&]p=(\d+)/);
+    if (mp) p = parseInt(mp[1], 10);
+  }
+  if (!bvid) return JSON.stringify({ parse: 0, url: "", header: header });
+
+  try {
+    const info = view(bvid, p);
+    let cid = info.cid || 0;
+    const pages = info.pages || [];
+    if (!cid && pages.length) {
+      const idx = Math.min(Math.max(p - 1, 0), pages.length - 1);
+      cid = pages[idx].cid || 0;
+    }
+    if (cid) {
+      const pu = playurl(bvid, cid);
+      if (pu.url) {
+        return JSON.stringify({
+          parse: 0,
+          url: pu.url,
+          header: header,
+          format: "mp4"
+        });
+      }
+    }
+  } catch (e) {}
+  return JSON.stringify({ parse: 0, url: "", header: header });
+}
+
+// 兼容部分环境命名
+function homeContent(filter) {
+  return home(filter);
+}
+function homeVideoContent() {
+  return homeVod();
+}
+function categoryContent(tid, pg, filter, extend) {
+  return category(tid, pg, filter, extend);
+}
+function detailContent(ids) {
+  return detail(ids);
+}
+function searchContent(key, quick, pg) {
+  return search(key, quick, pg);
+}
+function playerContent(flag, id, vipFlags) {
+  return play(flag, id, vipFlags);
+}
+
+export function __jsEvalReturn() {
+  return {
+    init: init,
+    home: home,
+    homeVod: homeVod,
+    category: category,
+    detail: detail,
+    play: play,
+    search: search,
+    homeContent: homeContent,
+    homeVideoContent: homeVideoContent,
+    categoryContent: categoryContent,
+    detailContent: detailContent,
+    searchContent: searchContent,
+    playerContent: playerContent
+  };
+}
