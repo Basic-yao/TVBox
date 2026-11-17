@@ -5,7 +5,7 @@
       "key": "js_bili_concert",
       "name": "演唱会·哔哩哔哩",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/Basic-yao/TVBox/main/music.js",
+      "api": "https://github.com/Basic-yao/TVBox/blob/main/Music.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
