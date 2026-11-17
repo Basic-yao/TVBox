@@ -1,13 +1,13 @@
-/*
- * 哔哩哔哩「音乐·演唱会」QuickJS 源 —— TVBox / Tank 版专用
+/**
+ * 哔哩哔哩「音乐·演唱会」TVBox 专用 JS 蜘蛛（纯同步 req 版）
  *
- * 本文件是纯 JS 爬虫本体，配合订阅 JSON 使用：
- *   { "key":"js_bili_concert", "name":"演唱会·哔哩哔哩", "type":3,
- *     "api":"https://你的域名/你的仓库/music_pure.js",
- *     "searchable":1, "quickSearch":1, "filterable":1,
- *     "ext":"{\"sessdata\":\"\"}" }
+ * 订阅配置：
+ * {"key":"js_bili_concert","name":"演唱会·哔哩哔哩","type":3,
+ *  "api":"https://raw.githubusercontent.com/Basic-yao/TVBox/main/music.js",
+ *  "searchable":1,"quickSearch":1,"filterable":1,"ext":"{\"sessdata\":\"\"}"}
  *
- * 若你的内核支持 Shebang 式自包含订阅，可改用同目录 music.json（顶部带 [TVBox] 声明）。
+ * 说明：原版 TVBox 的 JS 引擎只注入同步 req()，不支持 fetch / async / await。
+ * 本文件全程同步，所有生命周期函数直接返回 JSON 字符串。
  */
 
 var UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
@@ -43,8 +43,7 @@ var CLASSES = [
 ];
 
 var ORDER_FILTER = {
-  key: "order",
-  name: "排序",
+  key: "order", name: "排序",
   value: [
     { n: "综合排序", v: "0" },
     { n: "最多点击", v: "click" },
@@ -55,8 +54,7 @@ var ORDER_FILTER = {
 };
 
 var DURATION_FILTER = {
-  key: "duration",
-  name: "时长",
+  key: "duration", name: "时长",
   value: [
     { n: "全部", v: "0" },
     { n: "60分钟以上", v: "4" },
@@ -67,8 +65,7 @@ var DURATION_FILTER = {
 };
 
 var ARTIST_FILTER = {
-  key: "tid",
-  name: "分类",
+  key: "tid", name: "分类",
   value: [
     { n: "全部", v: "演唱会超清" },
     { n: "周杰伦", v: "周杰伦演唱会超清" },
@@ -106,27 +103,29 @@ var FILTERS = {
   古风歌曲: [DURATION_FILTER],
   闽南语歌曲: [DURATION_FILTER],
   电子琴纯音乐: [ORDER_FILTER, DURATION_FILTER],
-  抖音DJ: [ORDER_FILTER, DURATION_FILTER],
+  抖音DJ: [ORDER_ORDER_PLACEHOLDER, DURATION_FILTER],
   无损音乐: [DURATION_FILTER],
   时光音乐会MV: [DURATION_FILTER],
   "2026年热门歌曲": [ORDER_FILTER, DURATION_FILTER],
   "2025年热门歌曲": [ORDER_FILTER, DURATION_FILTER],
   "2024年热门歌曲": [ORDER_FILTER, DURATION_FILTER],
-  "00年代经典歌曲": [DURATION_FILTER],
-  "90年代经典歌曲": [DURATION_FILTER],
-  "80年代经典歌曲": [DURATION_FILTER],
-  "70年代经典歌曲": [DURATION_FILTER],
-  "60年代经典歌曲": [DURATION_FILTER]
+  "00年代经典歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "90年代经典歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "80年代经典歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "70年代经典歌曲": [ORDER_FILTER, DURATION_FILTER],
+  "60年代经典歌曲": [ORDER_FILTER, DURATION_FILTER]
 };
+// 修正占位
+FILTERS["抖音DJ"] = [ORDER_FILTER, DURATION_FILTER];
 
 var _wbiKeys = null;
 
 function headers() {
   var h = {
     "User-Agent": UA,
-    Referer: "https://www.bilibili.com/",
-    Origin: "https://www.bilibili.com",
-    Accept: "application/json, text/plain, */*",
+    "Referer": "https://www.bilibili.com/",
+    "Origin": "https://www.bilibili.com",
+    "Accept": "application/json, text/plain, */*",
     "Accept-Language": "zh-CN,zh;q=0.9"
   };
   var ck = BUVID;
@@ -135,58 +134,58 @@ function headers() {
   return h;
 }
 
-function httpText(url, params) {
-  try {
-    var full = url;
-    if (params) {
-      var qs = [];
-      for (var k in params) {
-        if (Object.prototype.hasOwnProperty.call(params, k)) {
-          qs.push(encodeURIComponent(k) + "=" + encodeURIComponent(params[k]));
-        }
+function buildUrl(url, params) {
+  var full = url;
+  if (params) {
+    var qs = [];
+    for (var k in params) {
+      if (Object.prototype.hasOwnProperty.call(params, k)) {
+        qs.push(encodeURIComponent(k) + "=" + encodeURIComponent(params[k]));
       }
-      if (qs.length) full += (full.indexOf("?") >= 0 ? "&" : "?") + qs.join("&");
     }
+    if (qs.length) full += (full.indexOf("?") >= 0 ? "&" : "?") + qs.join("&");
+  }
+  return full;
+}
+
+// 同步取文本：TVBox 注入 req(url, opts) -> 字符串 / {content} / {body}
+function httpText(url, params) {
+  var full = buildUrl(url, params);
+  try {
     if (typeof req === "function") {
       var res = req(full, { headers: headers(), method: "get" });
-      if (res && res.content) return typeof res.content === "string" ? res.content : String(res.content);
+      if (res === null || res === undefined) return null;
       if (typeof res === "string") return res;
-      if (res && typeof res.text === "string") return res.text;
-    }
-    if (typeof fetch === "function") {
-      var r = fetch(full, { headers: headers(), method: "get" });
-      if (r && typeof r.then === "function") return r;
-      if (r && r.text && typeof r.text.then === "function") return r.text;
-      if (r && typeof r.text === "string") return r.text;
-      if (r && typeof r.content === "string") return r.content;
-      if (typeof r === "string") return r;
+      if (typeof res === "object") {
+        if (typeof res.content === "string") return res.content;
+        if (typeof res.body === "string") return res.body;
+        if (typeof res.text === "string") return res.text;
+      }
+      return String(res);
     }
   } catch (e) {}
   return null;
 }
 
-async function httpJson(url, params) {
+function httpJson(url, params) {
   var t = httpText(url, params);
-  if (t && typeof t.then === "function") {
-    try { t = await t; } catch (e) { return null; }
-  }
   if (!t) return null;
   if (typeof t !== "string") t = String(t);
   t = t.trim();
   if (!t || (t.charAt(0) !== "{" && t.charAt(0) !== "[")) return null;
   try {
     return JSON.parse(t);
-  } catch (e) {
-    return null;
-  }
+  } catch (e) {}
+  return null;
 }
 
-async function getWbiKeys() {
+function getWbiKeys() {
   if (_wbiKeys) return _wbiKeys;
   try {
-    var r = await httpJson("https://api.bilibili.com/x/web-interface/nav");
-    var img = ((r.data.wbi_img.img_url) || "").split("/").pop().split(".")[0];
-    var sub = ((r.data.wbi_img.sub_url) || "").split("/").pop().split(".")[0];
+    var r = httpJson("https://api.bilibili.com/x/web-interface/nav");
+    if (!r || !r.data || !r.data.wbi_img) { _wbiKeys = ""; return _wbiKeys; }
+    var img = (r.data.wbi_img.img_url || "").split("/").pop().split(".")[0];
+    var sub = (r.data.wbi_img.sub_url || "").split("/").pop().split(".")[0];
     var raw = img + sub;
     var mixin = "";
     for (var i = 0; i < MIXIN_KEY_ENC_TAB.length; i++) mixin += raw.charAt(MIXIN_KEY_ENC_TAB[i]) || "";
@@ -197,116 +196,73 @@ async function getWbiKeys() {
   return _wbiKeys;
 }
 
-function md5(str) {
-  function cmn(q, a, b, x, s, t) {
-    a = (a + q + x + t) | 0;
-    return (((a << s) | (a >>> (32 - s))) + b) | 0;
+function md5(input){
+  function AddUnsigned(lX,lY){var lX4,lY4,lX8,lY8,lResult;lX8=(lX&0x80000000);lY8=(lY&0x80000000);lX4=(lX&0x40000000);lY4=(lY&0x40000000);lResult=(lX&0x3FFFFFFF)+(lY&0x3FFFFFFF);if(lX4&lY4)return(lResult^0x80000000^lX8^lY8);if(lX4|lY4){if(lResult&0x40000000)return(lResult^0xC0000000^lX8^lY8);else return(lResult^0x40000000^lX8^lY8);}else return(lResult^lX8^lY8);}
+  function F(x,y,z){return(x&y)|((~x)&z);}
+  function G(x,y,z){return(x&z)|(y&(~z));}
+  function H(x,y,z){return(x^y^z);}
+  function I(x,y,z){return(y^(x|(~z)));}
+  function RotateLeft(lValue,iShiftBits){return(lValue<<iShiftBits)|(lValue>>>(32-iShiftBits));}
+  function FF(a,b,c,d,x,s,ac){a=AddUnsigned(a,AddUnsigned(AddUnsigned(F(b,c,d),x),ac));return AddUnsigned(RotateLeft(a,s),b);}
+  function GG(a,b,c,d,x,s,ac){a=AddUnsigned(a,AddUnsigned(AddUnsigned(G(b,c,d),x),ac));return AddUnsigned(RotateLeft(a,s),b);}
+  function HH(a,b,c,d,x,s,ac){a=AddUnsigned(a,AddUnsigned(AddUnsigned(H(b,c,d),x),ac));return AddUnsigned(RotateLeft(a,s),b);}
+  function II(a,b,c,d,x,s,ac){a=AddUnsigned(a,AddUnsigned(AddUnsigned(I(b,c,d),x),ac));return AddUnsigned(RotateLeft(a,s),b);}
+  function ConvertToWordArray(s){
+    var lWordCount,lMessageLengthInBits,lMessageLengthInIndex,lMessageLength,s;
+    var lNumberOfWords_temp1,lNumberOfWords_temp2,lNumberOfWords;
+    var lWordArray=new Array(),lBytePosition=0,lByteCount=0,lWordPosition=0;
+    s=utf8Encode(s);
+    lMessageLength=s.length;
+    lNumberOfWords_temp1=lMessageLength+8;
+    lNumberOfWords_temp2=(lNumberOfWords_temp1-(lNumberOfWords_temp1%64))/64;
+    lNumberOfWords=(lNumberOfWords_temp2+1)*16;
+    var pad=Math.pow(2,8);
+    while(lByteCount<lMessageLength){lBytePosition=(lByteCount%4)*8;lWordPosition=(lByteCount-(lByteCount%4))/4;lWordArray[lWordPosition]=(lWordArray[lWordPosition]|(s.charCodeAt(lByteCount)<<lBytePosition));lByteCount++;}
+    lBytePosition=(lByteCount%4)*8;lWordPosition=(lByteCount-(lByteCount%4))/4;lWordArray[lWordPosition]=(lWordArray[lWordPosition]|(0x80<<lBytePosition));
+    lByteCount++;
+    while(lByteCount<(lNumberOfWords-2)){lBytePosition=(lByteCount%4)*8;lWordPosition=(lByteCount-(lByteCount%4))/4;lWordArray[lWordPosition]=(lWordArray[lWordPosition]|(0<<lBytePosition));lByteCount++;}
+    lWordArray[lNumberOfWords-2]=lMessageLength<<3;lWordArray[lNumberOfWords-1]=lMessageLength>>>29;
+    return lWordArray;
   }
-  function ff(a, b, c, d, x, s, t) { return cmn((b & c) | (~b & d), a, b, x, s, t); }
-  function gg(a, b, c, d, x, s, t) { return cmn((b & d) | (c & ~d), a, b, x, s, t); }
-  function hh(a, b, c, d, x, s, t) { return cmn(b ^ c ^ d, a, b, x, s, t); }
-  function ii(a, b, c, d, x, s, t) { return cmn(c ^ (b | ~d), a, b, x, s, t); }
-  function toUtf8(s) { return unescape(encodeURIComponent(s)); }
-  var msg = toUtf8(str);
-  var n = msg.length;
-  var words = [];
-  for (var i = 0; i < n; i++) words[i >> 2] |= (msg.charCodeAt(i) & 0xff) << ((i % 4) * 8);
-  words[n >> 2] |= 0x80 << ((n % 4) * 8);
-  words[(((n + 8) >> 6) << 4) + 14] = n * 8;
-  var a = 1732584193, b = -271733879, c = -1732584194, d = 271733878;
-  for (var j = 0; j < words.length; j += 16) {
-    var oa = a, ob = b, oc = c, od = d;
-    a = ff(a, b, c, d, words[j + 0], 7, -680876936);
-    d = ff(d, a, b, c, words[j + 1], 12, -389564586);
-    c = ff(c, d, a, b, words[j + 2], 17, 606105819);
-    b = ff(b, c, d, a, words[j + 3], 22, -1044525330);
-    a = ff(a, b, c, d, words[j + 4], 7, -176418897);
-    d = ff(d, a, b, c, words[j + 5], 12, 1200080426);
-    c = ff(c, d, a, b, words[j + 6], 17, -1473231341);
-    b = ff(b, c, d, a, words[j + 7], 22, -45705983);
-    a = ff(a, b, c, d, words[j + 8], 7, 1770035416);
-    d = ff(d, a, b, c, words[j + 9], 12, -1958414417);
-    c = ff(c, d, a, b, words[j + 10], 17, -42063);
-    b = ff(b, c, d, a, words[j + 11], 22, -1990404162);
-    a = ff(a, b, c, d, words[j + 12], 7, 1804603682);
-    d = ff(d, a, b, c, words[j + 13], 12, -40341101);
-    c = ff(c, d, a, b, words[j + 14], 17, -1502002290);
-    b = ff(b, c, d, a, words[j + 15], 22, 1236535329);
-    a = gg(a, b, c, d, words[j + 1], 5, -165796510);
-    d = gg(d, a, b, c, words[j + 6], 9, -1069501632);
-    c = gg(c, d, a, b, words[j + 11], 14, 643717713);
-    b = gg(b, c, d, a, words[j + 0], 20, -373897302);
-    a = gg(a, b, c, d, words[j + 5], 5, -701558691);
-    d = gg(d, a, b, c, words[j + 10], 9, 38016083);
-    c = gg(c, d, a, b, words[j + 15], 14, -660478335);
-    b = gg(b, c, d, a, words[j + 4], 20, -405537848);
-    a = gg(a, b, c, d, words[j + 9], 5, 568446438);
-    d = gg(d, a, b, c, words[j + 14], 9, -1019803690);
-    c = gg(c, d, a, b, words[j + 3], 14, -187363961);
-    b = gg(b, c, d, a, words[j + 8], 20, 1163531501);
-    a = gg(a, b, c, d, words[j + 13], 5, -1444681467);
-    d = gg(d, a, b, c, words[j + 2], 9, -51403784);
-    c = gg(c, d, a, b, words[j + 7], 14, 1735328473);
-    b = gg(b, c, d, a, words[j + 12], 20, -1926607734);
-    a = hh(a, b, c, d, words[j + 5], 4, -378558);
-    d = hh(d, a, b, c, words[j + 8], 11, -2022574463);
-    c = hh(c, d, a, b, words[j + 11], 16, 1839030562);
-    b = hh(b, c, d, a, words[j + 14], 23, -35309556);
-    a = hh(a, b, c, d, words[j + 1], 4, -1530992060);
-    d = hh(d, a, b, c, words[j + 4], 11, 1272893353);
-    c = hh(c, d, a, b, words[j + 7], 16, -155497632);
-    b = hh(b, c, d, a, words[j + 10], 23, -1094730640);
-    a = hh(a, b, c, d, words[j + 13], 4, 681279174);
-    d = hh(d, a, b, c, words[j + 0], 11, -358537222);
-    c = hh(c, d, a, b, words[j + 3], 16, -722521979);
-    b = hh(b, c, d, a, words[j + 6], 23, 76029189);
-    a = hh(a, b, c, d, words[j + 9], 4, -640364487);
-    d = hh(d, a, b, c, words[j + 12], 11, -421815835);
-    c = hh(c, d, a, b, words[j + 15], 16, 530742520);
-    b = hh(b, c, d, a, words[j + 2], 23, -995338651);
-    a = ii(a, b, c, d, words[j + 0], 6, -198630844);
-    d = ii(d, a, b, c, words[j + 7], 10, 1126891415);
-    c = ii(c, d, a, b, words[j + 14], 15, -1416354905);
-    b = ii(b, c, d, a, words[j + 5], 21, -57434055);
-    a = ii(a, b, c, d, words[j + 12], 6, 1700485571);
-    d = ii(d, a, b, c, words[j + 3], 10, -1894986606);
-    c = ii(c, d, a, b, words[j + 10], 15, -1051523);
-    b = ii(b, c, d, a, words[j + 1], 21, -2054922799);
-    a = ii(a, b, c, d, words[j + 8], 6, 1873313359);
-    d = ii(d, a, b, c, words[j + 15], 10, -30611744);
-    c = ii(c, d, a, b, words[j + 6], 15, -1560198380);
-    b = ii(b, c, d, a, words[j + 13], 21, 1309151649);
-    a = ii(a, b, c, d, words[j + 4], 6, -145523070);
-    d = ii(d, a, b, c, words[j + 11], 10, -1120210379);
-    c = ii(c, d, a, b, words[j + 2], 15, 718787259);
-    b = ii(b, c, d, a, words[j + 9], 21, -343485551);
-    a = (a + oa) | 0;
-    b = (b + ob) | 0;
-    c = (c + oc) | 0;
-    d = (d + od) | 0;
+  function WordToHex(lValue){var WordToHexValue="",WordToHexValue_temp="",lByte,lCount;for(lCount=0;lCount<=3;lCount++){lByte=(lValue>>>(lCount*8))&255;WordToHexValue_temp="0"+lByte.toString(16);WordToHexValue=WordToHexValue+WordToHexValue_temp.substr(WordToHexValue_temp.length-2,2);}return WordToHexValue;}
+  function utf8Encode(s){s=s.replace(/\r\n/g,"\n");var utftext="";for(var n=0;n<s.length;n++){var c=s.charCodeAt(n);if(c<128){utftext+=String.fromCharCode(c);}else if((c>127)&&(c<2048)){utftext+=String.fromCharCode((c>>6)|192);utftext+=String.fromCharCode((c&63)|128);}else{utftext+=String.fromCharCode(((c>>12)&15)|224);utftext+=String.fromCharCode(((c>>6)&63)|128);utftext+=String.fromCharCode((c&63)|128);}}return utftext;}
+  var x=ConvertToWordArray(input);
+  var a=0x67452301,b=0xEFCDAB89,c=0x98BADCFE,d=0x10325476;
+  var S11=7,S12=12,S13=17,S14=22,S21=5,S22=9,S23=14,S24=20,S31=4,S32=11,S33=16,S34=23,S41=6,S42=10,S43=15,S44=21;
+  for(var k=0;k<x.length;k+=16){
+    var AA=a,BB=b,CC=c,DD=d;
+    a=FF(a,b,c,d,x[k+0],S11,0xD76AA478);d=FF(d,a,b,c,x[k+1],S12,0xE8C7B756);c=FF(c,d,a,b,x[k+2],S13,0x242070DB);b=FF(b,c,d,a,x[k+3],S14,0xC1BDCEEE);
+    a=FF(a,b,c,d,x[k+4],S11,0xF57C0FAF);d=FF(d,a,b,c,x[k+5],S12,0x4787C62A);c=FF(c,d,a,b,x[k+6],S13,0xA8304613);b=FF(b,c,d,a,x[k+7],S14,0xFD469501);
+    a=FF(a,b,c,d,x[k+8],S11,0x698098D8);d=FF(d,a,b,c,x[k+9],S12,0x8B44F7AF);c=FF(c,d,a,b,x[k+10],S13,0xFFFF5BB1);b=FF(b,c,d,a,x[k+11],S14,0x895CD7BE);
+    a=FF(a,b,c,d,x[k+12],S11,0x6B901122);d=FF(d,a,b,c,x[k+13],S12,0xFD987193);c=FF(c,d,a,b,x[k+14],S13,0xA679438E);b=FF(b,c,d,a,x[k+15],S14,0x49B40821);
+    a=GG(a,b,c,d,x[k+1],S21,0xF61E2562);d=GG(d,a,b,c,x[k+6],S22,0xC040B340);c=GG(c,d,a,b,x[k+11],S23,0x265E5A51);b=GG(b,c,d,a,x[k+0],S24,0xE9B6C7AA);
+    a=GG(a,b,c,d,x[k+5],S21,0xD62F105D);d=GG(d,a,b,c,x[k+10],S22,0x02441453);c=GG(c,d,a,b,x[k+15],S23,0xD8A1E681);b=GG(b,c,d,a,x[k+4],S24,0xE7D3FBC8);
+    a=GG(a,b,c,d,x[k+9],S21,0x21E1CDE6);d=GG(d,a,b,c,x[k+14],S22,0xC33707D6);c=GG(c,d,a,b,x[k+3],S23,0xF4D50D87);b=GG(b,c,d,a,x[k+8],S24,0x455A14ED);
+    a=GG(a,b,c,d,x[k+13],S21,0xA9E3E905);d=GG(d,a,b,c,x[k+2],S22,0xFCEFA3F8);c=GG(c,d,a,b,x[k+7],S23,0x676F02D9);b=GG(b,c,d,a,x[k+12],S24,0x8D2A4C8A);
+    a=HH(a,b,c,d,x[k+5],S31,0xFFFA3942);d=HH(d,a,b,c,x[k+8],S32,0x8771F681);c=HH(c,d,a,b,x[k+11],S33,0x6D9D6122);b=HH(b,c,d,a,x[k+14],S34,0xFDE5380C);
+    a=HH(a,b,c,d,x[k+1],S31,0xA4BEEA44);d=HH(d,a,b,c,x[k+4],S32,0x4BDECFA9);c=HH(c,d,a,b,x[k+7],S33,0xF6BB4B60);b=HH(b,c,d,a,x[k+10],S34,0xBEBFBC70);
+    a=HH(a,b,c,d,x[k+13],S31,0x289B7EC6);d=HH(d,a,b,c,x[k+0],S32,0xEAA127FA);c=HH(c,d,a,b,x[k+3],S33,0xD4EF3085);b=HH(b,c,d,a,x[k+6],S34,0x04881D05);
+    a=HH(a,b,c,d,x[k+9],S31,0xD9D4D039);d=HH(d,a,b,c,x[k+12],S32,0xE6DB99E5);c=HH(c,d,a,b,x[k+15],S33,0x1FA27CF8);b=HH(b,c,d,a,x[k+2],S34,0xC4AC5665);
+    a=II(a,b,c,d,x[k+0],S41,0xF4292244);d=II(d,a,b,c,x[k+7],S42,0x432AFF97);c=II(c,d,a,b,x[k+14],S43,0xAB9423A7);b=II(b,c,d,a,x[k+5],S44,0xFC93A039);
+    a=II(a,b,c,d,x[k+12],S41,0x655B59C3);d=II(d,a,b,c,x[k+3],S42,0x8F0CCC92);c=II(c,d,a,b,x[k+10],S43,0xFFEFF47D);b=II(b,c,d,a,x[k+1],S44,0x85845DD1);
+    a=II(a,b,c,d,x[k+8],S41,0x6FA87E4F);d=II(d,a,b,c,x[k+15],S42,0xFE2CE6E0);c=II(c,d,a,b,x[k+6],S43,0xA3014314);b=II(b,c,d,a,x[k+13],S44,0x4E0811A1);
+    a=II(a,b,c,d,x[k+4],S41,0xF7537E82);d=II(d,a,b,c,x[k+11],S42,0xBD3AF235);c=II(c,d,a,b,x[k+2],S43,0x2AD7D2BB);b=II(b,c,d,a,x[k+9],S44,0xEB86D391);
+    a=AddUnsigned(a,AA);b=AddUnsigned(b,BB);c=AddUnsigned(c,CC);d=AddUnsigned(d,DD);
   }
-  function hex(num) {
-    var s = "";
-    for (var k = 0; k < 4; k++) s += ("0" + ((num >> (k * 8)) & 0xff).toString(16)).slice(-2);
-    return s;
-  }
-  return hex(a) + hex(b) + hex(c) + hex(d);
+  return (WordToHex(a)+WordToHex(b)+WordToHex(c)+WordToHex(d)).toLowerCase();
 }
 
-async function wbiSign(params) {
-  var mixin = await getWbiKeys();
+function wbiSign(params) {
+  var mixin = getWbiKeys();
+  if (!mixin) return params;
   var p = {};
-  for (var k in params) {
-    if (Object.prototype.hasOwnProperty.call(params, k)) p[k] = params[k];
-  }
+  for (var k in params) if (Object.prototype.hasOwnProperty.call(params, k)) p[k] = params[k];
   p.wts = Math.floor(Date.now() / 1000);
   var keys = [];
-  for (var k2 in p) {
-    if (Object.prototype.hasOwnProperty.call(p, k2)) keys.push(k2);
-  }
+  for (var kk in p) if (Object.prototype.hasOwnProperty.call(p, kk)) keys.push(kk);
   keys.sort();
-  var q = keys.map(function (key) { return key + "=" + encodeURIComponent(p[key]); }).join("&");
-  if (mixin) p.w_rid = md5(q + mixin);
+  var q = keys.map(function (k2) { return k2 + "=" + encodeURIComponent(p[k2]); }).join("&");
+  p.w_rid = md5(q + mixin);
   return p;
 }
 
@@ -344,12 +300,12 @@ function norm(items) {
   return out;
 }
 
-async function searchOnce(endpoint, keyword, pg, order, duration, signed) {
+function searchOnce(endpoint, keyword, pg, order, duration, signed) {
   try {
     if (endpoint.indexOf("search/all/v2") >= 0) {
-      var r0 = await httpJson(endpoint, { keyword: keyword, page: pg });
-      if (!r0 || r0.code !== 0) return { list: [], pages: 1 };
-      var blocks = (r0.data && r0.data.result) || [];
+      var r = httpJson(endpoint, { keyword: keyword, page: pg });
+      if (!r || r.code !== 0) return { list: [], pages: 1 };
+      var blocks = (r.data && r.data.result) || [];
       var vids = [];
       for (var i = 0; i < blocks.length; i++) {
         if (blocks[i] && blocks[i].result_type === "video") {
@@ -357,7 +313,7 @@ async function searchOnce(endpoint, keyword, pg, order, duration, signed) {
           break;
         }
       }
-      return { list: norm(vids), pages: parseInt((r0.data && r0.data.numPages) || 1, 10) };
+      return { list: norm(vids), pages: parseInt((r.data && r.data.numPages) || 1, 10) };
     }
     var params = { search_type: "video", keyword: keyword, page: pg, page_size: 20 };
     if (order && order !== "0") {
@@ -365,19 +321,19 @@ async function searchOnce(endpoint, keyword, pg, order, duration, signed) {
       params.order = map[order] || "totalrank";
     }
     if (duration && duration !== "0") params.duration = duration;
-    var p = signed ? await wbiSign(params) : params;
-    var r = await httpJson(endpoint, p);
-    if (!r || r.code !== 0) return { list: [], pages: 1 };
+    var p = signed ? wbiSign(params) : params;
+      var r2 = httpJson(endpoint, p);
+    if (!r2 || r2.code !== 0) return { list: [], pages: 1 };
     return {
-      list: norm((r.data && r.data.result) || []),
-      pages: parseInt((r.data && r.data.numPages) || 1, 10)
+      list: norm((r2.data && r2.data.result) || []),
+      pages: parseInt((r2.data && r2.data.numPages) || 1, 10)
     };
   } catch (e) {
     return { list: [], pages: 1 };
   }
 }
 
-async function biliSearch(keyword, pg, order, duration) {
+function biliSearch(keyword, pg, order, duration) {
   var eps = [
     ["https://api.bilibili.com/x/web-interface/search/type", true],
     ["https://api.bilibili.com/x/web-interface/search/all/v2", false],
@@ -385,17 +341,17 @@ async function biliSearch(keyword, pg, order, duration) {
   ];
   for (var rnd = 0; rnd < 2; rnd++) {
     for (var i = 0; i < eps.length; i++) {
-      var res = await searchOnce(eps[i][0], keyword, pg, order, duration, eps[i][1]);
+      var res = searchOnce(eps[i][0], keyword, pg, order, duration, eps[i][1]);
       if (res.list && res.list.length) return res;
     }
   }
   return { list: [], pages: 1 };
 }
 
-async function ranking() {
+function ranking() {
   var rids = ["3", "1", "4"];
   for (var i = 0; i < rids.length; i++) {
-    var r = await httpJson("https://api.bilibili.com/x/web-interface/ranking/v2", { rid: rids[i], type: "all" });
+    var r = httpJson("https://api.bilibili.com/x/web-interface/ranking/v2", { rid: rids[i], type: "all" });
     if (r && r.code === 0) {
       var lst = (r.data && r.data.list) || [];
       if (lst.length) {
@@ -415,27 +371,21 @@ async function ranking() {
   return [];
 }
 
-async function view(bvid, p) {
+function view(bvid, p) {
   var params = { bvid: bvid };
   if (p && p > 1) params.p = p;
-  var r = await httpJson("https://api.bilibili.com/x/web-interface/view", params);
+  var r = httpJson("https://api.bilibili.com/x/web-interface/view", params);
   if (r && r.code === 0 && r.data) return r.data;
-  var r2 = await httpJson("https://api.bilibili.com/x/player/pagelist", { bvid: bvid });
-  if (r2 && r2.code === 0 && r2.data) {
-    var pages = r2.data;
+  r = httpJson("https://api.bilibili.com/x/player/pagelist", { bvid: bvid });
+  if (r && r.code === 0 && r.data) {
+    var pages = r.data;
     var idx = Math.min(Math.max((p || 1) - 1, 0), pages.length - 1);
-    return {
-      bvid: bvid,
-      cid: pages[idx].cid || 0,
-      pages: pages,
-      title: pages[idx].part || "",
-      pic: ""
-    };
+    return { bvid: bvid, cid: pages[idx].cid || 0, pages: pages, title: pages[idx].part || "", pic: "" };
   }
   return {};
 }
 
-async function playurl(bvid, cid) {
+function playurl(bvid, cid) {
   var qns = SESSDATA ? [80, 64, 32, 16] : [64, 32, 16];
   var endpoints = [
     ["https://api.bilibili.com/x/player/wbi/playurl", true],
@@ -446,17 +396,9 @@ async function playurl(bvid, cid) {
     for (var ei = 0; ei < endpoints.length; ei++) {
       for (var fi = 0; fi < 2; fi++) {
         var fnval = fi === 0 ? 1 : 0;
-        var params = {
-          bvid: bvid,
-          cid: cid,
-          qn: qn,
-          fnval: fnval,
-          fnver: 0,
-          fourk: 1,
-          platform: "pc"
-        };
-        if (endpoints[ei][1]) params = await wbiSign(params);
-        var r = await httpJson(endpoints[ei][0], params);
+        var params = { bvid: bvid, cid: cid, qn: qn, fnval: fnval, fnver: 0, fourk: 1, platform: "pc" };
+        if (endpoints[ei][1]) params = wbiSign(params);
+        var r = httpJson(endpoints[ei][0], params);
         if (!r || r.code !== 0) continue;
         var data = r.data || {};
         var durl = data.durl || [];
@@ -500,32 +442,32 @@ function home(filter) {
   return JSON.stringify(result);
 }
 
-async function homeVod() {
+function homeVod() {
   try {
-    return JSON.stringify({ list: await ranking() });
+    return JSON.stringify({ list: ranking() });
   } catch (e) {
     return JSON.stringify({ list: [] });
   }
 }
 
-async function category(tid, pg, filter, extend) {
+function category(tid, pg, filter, extend) {
   try {
     pg = String(pg || "1");
     var ext = asObj(extend) || {};
     var keyword = String(ext.tid || tid || "").trim();
     var order = String(ext.order || "0");
     var duration = String(ext.duration || "0");
-    var res = await biliSearch(keyword, pg, order, duration);
+    var res = biliSearch(keyword, pg, order, duration);
     if ((!res.list || !res.list.length) && (pg === "1" || pg === 1)) {
       var alts = [keyword + "超清", keyword.replace("超清", "").trim(), keyword + " MV"];
       for (var i = 0; i < alts.length; i++) {
         if (!alts[i] || alts[i] === keyword) continue;
-        res = await biliSearch(alts[i], pg, order, duration);
+        res = biliSearch(alts[i], pg, order, duration);
         if (res.list && res.list.length) break;
       }
     }
     if ((!res.list || !res.list.length) && (pg === "1" || pg === 1)) {
-      res = { list: await ranking(), pages: 1 };
+      res = { list: ranking(), pages: 1 };
     }
     return JSON.stringify({
       list: res.list || [],
@@ -539,7 +481,7 @@ async function category(tid, pg, filter, extend) {
   }
 }
 
-async function detail(ids) {
+function detail(ids) {
   try {
     var vid = "";
     if (Array.isArray(ids)) vid = String(ids[0] || "");
@@ -548,7 +490,7 @@ async function detail(ids) {
     vid = vid.replace(/^["']|["']$/g, "").trim();
     var bvid = vid.split("?")[0].split("$")[0].trim();
     if (!bvid) return JSON.stringify({ list: [] });
-    var info = await view(bvid, 1);
+    var info = view(bvid, 1);
     var pages = info.pages || [];
     var play = "";
     if (pages.length <= 1) {
@@ -571,9 +513,7 @@ async function detail(ids) {
       remark = "播放:" + fv + " 弹幕:" + fd;
     }
     var year = "";
-    try {
-      if (info.pubdate) year = String(new Date(info.pubdate * 1000).getFullYear());
-    } catch (e) {}
+    try { if (info.pubdate) year = String(new Date(info.pubdate * 1000).getFullYear()); } catch (e) {}
     var vod = {
       vod_id: bvid,
       vod_name: info.title || bvid,
@@ -594,10 +534,10 @@ async function detail(ids) {
   }
 }
 
-async function search(key, quick, pg) {
+function search(key, quick, pg) {
   try {
     pg = String(pg || "1");
-    var res = await biliSearch(String(key || "").trim(), pg, "totalrank", "0");
+    var res = biliSearch(String(key || "").trim(), pg, "totalrank", "0");
     return JSON.stringify({
       list: res.list || [],
       page: pg,
@@ -608,26 +548,29 @@ async function search(key, quick, pg) {
   }
 }
 
-async function play(flag, id, vipFlags) {
+function play(flag, id, vipFlags) {
   var header = {
     "User-Agent": UA,
-    Referer: "https://www.bilibili.com",
-    Origin: "https://www.bilibili.com",
-    Accept: "*/*",
+    "Referer": "https://www.bilibili.com",
+    "Origin": "https://www.bilibili.com",
+    "Accept": "*/*",
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"
   };
   if (SESSDATA) header.Cookie = "SESSDATA=" + SESSDATA;
 
+  var bvid = "";
+  var p = 1;
   var cand = String(id || "");
   var m = cand.match(/(BV[0-9A-Za-z]{8,})/);
-  if (!m) return JSON.stringify({ parse: 0, url: "", header: header });
-  var bvid = m[1];
-  var p = 1;
-  var mp = cand.match(/[?&]p=(\d+)/);
-  if (mp) p = parseInt(mp[1], 10);
+  if (m) {
+    bvid = m[1];
+    var mp = cand.match(/[?&]p=(\d+)/);
+    if (mp) p = parseInt(mp[1], 10);
+  }
+  if (!bvid) return JSON.stringify({ parse: 0, url: "", header: header });
 
   try {
-    var info = await view(bvid, p);
+    var info = view(bvid, p);
     var cid = info.cid || 0;
     var pages = info.pages || [];
     if (!cid && pages.length) {
@@ -635,18 +578,37 @@ async function play(flag, id, vipFlags) {
       cid = pages[idx].cid || 0;
     }
     if (cid) {
-      var pu = await playurl(bvid, cid);
+      var pu = playurl(bvid, cid);
       if (pu.url) {
         return JSON.stringify({ parse: 0, url: pu.url, header: header, format: "mp4" });
-        }
+      }
     }
   } catch (e) {}
   return JSON.stringify({ parse: 0, url: "", header: header });
 }
 
+// 兼容别名
 function homeContent(filter) { return home(filter); }
 function homeVideoContent() { return homeVod(); }
 function categoryContent(tid, pg, filter, extend) { return category(tid, pg, filter, extend); }
 function detailContent(ids) { return detail(ids); }
 function searchContent(key, quick, pg) { return search(key, quick, pg); }
 function playerContent(flag, id, vipFlags) { return play(flag, id, vipFlags); }
+
+function __jsEvalReturn() {
+  return {
+    init: init,
+    home: home,
+    homeVod: homeVod,
+    category: category,
+    detail: detail,
+    play: play,
+    search: search,
+    homeContent: homeContent,
+    homeVideoContent: homeVideoContent,
+    categoryContent: categoryContent,
+    detailContent: detailContent,
+    searchContent: searchContent,
+    playerContent: playerContent
+  };
+}
