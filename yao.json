@@ -1,9 +1,9 @@
 {
-    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/ff5af105e608d6389b89d59586515c70.jpg;md5;5a934007fb34ec762c2e7d25dbdc865d",
+    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/b739e258520d1aefa13a1444ee39ef0d.jpg;md5;c789e7b7a87532b61136116ab3b1541e",
     "sites": [
         {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20261117】🐮",
+            "name": "🐮【更新日期:20261121】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
