@@ -1,16 +1,16 @@
 {
-    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/b739e258520d1aefa13a1444ee39ef0d.jpg;md5;c789e7b7a87532b61136116ab3b1541e",
+    "spider": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/0684202079fbec343ec03f772b72e928.jpg;md5;d773eab0709f62b0077f8112765eb6d2",
     "sites": [
         {
             "key": "Doubanaaaa",
-            "name": "🐮【更新日期:20261121】🐮",
+            "name": "🐮【更新日期:20261124】🐮",
             "type": 3,
             "api": "csp_NewDouBanGuard",
             "indexs": 1,
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 0,
-            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/Basic-yao/TVBox/refs/heads/main/20260414181247-ae51abfbfe.txt"
+            "ext": "https://cdn.waimaimingtang.com/file/images/bwc/20260414181247-ae51abfbfe.txt"
         }, {
             "key": "Wexconfig",
             "name": "🐮配置┃中心🐮",
@@ -170,15 +170,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 0
-        },  {
-            "key": "AiNewShanDian",
-            "name": "💓闪电┃4K💓",
-            "type": 3,
-            "api": "csp_AiNewShanDianGuard",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0
-        }, {
+        },{
             "key": "AiNewJuTou",
             "name": "💓剧透┃4K💓",
             "type": 3,
@@ -314,19 +306,7 @@
                 "proxyImg": false
             },
             "timeout": 120
-        }, {
-            "key": "AppV7 | 咸鱼",
-            "name": "💥咸鱼┃秒播💥",
-            "type": 3,
-            "api": "csp_WexAppV7Guard",
-            "searchable": 1,
-            "changeable": 0,
-            "ext": {
-                "config": "AppV7Xy",
-                "proxyImg": false
-            },
-            "timeout": 120
-        }, {
+        },  {
             "key": "AppV7 | 追剧达人",
             "name": "💥追剧┃秒播💥",
             "type": 3,
@@ -350,19 +330,7 @@
                 "proxyImg": false
             },
             "timeout": 120
-        }, {
-            "key": "AppV7 | 小柠檬",
-            "name": "💥柠檬┃秒播💥",
-            "type": 3,
-            "api": "csp_WexAppV7Guard",
-            "searchable": 1,
-            "changeable": 0,
-            "ext": {
-                "config": "AppV7Xnm",
-                "proxyImg": false
-            },
-            "timeout": 120
-        }, {
+        },  {
             "key": "AppV7 | 蒙太奇",
             "name": "💥太奇┃秒播💥",
             "type": 3,
@@ -374,31 +342,7 @@
                 "proxyImg": false
             },
             "timeout": 120
-        }, {
-            "key": "AppV7 | 零零七影视",
-            "name": "💥零七┃秒播💥",
-            "type": 3,
-            "api": "csp_WexAppV7Guard",
-            "searchable": 1,
-            "changeable": 0,
-            "ext": {
-                "config": "AppV7Llq",
-                "proxyImg": false
-            },
-            "timeout": 120
-        }, {
-            "key": "AppV7 | 小柿子",
-            "name": "💥柿子┃秒播💥",
-            "type": 3,
-            "api": "csp_WexAppV7Guard",
-            "searchable": 1,
-            "changeable": 0,
-            "ext": {
-                "config": "AppV7Xsz",
-                "proxyImg": false
-            },
-            "timeout": 120
-        }, {
+        },  {
             "key": "AppV7 | 小黄人",
             "name": "💥黄人┃秒播💥",
             "type": 3,
